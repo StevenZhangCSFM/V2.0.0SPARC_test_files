@@ -1,0 +1,2439 @@
+
+Creating SPARC_INPUT_MPI datatype took 0.051 ms
+Initializing ...
+Checking input arguments parsed by command line.
+
+Checking inputs parsed by commandline took 0.018 ms
+
+Set default values took 0.002 ms
+Reading input file Al256.inpt
+
+Reading input file took 1.068 ms
+Reading ion file Al256.ion
+Number of atom types : 1.
+Total number of atoms: 256.
+[32m
+Time for finding element is 0.003 ms
+[32mElement type for atom_type Al is Al
+[0m[32mDefault atomic mass for Al is 26.981538
+[0mpseudo_dir # 1 = ../13_Al_3_1.9_1.9_pbe_n_v1.0.psp8
+
+Reading ion file took 1.798 ms
+Reading pseudopotential (PSP) file.
+Reading pseudopotential: ../13_Al_3_1.9_1.9_pbe_n_v1.0.psp8
+Input element type: Al
+pspcod = 8, pspxc = 11
+
+fchrg = 5.00000000 > 0.0 (icmod != 0)
+This pseudopotential contains non-linear core correction. 
+
+fchrg = 5.000000, READING MODEL CORE CHARGE!
+
+
+Reading pseudopotential file took 5.149 ms
+
+Freeing SPARC_INPUT_MPI datatype took 0.007 ms
+Broadcasting Atom info. using MPI_Pack & MPI_Unpack in SPARC took 6.286 ms
+
+Checking existence of (0) out file(s) took 0.095 ms
+
+
+CELL_TYP: 0
+
+
+Range:
+   30.600000	   30.600000	   30.600000
+
+COORD AFTER MAPPING:
+   30.510228	    0.080828	   22.470692	
+    4.063363	    0.138562	   26.481611	
+   30.059187	    3.593021	   26.952538	
+   30.386149	    0.093943	   15.297025	
+    3.442835	    0.270492	   19.145573	
+    7.208962	    0.387650	   22.598088	
+   11.135573	    0.275967	   26.851506	
+   30.432916	    4.039273	   19.662424	
+    3.713315	    4.219321	   23.292775	
+    7.691995	    3.633163	   26.877099	
+   30.512579	    7.834772	   23.464960	
+    4.025384	    7.596852	   27.209440	
+   30.280255	   11.347450	   26.878436	
+    0.409075	   30.503509	    7.144144	
+    3.313693	   30.493413	   11.035302	
+    7.834424	   30.402433	   14.829787	
+   11.385534	    0.131901	   19.072781	
+   15.363495	   30.524536	   22.815236	
+   18.735944	    0.512594	   27.289269	
+   30.273384	    4.017358	   11.115800	
+    4.150368	    3.498891	   15.811496	
+    8.156600	    3.745700	   19.414374	
+   11.273149	    3.655520	   23.300784	
+   15.508069	    4.147007	   26.918474	
+    0.407205	    8.061110	   15.482547	
+    4.251914	    8.086906	   19.099990	
+    7.201070	    7.826042	   22.423275	
+   10.976316	    7.401394	   26.615971	
+   30.242798	   11.207092	   19.116423	
+    4.234102	   11.858955	   23.198930	
+    7.215462	   11.504984	   26.741060	
+   30.514648	   15.626900	   22.903918	
+    4.320378	   15.378423	   26.382997	
+    0.035881	   19.377231	   26.245844	
+    0.207587	    0.020568	    0.279424	
+    3.625411	    0.293062	    3.630212	
+    7.851770	    0.074496	    8.174042	
+   11.837023	   30.562902	   11.172329	
+   14.778849	   30.429809	   15.125503	
+   19.395624	   30.132857	   19.150853	
+   23.478886	   30.467929	   23.225760	
+   27.043484	   30.145209	   26.735899	
+   30.362468	    4.347347	    3.419105	
+    4.137964	    3.480545	    7.447150	
+    7.220741	    4.162392	   11.479889	
+   11.418627	    4.230661	   15.488083	
+   15.742049	    4.028839	   19.417268	
+   18.901717	    3.900184	   22.550070	
+   22.720400	    3.458214	   26.258855	
+   30.199738	    7.614168	    7.670645	
+    3.305016	    7.482496	   11.810369	
+    7.843477	    7.352528	   14.772699	
+   11.163018	    7.750086	   19.311591	
+   15.046351	    7.446900	   23.152103	
+   19.115883	    8.100390	   26.720091	
+   30.116795	   11.918174	   11.923749	
+    3.905186	   11.212233	   15.456180	
+    7.267805	   11.054034	   18.589732	
+   11.571617	   11.142825	   22.933154	
+   15.516113	   11.474550	   27.163736	
+   30.169776	   15.547301	   15.657450	
+    3.732019	   14.984303	   19.286366	
+    7.860316	   15.027404	   23.137920	
+   11.382153	   15.680464	   26.859927	
+   30.113107	   19.033959	   18.880626	
+    3.863835	   19.251238	   23.015486	
+    7.827205	   18.836860	   26.960790	
+    0.016108	   22.519379	   22.790348	
+    4.305995	   22.967155	   27.159961	
+    0.093642	   26.750269	   26.445069	
+    8.086430	   30.224235	    0.267570	
+   11.082794	    0.131779	    3.597377	
+   14.909743	    0.047613	    7.946216	
+   19.457558	    0.166757	   11.396821	
+   22.839299	   30.215443	   15.632891	
+   26.412956	    0.272121	   18.966543	
+    4.287510	    3.524292	   30.290252	
+    7.485302	    3.845936	    4.114168	
+   11.746347	    4.133654	    7.442975	
+   15.544501	    3.308222	   11.727342	
+   19.539689	    3.634982	   15.564489	
+   23.083798	    4.228455	   18.823587	
+   27.046488	    4.197932	   22.640706	
+   30.436527	    7.691588	   30.274300	
+    3.576091	    8.046624	    3.438250	
+    8.078299	    8.136633	    7.517019	
+   11.397204	    8.003131	   10.962871	
+   15.802898	    8.033108	   14.879065	
+   19.301823	    7.215891	   19.313856	
+   23.081659	    7.813692	   23.274320	
+   26.358204	    7.870180	   26.321186	
+    0.486290	   11.594267	    3.534736	
+    3.770811	   11.799146	    7.333688	
+    7.734808	   10.971465	   11.926502	
+   11.375616	   11.767364	   15.528616	
+   15.015496	   11.725701	   19.183296	
+   19.561406	   11.215024	   22.738513	
+   23.029712	   11.212180	   27.137270	
+   30.062169	   15.443135	    7.580009	
+    3.951736	   15.132631	   11.933126	
+    7.462452	   15.620871	   15.522922	
+   11.504273	   15.241737	   19.101233	
+   15.717540	   15.605899	   22.545607	
+   18.970584	   15.830628	   27.290019	
+    0.441983	   18.908894	   11.106983	
+    3.958460	   18.738778	   14.978253	
+    7.126180	   19.559165	   19.050547	
+   11.939597	   19.169962	   22.846359	
+   15.506526	   19.638609	   26.392830	
+    0.538040	   23.097789	   15.548094	
+    3.470514	   23.484351	   18.788262	
+    7.257427	   22.999843	   23.105677	
+   11.943014	   22.978590	   27.050127	
+    0.212932	   26.380579	   18.812049	
+    3.355467	   26.618891	   23.059220	
+    7.926379	   26.262428	   27.044309	
+   15.574662	   30.232591	    0.149535	
+   19.582659	    0.265748	    3.930079	
+   23.178843	   30.091952	    7.428738	
+   26.368509	   30.455617	   11.725569	
+   10.955571	    4.217013	    0.481767	
+   14.787420	    4.033453	    3.744467	
+   18.614687	    4.031575	    7.955285	
+   22.675433	    3.488144	   10.994801	
+   27.164505	    3.762148	   15.662721	
+    7.692010	    7.738256	   30.267053	
+   11.532147	    8.179849	    3.711508	
+   15.670034	    7.329664	    7.433713	
+   18.718403	    7.377079	   11.020725	
+   22.711105	    7.392701	   15.737760	
+   26.867781	    7.920655	   18.984523	
+    4.333043	   11.428453	    0.033211	
+    7.716027	   10.995654	    3.818635	
+   10.954237	   11.484213	    7.252045	
+   15.625246	   11.163377	   11.157420	
+   18.836112	   11.798052	   14.841490	
+   23.282249	   11.255738	   19.133570	
+   26.653679	   10.963930	   22.692027	
+    0.393306	   15.401082	   30.445359	
+    4.092354	   15.671992	    3.400976	
+    7.710845	   15.171275	    7.961095	
+   11.081691	   15.570315	   11.049374	
+   14.823887	   15.312054	   15.825475	
+   18.715342	   15.344305	   18.775729	
+   22.457263	   15.797050	   23.028333	
+   26.350358	   15.628847	   26.282580	
+   30.303252	   18.619033	    4.135623	
+    4.055427	   19.351530	    7.314193	
+    7.714606	   19.087136	   11.505189	
+   10.947647	   19.609191	   15.559734	
+   14.836930	   18.823625	   18.746270	
+   19.630534	   18.873001	   23.005270	
+   23.023676	   18.672208	   26.468416	
+   30.279001	   22.872775	    7.930417	
+    3.557048	   22.527008	   11.716166	
+    7.913789	   23.094740	   14.950067	
+   11.145493	   23.277768	   19.516602	
+   15.388020	   23.162913	   22.430457	
+   19.633502	   23.238007	   27.164731	
+    0.375225	   26.604555	   11.538726	
+    3.543548	   27.149168	   15.195297	
+    7.643260	   26.697937	   19.404931	
+   11.604777	   27.125538	   23.184690	
+   15.655916	   26.911853	   27.302225	
+   22.578692	   30.214229	   30.359916	
+   26.254160	   30.143868	    3.288168	
+   18.659818	    3.303897	    0.469428	
+   22.935227	    3.356251	    4.212199	
+   26.890035	    3.780193	    7.897588	
+   15.374489	    7.231685	    0.018055	
+   18.927409	    7.139121	    4.048900	
+   23.478621	    7.925728	    7.953497	
+   26.861274	    7.536242	   11.339632	
+   11.345328	   11.742156	    0.292455	
+   15.355120	   11.423508	    4.096144	
+   19.390421	   11.421000	    7.772480	
+   23.133089	   11.451277	   11.368831	
+   26.520673	   11.446876	   15.513462	
+    7.180829	   15.627984	   30.062431	
+   11.334448	   15.194401	    4.122403	
+   15.440338	   15.737819	    8.078873	
+   18.811445	   14.799159	   11.192973	
+   23.223450	   15.596297	   14.889718	
+   26.306047	   14.894991	   18.822383	
+    3.565691	   19.253217	   30.385894	
+    7.979706	   18.595276	    4.239388	
+   11.143335	   19.166790	    7.696701	
+   15.450879	   18.587328	   11.244249	
+   19.151690	   19.613135	   14.908746	
+   23.409588	   19.563594	   18.897963	
+   26.518917	   19.445199	   23.073194	
+   30.130425	   23.399274	   30.409740	
+    4.079312	   22.566539	    3.778869	
+    7.944462	   22.579707	    7.589542	
+   11.916205	   22.612057	   11.830001	
+   15.767339	   23.082525	   15.220318	
+   18.599157	   23.389034	   18.958066	
+   22.662613	   23.480069	   23.139297	
+   26.901339	   23.178408	   26.473679	
+    0.485779	   27.025779	    3.789564	
+    4.312034	   27.217803	    7.449600	
+    7.711292	   26.667758	   11.612242	
+   11.924633	   26.504370	   15.708256	
+   15.453157	   26.421693	   19.068406	
+   19.006002	   26.363301	   23.257747	
+   22.934844	   27.113205	   26.728442	
+   26.887851	    3.442874	    0.169020	
+   23.003605	    7.395000	   30.201699	
+   27.236074	    7.995214	    3.752494	
+   19.578017	   11.270079	    0.442824	
+   22.836269	   11.996915	    3.939115	
+   27.276191	   11.222533	    7.938616	
+   14.947261	   15.336409	    0.005085	
+   18.720736	   15.099277	    3.822896	
+   22.555202	   15.744404	    8.020974	
+   26.781126	   15.155631	   11.007422	
+   10.957350	   19.053155	    0.079271	
+   15.784647	   19.138299	    4.304013	
+   19.478898	   19.599820	    7.669322	
+   22.425312	   18.617546	   11.144451	
+   26.424685	   19.359635	   15.676426	
+    7.468314	   23.373033	   30.331305	
+   11.075785	   22.438585	    4.042160	
+   15.634830	   22.973857	    7.693557	
+   18.957025	   22.761743	   11.960584	
+   23.426141	   23.338922	   15.434517	
+   26.863729	   23.013307	   19.490649	
+    4.234848	   26.980802	   30.067646	
+    8.022959	   26.723993	    4.354404	
+   11.913583	   26.913814	    7.193141	
+   15.256596	   26.547911	   11.282567	
+   19.175141	   26.244177	   15.782680	
+   23.273051	   26.858040	   18.593734	
+   26.543175	   26.571007	   23.299153	
+   26.764456	   11.493681	    0.390785	
+   23.057225	   15.750498	   30.534905	
+   26.250868	   15.220455	    3.560747	
+   19.226135	   18.851714	    0.327472	
+   22.878246	   18.985756	    3.801049	
+   27.107525	   19.592219	    7.254401	
+   15.100118	   23.422636	    0.462878	
+   19.550056	   23.322521	    4.253389	
+   23.034232	   23.404610	    7.640853	
+   26.433139	   22.655623	   11.860907	
+   11.786503	   26.328708	   30.511912	
+   15.421204	   26.479984	    4.023486	
+   18.642386	   26.574179	    7.539639	
+   22.863660	   26.423138	   11.481212	
+   26.968730	   26.890862	   14.964134	
+   27.227874	   19.031511	    0.503059	
+   22.409498	   23.292252	   30.377367	
+   27.290793	   22.609351	    3.395993	
+   18.991476	   26.993405	   30.215194	
+   23.462574	   26.494098	    3.299309	
+   26.888290	   26.855296	    7.883626	
+   27.130770	   26.611624	    0.069779	
+
+Max eigenvalue of -0.5*Lap is 67.1241696211870, time taken: 0.004 ms
+h_eff = 0.40, npl = 20
+[34m[k1_red,k2_red,k3_red] =   0.0000   0.0000   0.0000
+[0mAfter symmetry reduction, Nkpts_sym = 1
+k1[ 0]:   0.0000, k2[ 0]:   0.0000, k3[ 0]:   0.0000, kptwt[ 0]: 1.000 
+----------------------
+Estimated memory usage
+Total: 9.28 GB
+orbitals             : 9.18 GB
+global sized vectors : 97.53 MB
+----------------------------------------------
+Estimated memory usage per processor: 98.98 MB
+
+rank = 0, Copying data from SPARC_Input into SPARC & set up subcomm took 0.592 ms
+Set up communicators.
+
+--set up spincomm took 2.787 ms
+
+--set up kptcomm took 0.412 ms
+
+ kpt_topo #0, kptcomm topology dims = {4, 4, 6}, nodes/proc = {19.25,19.25,12.83}
+
+--set up bandcomm took 0.036 ms
+rank = 0, dmcomm dims = {1, 2, 2}
+gridsizes = [77, 77, 77], Nstates = 450, dmcomm dims = [1, 2, 2]
+
+--set up dmcomm took 0.017 ms
+
+--set up blacscomm took 2.736 ms
+rank = 0, size_blacscomm = 24, ScaLAPACK topology Dims = (24, 1)
+nproc = 96, size_blacscomm = 24 = dims[0] * dims[1] = (24, 1)
+rank =  0, my blacs rank = 0, BLCYC size (117117, 19), actual size (117117, 19)
+rank = 0, mb = nb = 450, mbQ = nbQ = 64
+rank = 0, nr_Hp = 450, nc_Hp = 450
+========================================================================
+Poisson domain decomposition:np total = 96, {Nx, Ny, Nz} = {77, 77, 77}
+nproc used = 96 = {4, 4, 6}, nodes/proc = {19.25, 19.25, 12.83}
+
+
+--set up dmcomm_phi took 12.037 ms
+======Set_D2D_Target: find receivers in each process (c_ndgrid) in send_comm took 0.003 ms
+======Set_D2D_Target: Gather and Scatter receivers in send_comm took 33.787 ms
+
+-----------------------------------------------
+Parallelization summary
+Total number of processors: 96
+-----------------------------------------------
+== Psi domain ==
+Total number of processors used for Psi domain: 96
+npspin  : 1
+# of spin per spincomm           : 1
+npkpt   : 1
+# of k-points per kptcomm        : 1
+npband  : 24
+# of bands per bandcomm          : 19
+npdomain: 4
+Embeded Cartesian topology dims: (1,2,2)
+# of FD-grid points per processor: 117117 = (77,39,39)
+-----------------------------------------------
+== Phi domain ==
+Total number of processors used for Phi domain: 96
+Embeded Cartesian topology dims: (4,4,6)
+# of FD-grid points per processor: 5200 = (20,20,13)
+-----------------------------------------------
+
+Calculate_SplineDerivRadFun took 0.117 ms
+Rbmax_x = 9.474026, Rbmax_y = 9.474026, Rbmax_z = 9.474026
+rlen_ex = 46656, nxp = 36, nyp = 36, nzp = 36
+time spent on qsort: 0.232 ms.
+time spent on vectorized spline interp: 0.482 ms.
+Z = 3,rb_x = 5.711868,rb_y = 5.711868,rb_z = 5.711868,error = 2.373E-05,Bint = -2.9999762699393
+Z = 3,rb_x = 7.592947,rb_y = 7.592947,rb_z = 7.592947,error = 1.778E-09,Bint = -3.0000000017785
+Z = 3,rb_x = 6.652407,rb_y = 6.652407,rb_z = 6.652407,error = 8.743E-07,Bint = -2.9999991256917
+Z = 3,rb_x = 6.182138,rb_y = 6.182138,rb_z = 6.182138,error = 6.222E-06,Bint = -3.0000062217456
+Z = 3,rb_x = 5.947003,rb_y = 5.947003,rb_z = 5.947003,error = 2.373E-05,Bint = -2.9999762699393
+dx = 0.397403, dy = 0.397403, dz = 0.397403, Ncube_x = 16, Ncube_y = 16, Ncube_z = 16
+ityp = 0, converged in 5 iters, err_cur = 6.22E-06, TOL = 2.00E-05, rb = {6.182138, 6.182138, 6.182138}, after proj to grid rb = {6.358442, 6.358442, 6.358442}
+time for finding rb using bisection: 0.252 ms.
+
+Calculating rb for all atom types took 0.970 ms
+Start ground-state calculation.
+Calculating electron density ... 
+Finding atoms that influence the local process domain ... 
+
+Finding influencing atoms took 0.031 ms
+Calculating pseudocharge density ... 
+the global sum of int_b = -767.9997266602121, sum_int_rho = 746.9450369511169
+PosCharge = 767.999726660212, NegCharge = -746.945036951117, scal_fac = 1.028187736269
+After scaling, int_rho = 767.9997266602121, PosCharge + NegCharge - NetCharge = 0.000e+00
+--Calculate Vref took 0.613 ms
+--Calculate rho_guess took 7.708 ms
+
+ integral of b = -767.9997266602121,
+ int{b} + Nelectron + NetCharge = 2.733e-04,
+ Esc = -799.9255981178553,
+ MPI_Reduce took 0.048 ms
+
+Calculating b & b_ref took 17.165 ms
+Finding atoms that has nonlocal influence on the local process domain ... 
+[32mrank = 0, time for nonlocal influencing atoms: 0.316 ms
+[0m
+Finding nonlocal influencing atoms in psi-domain took 0.326 ms
+Calculate nonlocal projectors ... 
+[34mrank = 0, Time for spherical harmonics: 0.941 ms
+[0m
+Calculating nonlocal projectors in psi-domain took 5.414 ms
+Finding atoms that has nonlocal influence on the local process domain ... 
+[32mrank = 0, time for nonlocal influencing atoms: 0.040 ms
+[0m
+Finding nonlocal influencing atoms in kptcomm_topo took 0.042 ms
+Calculate nonlocal projectors ... 
+[34mrank = 0, Time for spherical harmonics: 0.047 ms
+[0m
+Calculating nonlocal projectors in kptcomm_topo took 0.282 ms
+Initializing electron density ... 
+Initializing Kohn-Sham orbitals ... 
+Finished setting random orbitals. Time taken: 52.502 ms
+Start SCF calculation ... 
+Start calculating electrostatic potential ... 
+Start calculating rhs of the poisson problem
+rank = 0, int_b = -767.99972666021222, int_rho = 767.99972666021210, int_b + int_rho = -1.142e-13, checking this took 0.031 ms
+2-norm of RHS = 414.7543375268616, which took 0.161 ms
+
+iter_count = 204, r_2norm = 8.067e-03, tol*||rhs|| = 8.295e-03
+
+Anderson update took 21.614 ms, out of which F'*F took 4.141 ms; b-Ax took 37.768 ms, out of which Lap took 37.262 ms
+Solving Poisson took 68.306 ms
+Start calculating Vxc (GGA_PBE) ...
+rank = 0, XC calculation took 1.276 ms
+Transmitting Veff_loc from phi-domain to psi-domain (LOCAL) ...
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.001 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.002 ms
+======D2D: initiated sending and receiving took 0.044 ms
+---Transfer Veff_loc: D2D took 0.951 ms
+---Transfer Veff_loc: bcast btw/ spincomms of 1st kptcomm took 0.000 ms
+---Transfer Veff_loc: bcast btw/ kptcomms of 1st bandcomm took 0.000 ms
+---Transfer Veff_loc: mpi_bcast (count = 117117) to all bandcomms took 3.395 ms
+rank = 0, Veff calculation and Bcast (non-blocking) took 14.235 ms
+-------------
+SCF iter 1  
+-------------
+
+Time for setting up initial guess for Lanczos: 0.132 ms
+
+Start Lanczos algorithm ...
+Wait for veff to be bcasted took 0.000 ms
+rank =  0, One H*x took 0.393 ms
+    Lanczos iter 30, eigmin  = -0.231641828, eigmax = 66.705918949, err_eigmin = 1.463e-04, err_eigmax = 9.293e-03
+rank =   0, Lanczos took 13.006 ms, eigmin = -0.231641828442, eigmax = 67.372978138601
+
+ Chebfilt 1, in Chebyshev filtering, lambda_cutoff = 33.520668, lowerbound = -0.331642, upperbound = 67.372978
+
+Start Chebyshev filtering ... 
+Total time for Chebyshev filtering (19 columns, degree = 20): 1403.933 ms
+New BLOCK CYCLIC DOMAIN: nproc = 24, dims = (24, 1), Elapsed time is 0.001 ms
+rank =  0, Distribute orbital to block cyclic format took 34.110 ms
+rank = 0, STARTING PDGEMM ...
+rank =  0, Psi'*Psi in block cyclic format in each blacscomm took 49.621 ms
+rank =  0, Allreduce to sum Psi'*Psi over dmcomm took 0.945 ms
+rank =  0, Distribute data + matrix mult took 84.694 ms
+rank =  0, finding HY took 61.745 ms
+rank =  0, distributing HY into block cyclic form took 22.059 ms
+rank =  0, finding Y'*HY took 39.647 ms
+Rank 0, Project_Hamiltonian used 208.183 ms
+Total time for projection: 208.186 ms
+Start solving generalized eigenvalue problem ...
+==generalized eigenproblem: info = 0, solving generalized eigenproblem using LAPACK_dsygv: 56.474 ms
+==generalized eigenproblem: distribute subspace eigenvectors into block cyclic format: 0.570 ms
+rank = 0, Solve_Generalized_EigenProblem used 57.053 ms
+    first calculated eigval = 0.942868339273654
+    last  calculated eigval = 2.021567893481547
+The last 20 eigenvalues of kpoints #1 and spin #0 are (Nelectron = 768):
+lambda[ 431] =   1.92391853007361
+lambda[ 432] =   1.92796873233920
+lambda[ 433] =   1.92893121060629
+lambda[ 434] =   1.93705086644624
+lambda[ 435] =   1.93846248178432
+lambda[ 436] =   1.94039646294715
+lambda[ 437] =   1.94325511385672
+lambda[ 438] =   1.94760504709321
+lambda[ 439] =   1.95120702158419
+lambda[ 440] =   1.95225684264114
+lambda[ 441] =   1.95817445994714
+lambda[ 442] =   1.96025027570482
+lambda[ 443] =   1.97015096809929
+lambda[ 444] =   1.97233886718027
+lambda[ 445] =   1.97777048189383
+lambda[ 446] =   1.98457993074556
+lambda[ 447] =   1.99240687472941
+lambda[ 448] =   1.99631058780686
+lambda[ 449] =   2.00756717106887
+lambda[ 450] =   2.02156789348155
+==generalized eigenproblem: bcast eigvals took 0.016 ms
+Total time for solving generalized eigenvalue problem: 57.073 ms
+rank =  0, subspace rotation using ScaLAPACK took 47.697 ms
+rank =  0, Distributing orbital back into band + domain format took 19.792 ms
+rank = 0, Subspace_Rotation used 67.506 ms
+
+Total time for subspace rotation: 67.508 ms
+rank = 0, Efermi =   1.795327534439 calculate fermi energy took 0.111 ms
+
+ Chebfilt 2, in Chebyshev filtering, lambda_cutoff = 2.121568, lowerbound = -0.331642, upperbound = 67.372978
+
+Start Chebyshev filtering ... 
+Total time for Chebyshev filtering (19 columns, degree = 20): 1411.386 ms
+New BLOCK CYCLIC DOMAIN: nproc = 24, dims = (24, 1), Elapsed time is 0.001 ms
+rank =  0, Distribute orbital to block cyclic format took 19.922 ms
+rank = 0, STARTING PDGEMM ...
+rank =  0, Psi'*Psi in block cyclic format in each blacscomm took 36.679 ms
+rank =  0, Allreduce to sum Psi'*Psi over dmcomm took 0.747 ms
+rank =  0, Distribute data + matrix mult took 57.366 ms
+rank =  0, finding HY took 59.670 ms
+rank =  0, distributing HY into block cyclic form took 21.791 ms
+rank =  0, finding Y'*HY took 36.742 ms
+Rank 0, Project_Hamiltonian used 175.600 ms
+Total time for projection: 175.603 ms
+Start solving generalized eigenvalue problem ...
+==generalized eigenproblem: info = 0, solving generalized eigenproblem using LAPACK_dsygv: 39.569 ms
+==generalized eigenproblem: distribute subspace eigenvectors into block cyclic format: 0.434 ms
+rank = 0, Solve_Generalized_EigenProblem used 40.010 ms
+    first calculated eigval = -0.145325771618303
+    last  calculated eigval = 0.567101042323145
+The last 20 eigenvalues of kpoints #1 and spin #0 are (Nelectron = 768):
+lambda[ 431] =   0.50766322692902
+lambda[ 432] =   0.50959984842607
+lambda[ 433] =   0.51437476733152
+lambda[ 434] =   0.51495104935840
+lambda[ 435] =   0.51620271892487
+lambda[ 436] =   0.51893188490212
+lambda[ 437] =   0.51990353063801
+lambda[ 438] =   0.52419427176959
+lambda[ 439] =   0.52810169416243
+lambda[ 440] =   0.53275544048690
+lambda[ 441] =   0.53534507527684
+lambda[ 442] =   0.53840648395001
+lambda[ 443] =   0.53976177325057
+lambda[ 444] =   0.54077989647588
+lambda[ 445] =   0.54253893814434
+lambda[ 446] =   0.54601640350073
+lambda[ 447] =   0.54974015303202
+lambda[ 448] =   0.55409425019188
+lambda[ 449] =   0.55745161776312
+lambda[ 450] =   0.56710104232314
+==generalized eigenproblem: bcast eigvals took 0.015 ms
+Total time for solving generalized eigenvalue problem: 40.027 ms
+rank =  0, subspace rotation using ScaLAPACK took 45.747 ms
+rank =  0, Distributing orbital back into band + domain format took 19.463 ms
+rank = 0, Subspace_Rotation used 65.228 ms
+
+Total time for subspace rotation: 65.229 ms
+rank = 0, Efermi =   0.434430830336 calculate fermi energy took 0.118 ms
+
+ Chebfilt 3, in Chebyshev filtering, lambda_cutoff = 0.667101, lowerbound = -0.331642, upperbound = 67.372978
+
+Start Chebyshev filtering ... 
+Total time for Chebyshev filtering (19 columns, degree = 20): 1396.886 ms
+New BLOCK CYCLIC DOMAIN: nproc = 24, dims = (24, 1), Elapsed time is 0.001 ms
+rank =  0, Distribute orbital to block cyclic format took 19.449 ms
+rank = 0, STARTING PDGEMM ...
+rank =  0, Psi'*Psi in block cyclic format in each blacscomm took 36.572 ms
+rank =  0, Allreduce to sum Psi'*Psi over dmcomm took 1.052 ms
+rank =  0, Distribute data + matrix mult took 57.090 ms
+rank =  0, finding HY took 59.615 ms
+rank =  0, distributing HY into block cyclic form took 20.896 ms
+rank =  0, finding Y'*HY took 36.846 ms
+Rank 0, Project_Hamiltonian used 174.474 ms
+Total time for projection: 174.477 ms
+Start solving generalized eigenvalue problem ...
+==generalized eigenproblem: info = 0, solving generalized eigenproblem using LAPACK_dsygv: 39.250 ms
+==generalized eigenproblem: distribute subspace eigenvectors into block cyclic format: 0.441 ms
+rank = 0, Solve_Generalized_EigenProblem used 39.699 ms
+    first calculated eigval = -0.229190005175418
+    last  calculated eigval = 0.347223594368239
+The last 20 eigenvalues of kpoints #1 and spin #0 are (Nelectron = 768):
+lambda[ 431] =   0.30996349916454
+lambda[ 432] =   0.31061093487936
+lambda[ 433] =   0.31193389138115
+lambda[ 434] =   0.31415404298530
+lambda[ 435] =   0.31425011160221
+lambda[ 436] =   0.31795927310240
+lambda[ 437] =   0.31893685202349
+lambda[ 438] =   0.32049091350623
+lambda[ 439] =   0.32205633944781
+lambda[ 440] =   0.32452614239593
+lambda[ 441] =   0.32638786884834
+lambda[ 442] =   0.32738509794153
+lambda[ 443] =   0.32973156226746
+lambda[ 444] =   0.33163752990296
+lambda[ 445] =   0.33387120173065
+lambda[ 446] =   0.33633638133791
+lambda[ 447] =   0.33911544237334
+lambda[ 448] =   0.34281434104056
+lambda[ 449] =   0.34449446410428
+lambda[ 450] =   0.34722359436824
+==generalized eigenproblem: bcast eigvals took 0.015 ms
+Total time for solving generalized eigenvalue problem: 39.716 ms
+rank =  0, subspace rotation using ScaLAPACK took 38.879 ms
+rank =  0, Distributing orbital back into band + domain format took 19.876 ms
+rank = 0, Subspace_Rotation used 58.769 ms
+
+Total time for subspace rotation: 58.771 ms
+rank = 0, Efermi =   0.251406646439 calculate fermi energy took 0.129 ms
+
+ Chebfilt 4, in Chebyshev filtering, lambda_cutoff = 0.447224, lowerbound = -0.331642, upperbound = 67.372978
+
+Start Chebyshev filtering ... 
+Total time for Chebyshev filtering (19 columns, degree = 20): 1421.597 ms
+New BLOCK CYCLIC DOMAIN: nproc = 24, dims = (24, 1), Elapsed time is 0.001 ms
+rank =  0, Distribute orbital to block cyclic format took 19.167 ms
+rank = 0, STARTING PDGEMM ...
+rank =  0, Psi'*Psi in block cyclic format in each blacscomm took 36.561 ms
+rank =  0, Allreduce to sum Psi'*Psi over dmcomm took 0.718 ms
+rank =  0, Distribute data + matrix mult took 56.461 ms
+rank =  0, finding HY took 59.927 ms
+rank =  0, distributing HY into block cyclic form took 19.533 ms
+rank =  0, finding Y'*HY took 37.220 ms
+Rank 0, Project_Hamiltonian used 173.169 ms
+Total time for projection: 173.172 ms
+Start solving generalized eigenvalue problem ...
+==generalized eigenproblem: info = 0, solving generalized eigenproblem using LAPACK_dsygv: 38.914 ms
+==generalized eigenproblem: distribute subspace eigenvectors into block cyclic format: 0.458 ms
+rank = 0, Solve_Generalized_EigenProblem used 39.378 ms
+    first calculated eigval = -0.233877680506078
+    last  calculated eigval = 0.291223728676822
+The last 20 eigenvalues of kpoints #1 and spin #0 are (Nelectron = 768):
+lambda[ 431] =   0.26101914175765
+lambda[ 432] =   0.26201102821946
+lambda[ 433] =   0.26287543852557
+lambda[ 434] =   0.26341247521196
+lambda[ 435] =   0.26563166651758
+lambda[ 436] =   0.26837257364292
+lambda[ 437] =   0.26899349139422
+lambda[ 438] =   0.27119489402774
+lambda[ 439] =   0.27188196645921
+lambda[ 440] =   0.27410216621289
+lambda[ 441] =   0.27549002785150
+lambda[ 442] =   0.27676550294599
+lambda[ 443] =   0.27718224127268
+lambda[ 444] =   0.28089348274032
+lambda[ 445] =   0.28160839834452
+lambda[ 446] =   0.28351685668663
+lambda[ 447] =   0.28501568964842
+lambda[ 448] =   0.28744777385235
+lambda[ 449] =   0.28882675243400
+lambda[ 450] =   0.29122372867682
+==generalized eigenproblem: bcast eigvals took 0.015 ms
+Total time for solving generalized eigenvalue problem: 39.397 ms
+rank =  0, subspace rotation using ScaLAPACK took 39.044 ms
+rank =  0, Distributing orbital back into band + domain format took 19.059 ms
+rank = 0, Subspace_Rotation used 58.119 ms
+
+Total time for subspace rotation: 58.121 ms
+rank = 0, Efermi =   0.206143834048 calculate fermi energy took 0.133 ms
+rank = 0, --- Calculate rho: sum over local bands took 3.308 ms
+rank = 0, --- Calculate rho: reduce over all band groups took 3.384 ms
+rank = 0, --- Scale rho: scale by 1/dV took 0.041 ms
+rank = 0, Calculating density took 6812.804 ms
+rank = 0, starting to transfer density...
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.001 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.001 ms
+======D2D: initiated sending and receiving took 0.220 ms
+rank = 0, D2D took 0.238 ms
+rank = 0, Transfering density took 0.240 ms
+Etot    =  -588.851213906835
+Eband   =    20.215581500945
+E1      =   185.645877146183
+E2      =    -7.646265898449
+E3      =  -280.530391526797
+Exc     =  -282.909747504989
+Esc     =  -799.925598117855
+Entropy =    -0.053984356364
+dE = 2.300e+00, dEband = 7.897e-02
+rank = 0, Calculating/Estimating energy took 0.250 ms, Etot = -588.851213907, dEtot = 2.300e+00, dEband = 7.897e-02
+Start applying Kerker preconditioner ...
+2-norm of RHS = 9.6090001647563, which took 0.043 ms
+
+iter_count = 48, r_2norm = 9.818e-04, tol*||rhs|| = 1.518e-03
+
+Anderson update took 3.751 ms, out of which F'*F took 1.032 ms; b-Ax took 6.577 ms, out of which Lap took 6.452 ms
+rank = 0, Mixing (+ precond) took 14.800 ms
+Start calculating electrostatic potential ... 
+Start calculating rhs of the poisson problem
+rank = 0, int_b = -767.99972666021222, int_rho = 767.99972666021222, int_b + int_rho = 0.000e+00, checking this took 0.017 ms
+2-norm of RHS = 430.9457480724602, which took 0.054 ms
+
+iter_count = 174, r_2norm = 7.630e-03, tol*||rhs|| = 8.619e-03
+
+Anderson update took 21.013 ms, out of which F'*F took 3.609 ms; b-Ax took 50.453 ms, out of which Lap took 50.035 ms
+Solving Poisson took 80.846 ms
+Start calculating Vxc (GGA_PBE) ...
+Transmitting Veff_loc from phi-domain to psi-domain (LOCAL) ...
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.001 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.001 ms
+======D2D: initiated sending and receiving took 0.025 ms
+---Transfer Veff_loc: D2D took 0.479 ms
+---Transfer Veff_loc: bcast btw/ spincomms of 1st kptcomm took 0.000 ms
+---Transfer Veff_loc: bcast btw/ kptcomms of 1st bandcomm took 0.000 ms
+---Transfer Veff_loc: mpi_bcast (count = 117117) to all bandcomms took 0.847 ms
+rank = 0, Transfering Veff from phi-domain to psi-domain took 15.579 ms
+
+This SCF took 6931.304 ms, scf error = 1.444e-01
+-------------
+SCF iter 2  
+-------------
+
+ Chebfilt 5, in Chebyshev filtering, lambda_cutoff = 0.391224, lowerbound = -0.233878, upperbound = 67.372978
+
+Start Chebyshev filtering ... 
+Total time for Chebyshev filtering (19 columns, degree = 20): 1394.830 ms
+New BLOCK CYCLIC DOMAIN: nproc = 24, dims = (24, 1), Elapsed time is 0.001 ms
+rank =  0, Distribute orbital to block cyclic format took 18.703 ms
+rank = 0, STARTING PDGEMM ...
+rank =  0, Psi'*Psi in block cyclic format in each blacscomm took 37.712 ms
+rank =  0, Allreduce to sum Psi'*Psi over dmcomm took 0.936 ms
+rank =  0, Distribute data + matrix mult took 57.367 ms
+rank =  0, finding HY took 61.264 ms
+rank =  0, distributing HY into block cyclic form took 20.318 ms
+rank =  0, finding Y'*HY took 37.377 ms
+Rank 0, Project_Hamiltonian used 176.359 ms
+Total time for projection: 176.361 ms
+Start solving generalized eigenvalue problem ...
+==generalized eigenproblem: info = 0, solving generalized eigenproblem using LAPACK_dsygv: 38.269 ms
+==generalized eigenproblem: distribute subspace eigenvectors into block cyclic format: 0.442 ms
+rank = 0, Solve_Generalized_EigenProblem used 38.718 ms
+    first calculated eigval = -0.226043486237196
+    last  calculated eigval = 0.273098608326490
+The last 20 eigenvalues of kpoints #1 and spin #0 are (Nelectron = 768):
+lambda[ 431] =   0.24016295211793
+lambda[ 432] =   0.24124077777525
+lambda[ 433] =   0.24268864258428
+lambda[ 434] =   0.24355846503191
+lambda[ 435] =   0.24645633521218
+lambda[ 436] =   0.24667517573851
+lambda[ 437] =   0.24855233424884
+lambda[ 438] =   0.24932186122146
+lambda[ 439] =   0.25088342225540
+lambda[ 440] =   0.25314360893100
+lambda[ 441] =   0.25378417463070
+lambda[ 442] =   0.25555258572783
+lambda[ 443] =   0.25579485607085
+lambda[ 444] =   0.25630721397051
+lambda[ 445] =   0.25847181501480
+lambda[ 446] =   0.26046344727365
+lambda[ 447] =   0.26353021579486
+lambda[ 448] =   0.26778138394622
+lambda[ 449] =   0.26876379901204
+lambda[ 450] =   0.27309860832649
+==generalized eigenproblem: bcast eigvals took 0.015 ms
+Total time for solving generalized eigenvalue problem: 38.736 ms
+rank =  0, subspace rotation using ScaLAPACK took 39.836 ms
+rank =  0, Distributing orbital back into band + domain format took 19.355 ms
+rank = 0, Subspace_Rotation used 59.208 ms
+
+Total time for subspace rotation: 59.209 ms
+rank = 0, Efermi =   0.189077050696 calculate fermi energy took 0.157 ms
+rank = 0, --- Calculate rho: sum over local bands took 3.091 ms
+rank = 0, --- Calculate rho: reduce over all band groups took 20.598 ms
+rank = 0, --- Scale rho: scale by 1/dV took 0.045 ms
+rank = 0, Calculating density took 1693.564 ms
+rank = 0, starting to transfer density...
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.002 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.001 ms
+======D2D: initiated sending and receiving took 0.335 ms
+rank = 0, D2D took 0.351 ms
+rank = 0, Transfering density took 0.352 ms
+Etot    =  -591.633756077127
+Eband   =    18.655741390426
+E1      =   191.559900528625
+E2      =     0.320905366366
+E3      =  -279.739244421742
+Exc     =  -281.278643885508
+Esc     =  -799.925598117855
+Entropy =    -0.063495048191
+dE = 1.087e-02, dEband = 6.093e-03
+rank = 0, Calculating/Estimating energy took 0.112 ms, Etot = -591.633756077, dEtot = 1.087e-02, dEband = 6.093e-03
+Start applying Kerker preconditioner ...
+2-norm of RHS = 1.4633582861512, which took 0.025 ms
+
+iter_count = 60, r_2norm = 1.115e-04, tol*||rhs|| = 2.311e-04
+
+Anderson update took 1.900 ms, out of which F'*F took 1.293 ms; b-Ax took 8.232 ms, out of which Lap took 8.088 ms
+rank = 0, Mixing (+ precond) took 12.121 ms
+Start calculating electrostatic potential ... 
+Start calculating rhs of the poisson problem
+rank = 0, int_b = -767.99972666021222, int_rho = 767.99972666021233, int_b + int_rho = 1.142e-13, checking this took 0.009 ms
+2-norm of RHS = 434.9799655977077, which took 0.014 ms
+
+iter_count = 156, r_2norm = 8.132e-03, tol*||rhs|| = 8.700e-03
+
+Anderson update took 5.499 ms, out of which F'*F took 3.207 ms; b-Ax took 21.307 ms, out of which Lap took 20.933 ms
+Solving Poisson took 30.357 ms
+Start calculating Vxc (GGA_PBE) ...
+Transmitting Veff_loc from phi-domain to psi-domain (LOCAL) ...
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.001 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.001 ms
+======D2D: initiated sending and receiving took 0.023 ms
+---Transfer Veff_loc: D2D took 0.418 ms
+---Transfer Veff_loc: bcast btw/ spincomms of 1st kptcomm took 0.000 ms
+---Transfer Veff_loc: bcast btw/ kptcomms of 1st bandcomm took 0.000 ms
+---Transfer Veff_loc: mpi_bcast (count = 117117) to all bandcomms took 0.816 ms
+rank = 0, Transfering Veff from phi-domain to psi-domain took 1.258 ms
+
+This SCF took 1739.111 ms, scf error = 3.456e-02
+-------------
+SCF iter 3  
+-------------
+
+ Chebfilt 6, in Chebyshev filtering, lambda_cutoff = 0.373099, lowerbound = -0.226043, upperbound = 67.372978
+
+Start Chebyshev filtering ... 
+Total time for Chebyshev filtering (19 columns, degree = 20): 1437.050 ms
+New BLOCK CYCLIC DOMAIN: nproc = 24, dims = (24, 1), Elapsed time is 0.001 ms
+rank =  0, Distribute orbital to block cyclic format took 19.644 ms
+rank = 0, STARTING PDGEMM ...
+rank =  0, Psi'*Psi in block cyclic format in each blacscomm took 36.783 ms
+rank =  0, Allreduce to sum Psi'*Psi over dmcomm took 0.746 ms
+rank =  0, Distribute data + matrix mult took 57.190 ms
+rank =  0, finding HY took 60.086 ms
+rank =  0, distributing HY into block cyclic form took 19.542 ms
+rank =  0, finding Y'*HY took 36.521 ms
+Rank 0, Project_Hamiltonian used 173.369 ms
+Total time for projection: 173.372 ms
+Start solving generalized eigenvalue problem ...
+==generalized eigenproblem: info = 0, solving generalized eigenproblem using LAPACK_dsygv: 38.247 ms
+==generalized eigenproblem: distribute subspace eigenvectors into block cyclic format: 0.437 ms
+rank = 0, Solve_Generalized_EigenProblem used 38.691 ms
+    first calculated eigval = -0.230258121652422
+    last  calculated eigval = 0.259903651146619
+The last 20 eigenvalues of kpoints #1 and spin #0 are (Nelectron = 768):
+lambda[ 431] =   0.23096409376392
+lambda[ 432] =   0.23247769657203
+lambda[ 433] =   0.23283947352746
+lambda[ 434] =   0.23417524375577
+lambda[ 435] =   0.23554010067483
+lambda[ 436] =   0.23679515722686
+lambda[ 437] =   0.23769492004347
+lambda[ 438] =   0.23781189463355
+lambda[ 439] =   0.23938712362762
+lambda[ 440] =   0.23972143205118
+lambda[ 441] =   0.24097765200930
+lambda[ 442] =   0.24257335899653
+lambda[ 443] =   0.24470014547885
+lambda[ 444] =   0.24633583278519
+lambda[ 445] =   0.24688610365439
+lambda[ 446] =   0.24864406149838
+lambda[ 447] =   0.25133500106910
+lambda[ 448] =   0.25592474424307
+lambda[ 449] =   0.25622473880815
+lambda[ 450] =   0.25990365114662
+==generalized eigenproblem: bcast eigvals took 0.015 ms
+Total time for solving generalized eigenvalue problem: 38.709 ms
+rank =  0, subspace rotation using ScaLAPACK took 38.776 ms
+rank =  0, Distributing orbital back into band + domain format took 19.489 ms
+rank = 0, Subspace_Rotation used 58.284 ms
+
+Total time for subspace rotation: 58.285 ms
+rank = 0, Efermi =   0.182686628185 calculate fermi energy took 0.171 ms
+rank = 0, --- Calculate rho: sum over local bands took 3.168 ms
+rank = 0, --- Calculate rho: reduce over all band groups took 1.343 ms
+rank = 0, --- Scale rho: scale by 1/dV took 0.039 ms
+rank = 0, Calculating density took 1712.815 ms
+rank = 0, starting to transfer density...
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.002 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.001 ms
+======D2D: initiated sending and receiving took 0.230 ms
+rank = 0, D2D took 0.245 ms
+rank = 0, Transfering density took 0.246 ms
+Etot    =  -592.556883986585
+Eband   =    17.246737647300
+E1      =   193.624903938235
+E2      =     2.129817316758
+E3      =  -279.502499716228
+Exc     =  -280.800956575434
+Esc     =  -799.925598117855
+Entropy =    -0.074653278303
+dE = 3.606e-03, dEband = 5.504e-03
+rank = 0, Calculating/Estimating energy took 0.804 ms, Etot = -592.556883987, dEtot = 3.606e-03, dEband = 5.504e-03
+Start applying Kerker preconditioner ...
+2-norm of RHS = 0.6738225957827, which took 0.021 ms
+
+iter_count = 60, r_2norm = 4.847e-05, tol*||rhs|| = 1.064e-04
+
+Anderson update took 4.271 ms, out of which F'*F took 1.223 ms; b-Ax took 8.249 ms, out of which Lap took 8.105 ms
+rank = 0, Mixing (+ precond) took 14.667 ms
+Start calculating electrostatic potential ... 
+Start calculating rhs of the poisson problem
+rank = 0, int_b = -767.99972666021222, int_rho = 767.99972666021199, int_b + int_rho = -2.283e-13, checking this took 0.091 ms
+2-norm of RHS = 435.5742072004818, which took 0.015 ms
+
+iter_count = 132, r_2norm = 6.884e-03, tol*||rhs|| = 8.711e-03
+
+Anderson update took 4.256 ms, out of which F'*F took 2.756 ms; b-Ax took 17.906 ms, out of which Lap took 17.582 ms
+Solving Poisson took 24.976 ms
+Start calculating Vxc (GGA_PBE) ...
+Transmitting Veff_loc from phi-domain to psi-domain (LOCAL) ...
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.001 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.001 ms
+======D2D: initiated sending and receiving took 0.024 ms
+---Transfer Veff_loc: D2D took 0.316 ms
+---Transfer Veff_loc: bcast btw/ spincomms of 1st kptcomm took 0.000 ms
+---Transfer Veff_loc: bcast btw/ kptcomms of 1st bandcomm took 0.000 ms
+---Transfer Veff_loc: mpi_bcast (count = 117117) to all bandcomms took 0.806 ms
+rank = 0, Transfering Veff from phi-domain to psi-domain took 1.141 ms
+
+This SCF took 1756.304 ms, scf error = 2.117e-02
+-------------
+SCF iter 4  
+-------------
+
+ Chebfilt 7, in Chebyshev filtering, lambda_cutoff = 0.359904, lowerbound = -0.230258, upperbound = 67.372978
+
+Start Chebyshev filtering ... 
+Total time for Chebyshev filtering (19 columns, degree = 20): 1395.395 ms
+New BLOCK CYCLIC DOMAIN: nproc = 24, dims = (24, 1), Elapsed time is 0.001 ms
+rank =  0, Distribute orbital to block cyclic format took 19.300 ms
+rank = 0, STARTING PDGEMM ...
+rank =  0, Psi'*Psi in block cyclic format in each blacscomm took 36.374 ms
+rank =  0, Allreduce to sum Psi'*Psi over dmcomm took 0.714 ms
+rank =  0, Distribute data + matrix mult took 56.404 ms
+rank =  0, finding HY took 60.121 ms
+rank =  0, distributing HY into block cyclic form took 19.262 ms
+rank =  0, finding Y'*HY took 37.078 ms
+Rank 0, Project_Hamiltonian used 173.435 ms
+Total time for projection: 173.437 ms
+Start solving generalized eigenvalue problem ...
+==generalized eigenproblem: info = 0, solving generalized eigenproblem using LAPACK_dsygv: 38.193 ms
+==generalized eigenproblem: distribute subspace eigenvectors into block cyclic format: 0.602 ms
+rank = 0, Solve_Generalized_EigenProblem used 38.803 ms
+    first calculated eigval = -0.228290584845687
+    last  calculated eigval = 0.251484536327115
+The last 20 eigenvalues of kpoints #1 and spin #0 are (Nelectron = 768):
+lambda[ 431] =   0.22663842019956
+lambda[ 432] =   0.22733892350075
+lambda[ 433] =   0.22817159032659
+lambda[ 434] =   0.22898923426158
+lambda[ 435] =   0.22966518783263
+lambda[ 436] =   0.23053802468918
+lambda[ 437] =   0.23137062534467
+lambda[ 438] =   0.23238226184071
+lambda[ 439] =   0.23303978436357
+lambda[ 440] =   0.23386910622503
+lambda[ 441] =   0.23480020239085
+lambda[ 442] =   0.23574483893749
+lambda[ 443] =   0.23707507035206
+lambda[ 444] =   0.23967368447621
+lambda[ 445] =   0.24036992872448
+lambda[ 446] =   0.24228039780982
+lambda[ 447] =   0.24370934625604
+lambda[ 448] =   0.24762294686987
+lambda[ 449] =   0.24875197037807
+lambda[ 450] =   0.25148453632712
+==generalized eigenproblem: bcast eigvals took 0.015 ms
+Total time for solving generalized eigenvalue problem: 38.820 ms
+rank =  0, subspace rotation using ScaLAPACK took 38.970 ms
+rank =  0, Distributing orbital back into band + domain format took 20.757 ms
+rank = 0, Subspace_Rotation used 59.745 ms
+
+Total time for subspace rotation: 59.746 ms
+rank = 0, Efermi =   0.179669866296 calculate fermi energy took 0.150 ms
+rank = 0, --- Calculate rho: sum over local bands took 3.160 ms
+rank = 0, --- Calculate rho: reduce over all band groups took 1.817 ms
+rank = 0, --- Scale rho: scale by 1/dV took 0.068 ms
+rank = 0, Calculating density took 1672.639 ms
+rank = 0, starting to transfer density...
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.002 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.001 ms
+======D2D: initiated sending and receiving took 0.243 ms
+rank = 0, D2D took 0.289 ms
+rank = 0, Transfering density took 0.290 ms
+Etot    =  -592.886135538119
+Eband   =    16.977051123208
+E1      =   193.853371489678
+E2      =     2.452060325620
+E3      =  -279.475939497670
+Exc     =  -280.733099211086
+Esc     =  -799.925598117855
+Entropy =    -0.081739994114
+dE = 1.286e-03, dEband = 1.053e-03
+rank = 0, Calculating/Estimating energy took 0.149 ms, Etot = -592.886135538, dEtot = 1.286e-03, dEband = 1.053e-03
+Start applying Kerker preconditioner ...
+2-norm of RHS = 0.4141111533186, which took 0.027 ms
+
+iter_count = 60, r_2norm = 2.814e-05, tol*||rhs|| = 6.540e-05
+
+Anderson update took 1.831 ms, out of which F'*F took 1.348 ms; b-Ax took 8.115 ms, out of which Lap took 7.974 ms
+rank = 0, Mixing (+ precond) took 11.998 ms
+Start calculating electrostatic potential ... 
+Start calculating rhs of the poisson problem
+rank = 0, int_b = -767.99972666021222, int_rho = 767.99972666021199, int_b + int_rho = -2.283e-13, checking this took 0.009 ms
+2-norm of RHS = 435.7670880175226, which took 0.014 ms
+
+iter_count = 102, r_2norm = 7.956e-03, tol*||rhs|| = 8.715e-03
+
+Anderson update took 3.126 ms, out of which F'*F took 2.706 ms; b-Ax took 14.326 ms, out of which Lap took 14.066 ms
+Solving Poisson took 19.680 ms
+Start calculating Vxc (GGA_PBE) ...
+Transmitting Veff_loc from phi-domain to psi-domain (LOCAL) ...
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.001 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.001 ms
+======D2D: initiated sending and receiving took 0.043 ms
+---Transfer Veff_loc: D2D took 0.316 ms
+---Transfer Veff_loc: bcast btw/ spincomms of 1st kptcomm took 0.000 ms
+---Transfer Veff_loc: bcast btw/ kptcomms of 1st bandcomm took 0.000 ms
+---Transfer Veff_loc: mpi_bcast (count = 117117) to all bandcomms took 0.988 ms
+rank = 0, Transfering Veff from phi-domain to psi-domain took 1.819 ms
+
+This SCF took 1708.019 ms, scf error = 1.889e-02
+-------------
+SCF iter 5  
+-------------
+
+ Chebfilt 8, in Chebyshev filtering, lambda_cutoff = 0.351485, lowerbound = -0.228291, upperbound = 67.372978
+
+Start Chebyshev filtering ... 
+Total time for Chebyshev filtering (19 columns, degree = 20): 1396.416 ms
+New BLOCK CYCLIC DOMAIN: nproc = 24, dims = (24, 1), Elapsed time is 0.001 ms
+rank =  0, Distribute orbital to block cyclic format took 18.745 ms
+rank = 0, STARTING PDGEMM ...
+rank =  0, Psi'*Psi in block cyclic format in each blacscomm took 52.355 ms
+rank =  0, Allreduce to sum Psi'*Psi over dmcomm took 0.744 ms
+rank =  0, Distribute data + matrix mult took 71.862 ms
+rank =  0, finding HY took 57.523 ms
+rank =  0, distributing HY into block cyclic form took 39.563 ms
+rank =  0, finding Y'*HY took 37.702 ms
+Rank 0, Project_Hamiltonian used 206.680 ms
+Total time for projection: 206.682 ms
+Start solving generalized eigenvalue problem ...
+==generalized eigenproblem: info = 0, solving generalized eigenproblem using LAPACK_dsygv: 38.224 ms
+==generalized eigenproblem: distribute subspace eigenvectors into block cyclic format: 0.440 ms
+rank = 0, Solve_Generalized_EigenProblem used 38.670 ms
+    first calculated eigval = -0.227494682444641
+    last  calculated eigval = 0.244200707313929
+The last 20 eigenvalues of kpoints #1 and spin #0 are (Nelectron = 768):
+lambda[ 431] =   0.22458654613808
+lambda[ 432] =   0.22518354404307
+lambda[ 433] =   0.22557670582821
+lambda[ 434] =   0.22653134203457
+lambda[ 435] =   0.22656952300987
+lambda[ 436] =   0.22786070638439
+lambda[ 437] =   0.22803973104227
+lambda[ 438] =   0.22831505407834
+lambda[ 439] =   0.23017036919671
+lambda[ 440] =   0.23046795639224
+lambda[ 441] =   0.23129454684134
+lambda[ 442] =   0.23199262509065
+lambda[ 443] =   0.23315995247786
+lambda[ 444] =   0.23453876300189
+lambda[ 445] =   0.23554075052179
+lambda[ 446] =   0.23713228257495
+lambda[ 447] =   0.23873873015285
+lambda[ 448] =   0.24283247251201
+lambda[ 449] =   0.24387162947807
+lambda[ 450] =   0.24420070731393
+==generalized eigenproblem: bcast eigvals took 0.017 ms
+Total time for solving generalized eigenvalue problem: 38.690 ms
+rank =  0, subspace rotation using ScaLAPACK took 39.104 ms
+rank =  0, Distributing orbital back into band + domain format took 19.214 ms
+rank = 0, Subspace_Rotation used 58.334 ms
+
+Total time for subspace rotation: 58.335 ms
+rank = 0, Efermi =   0.178015832257 calculate fermi energy took 0.165 ms
+rank = 0, --- Calculate rho: sum over local bands took 3.206 ms
+rank = 0, --- Calculate rho: reduce over all band groups took 1.191 ms
+rank = 0, --- Scale rho: scale by 1/dV took 0.041 ms
+rank = 0, Calculating density took 1704.771 ms
+rank = 0, starting to transfer density...
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.002 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.002 ms
+======D2D: initiated sending and receiving took 0.236 ms
+rank = 0, D2D took 0.279 ms
+rank = 0, Transfering density took 0.280 ms
+Etot    =  -592.977113627103
+Eband   =    16.861314581191
+E1      =   193.951134822794
+E2      =     2.535744669982
+E3      =  -279.463397070468
+Exc     =  -280.706595403893
+Esc     =  -799.925598117855
+Entropy =    -0.085021909826
+dE = 3.554e-04, dEband = 4.521e-04
+rank = 0, Calculating/Estimating energy took 0.103 ms, Etot = -592.977113627, dEtot = 3.554e-04, dEband = 4.521e-04
+Start applying Kerker preconditioner ...
+2-norm of RHS = 0.2861304515389, which took 0.069 ms
+
+iter_count = 54, r_2norm = 3.520e-05, tol*||rhs|| = 4.519e-05
+
+Anderson update took 1.655 ms, out of which F'*F took 1.242 ms; b-Ax took 7.377 ms, out of which Lap took 7.246 ms
+rank = 0, Mixing (+ precond) took 11.088 ms
+Start calculating electrostatic potential ... 
+Start calculating rhs of the poisson problem
+rank = 0, int_b = -767.99972666021222, int_rho = 767.99972666021222, int_b + int_rho = 0.000e+00, checking this took 0.019 ms
+2-norm of RHS = 435.8159579869405, which took 0.006 ms
+
+iter_count = 90, r_2norm = 7.524e-03, tol*||rhs|| = 8.716e-03
+
+Anderson update took 2.797 ms, out of which F'*F took 1.850 ms; b-Ax took 12.130 ms, out of which Lap took 11.918 ms
+Solving Poisson took 16.893 ms
+Start calculating Vxc (GGA_PBE) ...
+Transmitting Veff_loc from phi-domain to psi-domain (LOCAL) ...
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.001 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.001 ms
+======D2D: initiated sending and receiving took 0.024 ms
+---Transfer Veff_loc: D2D took 0.319 ms
+---Transfer Veff_loc: bcast btw/ spincomms of 1st kptcomm took 0.000 ms
+---Transfer Veff_loc: bcast btw/ kptcomms of 1st bandcomm took 0.000 ms
+---Transfer Veff_loc: mpi_bcast (count = 117117) to all bandcomms took 0.499 ms
+rank = 0, Transfering Veff from phi-domain to psi-domain took 0.844 ms
+
+This SCF took 1735.917 ms, scf error = 6.798e-03
+-------------
+SCF iter 6  
+-------------
+
+ Chebfilt 9, in Chebyshev filtering, lambda_cutoff = 0.344201, lowerbound = -0.227495, upperbound = 67.372978
+
+Start Chebyshev filtering ... 
+Total time for Chebyshev filtering (19 columns, degree = 20): 1399.351 ms
+New BLOCK CYCLIC DOMAIN: nproc = 24, dims = (24, 1), Elapsed time is 0.001 ms
+rank =  0, Distribute orbital to block cyclic format took 21.697 ms
+rank = 0, STARTING PDGEMM ...
+rank =  0, Psi'*Psi in block cyclic format in each blacscomm took 36.895 ms
+rank =  0, Allreduce to sum Psi'*Psi over dmcomm took 0.723 ms
+rank =  0, Distribute data + matrix mult took 59.330 ms
+rank =  0, finding HY took 59.757 ms
+rank =  0, distributing HY into block cyclic form took 168.838 ms
+rank =  0, finding Y'*HY took 36.549 ms
+Rank 0, Project_Hamiltonian used 324.504 ms
+Total time for projection: 324.506 ms
+Start solving generalized eigenvalue problem ...
+==generalized eigenproblem: info = 0, solving generalized eigenproblem using LAPACK_dsygv: 38.123 ms
+==generalized eigenproblem: distribute subspace eigenvectors into block cyclic format: 0.446 ms
+rank = 0, Solve_Generalized_EigenProblem used 38.576 ms
+    first calculated eigval = -0.227865284509709
+    last  calculated eigval = 0.241436638477761
+The last 20 eigenvalues of kpoints #1 and spin #0 are (Nelectron = 768):
+lambda[ 431] =   0.22322318204441
+lambda[ 432] =   0.22347855257564
+lambda[ 433] =   0.22382842583232
+lambda[ 434] =   0.22496731377075
+lambda[ 435] =   0.22510244569616
+lambda[ 436] =   0.22547309684139
+lambda[ 437] =   0.22592532199626
+lambda[ 438] =   0.22660183091881
+lambda[ 439] =   0.22742882521744
+lambda[ 440] =   0.22846352458790
+lambda[ 441] =   0.22913501920700
+lambda[ 442] =   0.22979641373640
+lambda[ 443] =   0.23090501819535
+lambda[ 444] =   0.23198231713947
+lambda[ 445] =   0.23353280987167
+lambda[ 446] =   0.23395355833282
+lambda[ 447] =   0.23567222877494
+lambda[ 448] =   0.23836534579837
+lambda[ 449] =   0.23992423630728
+lambda[ 450] =   0.24143663847776
+==generalized eigenproblem: bcast eigvals took 0.016 ms
+Total time for solving generalized eigenvalue problem: 38.595 ms
+rank =  0, subspace rotation using ScaLAPACK took 38.824 ms
+rank =  0, Distributing orbital back into band + domain format took 19.215 ms
+rank = 0, Subspace_Rotation used 58.053 ms
+
+Total time for subspace rotation: 58.055 ms
+rank = 0, Efermi =   0.177375947819 calculate fermi energy took 0.166 ms
+rank = 0, --- Calculate rho: sum over local bands took 3.152 ms
+rank = 0, --- Calculate rho: reduce over all band groups took 1.425 ms
+rank = 0, --- Scale rho: scale by 1/dV took 0.042 ms
+rank = 0, Calculating density took 1825.336 ms
+rank = 0, starting to transfer density...
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.002 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.002 ms
+======D2D: initiated sending and receiving took 0.750 ms
+rank = 0, D2D took 0.778 ms
+rank = 0, Transfering density took 0.780 ms
+Etot    =  -593.032079059712
+Eband   =    16.765548677057
+E1      =   193.994946616831
+E2      =     2.541195790963
+E3      =  -279.456945809482
+Exc     =  -280.696267885072
+Esc     =  -799.925598117855
+Entropy =    -0.086458369192
+dE = 2.147e-04, dEband = 3.741e-04
+rank = 0, Calculating/Estimating energy took 0.116 ms, Etot = -593.032079060, dEtot = 2.147e-04, dEband = 3.741e-04
+Start applying Kerker preconditioner ...
+2-norm of RHS = 0.1595430007455, which took 0.027 ms
+
+iter_count = 54, r_2norm = 1.780e-05, tol*||rhs|| = 2.520e-05
+
+Anderson update took 1.743 ms, out of which F'*F took 1.099 ms; b-Ax took 7.181 ms, out of which Lap took 7.053 ms
+rank = 0, Mixing (+ precond) took 10.940 ms
+Start calculating electrostatic potential ... 
+Start calculating rhs of the poisson problem
+rank = 0, int_b = -767.99972666021222, int_rho = 767.99972666021222, int_b + int_rho = 0.000e+00, checking this took 0.009 ms
+2-norm of RHS = 435.8388107157351, which took 0.017 ms
+
+iter_count = 78, r_2norm = 7.301e-03, tol*||rhs|| = 8.717e-03
+
+Anderson update took 2.353 ms, out of which F'*F took 1.586 ms; b-Ax took 10.479 ms, out of which Lap took 10.292 ms
+Solving Poisson took 14.611 ms
+Start calculating Vxc (GGA_PBE) ...
+Transmitting Veff_loc from phi-domain to psi-domain (LOCAL) ...
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.001 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.001 ms
+======D2D: initiated sending and receiving took 0.024 ms
+---Transfer Veff_loc: D2D took 0.321 ms
+---Transfer Veff_loc: bcast btw/ spincomms of 1st kptcomm took 0.000 ms
+---Transfer Veff_loc: bcast btw/ kptcomms of 1st bandcomm took 0.000 ms
+---Transfer Veff_loc: mpi_bcast (count = 117117) to all bandcomms took 0.468 ms
+rank = 0, Transfering Veff from phi-domain to psi-domain took 0.816 ms
+
+This SCF took 1853.968 ms, scf error = 3.608e-03
+-------------
+SCF iter 7  
+-------------
+
+ Chebfilt 10, in Chebyshev filtering, lambda_cutoff = 0.341437, lowerbound = -0.227865, upperbound = 67.372978
+
+Start Chebyshev filtering ... 
+Total time for Chebyshev filtering (19 columns, degree = 20): 1401.335 ms
+New BLOCK CYCLIC DOMAIN: nproc = 24, dims = (24, 1), Elapsed time is 0.001 ms
+rank =  0, Distribute orbital to block cyclic format took 19.000 ms
+rank = 0, STARTING PDGEMM ...
+rank =  0, Psi'*Psi in block cyclic format in each blacscomm took 36.103 ms
+rank =  0, Allreduce to sum Psi'*Psi over dmcomm took 0.742 ms
+rank =  0, Distribute data + matrix mult took 55.861 ms
+rank =  0, finding HY took 60.641 ms
+rank =  0, distributing HY into block cyclic form took 19.164 ms
+rank =  0, finding Y'*HY took 36.761 ms
+Rank 0, Project_Hamiltonian used 172.457 ms
+Total time for projection: 172.460 ms
+Start solving generalized eigenvalue problem ...
+==generalized eigenproblem: info = 0, solving generalized eigenproblem using LAPACK_dsygv: 38.332 ms
+==generalized eigenproblem: distribute subspace eigenvectors into block cyclic format: 0.453 ms
+rank = 0, Solve_Generalized_EigenProblem used 38.793 ms
+    first calculated eigval = -0.227751033752490
+    last  calculated eigval = 0.239644484719141
+The last 20 eigenvalues of kpoints #1 and spin #0 are (Nelectron = 768):
+lambda[ 431] =   0.22217191476517
+lambda[ 432] =   0.22230785677932
+lambda[ 433] =   0.22302081179327
+lambda[ 434] =   0.22373549053572
+lambda[ 435] =   0.22392648687539
+lambda[ 436] =   0.22446031128691
+lambda[ 437] =   0.22457812900351
+lambda[ 438] =   0.22487384380705
+lambda[ 439] =   0.22595216969448
+lambda[ 440] =   0.22715385082325
+lambda[ 441] =   0.22772406066202
+lambda[ 442] =   0.22843132404458
+lambda[ 443] =   0.22949742243858
+lambda[ 444] =   0.23070853652336
+lambda[ 445] =   0.23138291075833
+lambda[ 446] =   0.23212620227314
+lambda[ 447] =   0.23380935981019
+lambda[ 448] =   0.23540720735781
+lambda[ 449] =   0.23698747384502
+lambda[ 450] =   0.23964448471914
+==generalized eigenproblem: bcast eigvals took 0.016 ms
+Total time for solving generalized eigenvalue problem: 38.811 ms
+rank =  0, subspace rotation using ScaLAPACK took 38.713 ms
+rank =  0, Distributing orbital back into band + domain format took 19.241 ms
+rank = 0, Subspace_Rotation used 57.972 ms
+
+Total time for subspace rotation: 57.974 ms
+rank = 0, Efermi =   0.177017289053 calculate fermi energy took 0.167 ms
+rank = 0, --- Calculate rho: sum over local bands took 3.159 ms
+rank = 0, --- Calculate rho: reduce over all band groups took 1.323 ms
+rank = 0, --- Scale rho: scale by 1/dV took 0.040 ms
+rank = 0, Calculating density took 1675.920 ms
+rank = 0, starting to transfer density...
+======D2D: find receivers' coords in each process (c_ndgrid) in send_comm took 0.002 ms
+======D2D: finished initiating send_comm! Start entering receivers comm
+======D2D: find senders' coords in each process (c_ndgrid) in recv_comm took 0.001 ms
+======D2D: initiated sending and receiving took 0.236 ms
+rank = 0, D2D took 0.251 ms
+rank = 0, Transfering density took 0.253 ms
+Etot    =  -593.056369929922
+Eband   =    16.736996022222
+E1      =   194.009000709526
+E2      =     2.551330740291
+E3      =  -279.453514425992
+Exc     =  -280.691233743632
+Esc     =  -799.925598117855
+Entropy =    -0.087718485885
+dE = 9.489e-05, dEband = 1.115e-04
+rank = 0, Calculating/Estimating energy took 0.110 ms, Etot = -593.056369930, dEtot = 9.489e-05, dEband = 1.115e-04
+
+This SCF took 1676.532 ms, scf error = 1.201e-03
+Start calculating electrostatic potential ... 
+Start calculating rhs of the poisson problem
+rank = 0, int_b = -767.99972666021222, int_rho = 767.99972666021176, int_b + int_rho = -4.566e-13, checking this took 0.021 ms
+2-norm of RHS = 435.8692680157109, which took 0.017 ms
+
+iter_count = 108, r_2norm = 8.093e-03, tol*||rhs|| = 8.717e-03
+
+Anderson update took 3.311 ms, out of which F'*F took 2.289 ms; b-Ax took 14.825 ms, out of which Lap took 14.568 ms
+Solving Poisson took 20.664 ms
+Start calculating Vxc (GGA_PBE) ...
+Etot    =  -593.040060105724
+Eband   =    16.736996022222
+E1      =   194.030544826118
+E2      =     2.558603476860
+E3      =  -279.452390549594
+Exc     =  -280.688071423058
+Esc     =  -799.925598117855
+Entropy =    -0.087718485885
+dE = 6.371e-05, dEband = 0.000e+00
+The last 76 occupations of kpoints #1 are (Nelectron = 768):
+lambda[ 375] =   0.17114650872698, occ[ 375] =   1.74136266205673
+lambda[ 376] =   0.17139898295710, occ[ 376] =   1.72031990618425
+lambda[ 377] =   0.17216526052136, occ[ 377] =   1.64948770690447
+lambda[ 378] =   0.17331004847110, occ[ 378] =   1.52435430734138
+lambda[ 379] =   0.17379779378337, occ[ 379] =   1.46439620933617
+lambda[ 380] =   0.17423180772213, occ[ 380] =   1.40801682602750
+lambda[ 381] =   0.17494440152664, occ[ 381] =   1.30999749273263
+lambda[ 382] =   0.17503740625700, occ[ 382] =   1.29676431879509
+lambda[ 383] =   0.17576208589836, occ[ 383] =   1.19084641346896
+lambda[ 384] =   0.17638490232272, occ[ 384] =   1.09684737292493
+lambda[ 385] =   0.17676667839094, occ[ 385] =   1.03845979750969
+lambda[ 386] =   0.17774190417188, occ[ 386] =   0.88911370757295
+lambda[ 387] =   0.17835974921247, occ[ 387] =   0.79616957153678
+lambda[ 388] =   0.17855310680818, occ[ 388] =   0.76760266629176
+lambda[ 389] =   0.17907491880951, occ[ 389] =   0.69216709959846
+lambda[ 390] =   0.18070187067544, occ[ 390] =   0.47834715400182
+lambda[ 391] =   0.18106734577775, occ[ 391] =   0.43581136457944
+lambda[ 392] =   0.18207976076653, occ[ 392] =   0.33001275212216
+lambda[ 393] =   0.18222458080946, occ[ 393] =   0.31636603655612
+lambda[ 394] =   0.18238756565500, occ[ 394] =   0.30145696589808
+lambda[ 395] =   0.18362921491467, occ[ 395] =   0.20329348004898
+lambda[ 396] =   0.18372716280476, occ[ 396] =   0.19667917047969
+lambda[ 397] =   0.18484969133292, occ[ 397] =   0.13179517966696
+lambda[ 398] =   0.18527147892792, occ[ 398] =   0.11223704379054
+lambda[ 399] =   0.18687312292880, occ[ 399] =   0.05790769286449
+lambda[ 400] =   0.18880843353436, occ[ 400] =   0.02328194779626
+lambda[ 401] =   0.18905377051356, occ[ 401] =   0.02055923970002
+lambda[ 402] =   0.19039314836686, occ[ 402] =   0.01006184421759
+lambda[ 403] =   0.19104282713645, occ[ 403] =   0.00696101272995
+lambda[ 404] =   0.19164800820809, occ[ 404] =   0.00487546658102
+lambda[ 405] =   0.19548703226159, occ[ 405] =   0.00037966599488
+lambda[ 406] =   0.19757853139945, occ[ 406] =   0.00007613173129
+lambda[ 407] =   0.19899426109053, occ[ 407] =   0.00002350796016
+lambda[ 408] =   0.20445800033481, occ[ 408] =   0.00000012920865
+lambda[ 409] =   0.20659597020290, occ[ 409] =   0.00000001260468
+lambda[ 410] =   0.20817560853288, occ[ 410] =   0.00000000203131
+lambda[ 411] =   0.20949667690431, occ[ 411] =   0.00000000041184
+lambda[ 412] =   0.20977739309150, occ[ 412] =   0.00000000029102
+lambda[ 413] =   0.21035608475383, occ[ 413] =   0.00000000014097
+lambda[ 414] =   0.21063278972772, occ[ 414] =   0.00000000009926
+lambda[ 415] =   0.21099268583151, occ[ 415] =   0.00000000006263
+lambda[ 416] =   0.21256207378527, occ[ 416] =   0.00000000000796
+lambda[ 417] =   0.21326767636215, occ[ 417] =   0.00000000000306
+lambda[ 418] =   0.21351858983192, occ[ 418] =   0.00000000000217
+lambda[ 419] =   0.21512191228667, occ[ 419] =   0.00000000000023
+lambda[ 420] =   0.21521826155355, occ[ 420] =   0.00000000000020
+lambda[ 421] =   0.21572002282938, occ[ 421] =   0.00000000000010
+lambda[ 422] =   0.21628815125343, occ[ 422] =   0.00000000000004
+lambda[ 423] =   0.21687716074070, occ[ 423] =   0.00000000000002
+lambda[ 424] =   0.21820985823810, occ[ 424] =   0.00000000000000
+lambda[ 425] =   0.21869915868904, occ[ 425] =   0.00000000000000
+lambda[ 426] =   0.21927201853719, occ[ 426] =   0.00000000000000
+lambda[ 427] =   0.21946832403950, occ[ 427] =   0.00000000000000
+lambda[ 428] =   0.22014990399482, occ[ 428] =   0.00000000000000
+lambda[ 429] =   0.22049482091085, occ[ 429] =   0.00000000000000
+lambda[ 430] =   0.22176487699600, occ[ 430] =   0.00000000000000
+lambda[ 431] =   0.22217191476517, occ[ 431] =   0.00000000000000
+lambda[ 432] =   0.22230785677932, occ[ 432] =   0.00000000000000
+lambda[ 433] =   0.22302081179327, occ[ 433] =   0.00000000000000
+lambda[ 434] =   0.22373549053572, occ[ 434] =   0.00000000000000
+lambda[ 435] =   0.22392648687539, occ[ 435] =   0.00000000000000
+lambda[ 436] =   0.22446031128691, occ[ 436] =   0.00000000000000
+lambda[ 437] =   0.22457812900351, occ[ 437] =   0.00000000000000
+lambda[ 438] =   0.22487384380705, occ[ 438] =   0.00000000000000
+lambda[ 439] =   0.22595216969448, occ[ 439] =   0.00000000000000
+lambda[ 440] =   0.22715385082325, occ[ 440] =   0.00000000000000
+lambda[ 441] =   0.22772406066202, occ[ 441] =   0.00000000000000
+lambda[ 442] =   0.22843132404458, occ[ 442] =   0.00000000000000
+lambda[ 443] =   0.22949742243858, occ[ 443] =   0.00000000000000
+lambda[ 444] =   0.23070853652336, occ[ 444] =   0.00000000000000
+lambda[ 445] =   0.23138291075833, occ[ 445] =   0.00000000000000
+lambda[ 446] =   0.23212620227314, occ[ 446] =   0.00000000000000
+lambda[ 447] =   0.23380935981019, occ[ 447] =   0.00000000000000
+lambda[ 448] =   0.23540720735781, occ[ 448] =   0.00000000000000
+lambda[ 449] =   0.23698747384502, occ[ 449] =   0.00000000000000
+lambda[ 450] =   0.23964448471914, occ[ 450] =   0.00000000000000
+Start calculating local components of forces ...
+time for sorting and interpolate pseudopotential: 2.195 ms, time for Allreduce/Reduce: 0.784 ms 
+Time for calculating local force components: 12.892 ms
+Start Calculating nonlocal forces
+force_nloc = 
+ -0.01068548530862  -0.01295187628248   0.02993263395017
+ -0.01829485129770  -0.01252487822265   0.00583338938377
+  0.02438470267744   0.00745387043606  -0.01235445498133
+  0.01587131094900   0.00165170423999  -0.00342725799420
+  0.01659221138875  -0.02276647801919   0.00270638169968
+  0.01452671299742  -0.03058385112330   0.02005797721323
+  0.02970867549559  -0.02507585129485   0.00958441090462
+  0.03605940382125   0.01343740713424  -0.04243618050738
+ -0.00501119857241  -0.00948758298210  -0.01368267598438
+ -0.00825501012288   0.01105266083028  -0.00837888741309
+  0.02009538801440  -0.00378066758671  -0.01708163929974
+ -0.02102263857498   0.00357231405105  -0.02864874844613
+  0.00873733445224   0.03037556895393  -0.00504453940617
+ -0.04106503009690   0.01703697926238   0.01696270693283
+  0.02447014378368   0.01795286081300   0.03432215402341
+  0.00370862992457   0.01274009915591   0.01582668137578
+  0.01183307753354  -0.01161297193426   0.00231754077172
+  0.00503016410551   0.00556051695430   0.01201282099190
+  0.01626871704722  -0.02525201197642  -0.05164850817513
+  0.02588817092423  -0.02704942321479   0.03036105099964
+ -0.01336337891696   0.02417717304120  -0.02748045241883
+ -0.03352926064564   0.01425934936344  -0.02174369398288
+  0.01592365113150   0.00549903397972  -0.02066722746616
+ -0.01948730362710  -0.01521513673487  -0.00652887501837
+ -0.03635438333391  -0.03611184999182   0.00437244177728
+ -0.06439548506387  -0.05174689567160  -0.00331837096873
+  0.03356423704417  -0.00516191919060   0.05184170248296
+  0.02242160177394   0.01961887232692   0.00726045714737
+  0.02988745323708   0.02878813981251   0.01191683270910
+ -0.04449064591418  -0.02970523368045  -0.02555409992920
+  0.05012467405447  -0.01203983677164   0.00522825727269
+ -0.00608253516872  -0.02256714625167  -0.00245456233635
+ -0.05314032048543   0.01288163977576   0.01269091570616
+ -0.00508124139085  -0.01438846060037   0.04578256853034
+ -0.01148569689315  -0.00376865612407  -0.02751257801450
+  0.03655399648438  -0.00659226207836  -0.00643637507094
+  0.00780984158619   0.00275022499655  -0.01247137541677
+ -0.03919804314600  -0.00156662988568   0.02796038075119
+  0.03196923273644   0.00372126884408   0.01984596300208
+ -0.01470124031860   0.01579813508256   0.01408751342722
+ -0.02820933636176   0.00220810016889  -0.03651227425474
+ -0.00640101962263   0.02223059238311   0.01132862890961
+  0.02623589240334  -0.02852347803682   0.02719025791230
+ -0.03116333117802   0.03305767085450   0.01415474873134
+  0.01693660273079  -0.02499596514607  -0.01495931860592
+  0.02397965881547  -0.01872141546348  -0.01285283789076
+ -0.05162857689768  -0.01969576422982  -0.04011281580981
+  0.03351098057417  -0.02100871083034   0.05127597504282
+  0.01279692524211   0.02208715882236   0.02961065198545
+  0.04843350998715  -0.00087662434301  -0.00720872429153
+  0.02084306163920   0.01159150832766  -0.03197026266612
+ -0.01080614651142   0.01076919193023   0.04198066647514
+  0.02491226145507  -0.00358972806067  -0.01337427192331
+  0.01033544275371   0.02051820928022  -0.00647806223582
+ -0.00185993325582  -0.02651542026552   0.00301483082232
+  0.03623733373403  -0.02233355009070  -0.00543270754455
+ -0.01481452755661   0.02874693819245  -0.02722176367387
+  0.05652006203881   0.05318489257029   0.01936011466553
+ -0.01068454735379   0.02718712460079   0.01431144022287
+ -0.01666315183804   0.00830044730758  -0.01393748499894
+  0.00923491677908  -0.01647113362777  -0.02359829236403
+ -0.00192196727063   0.01955271738408  -0.00922619273497
+  0.01626530411022   0.02311342219357  -0.02822018259224
+  0.02371434823882  -0.02728606876193  -0.01007111188093
+  0.02293344556889   0.00704001363724   0.02108703024541
+  0.00403293516548  -0.00724109500998  -0.00843781616358
+ -0.00920841823302   0.05247229295361  -0.03784450576919
+  0.00359589879633   0.03271776570989  -0.00786512635009
+ -0.04559048973796  -0.00744380230051  -0.03571412024326
+  0.00216753539576   0.00267327435929   0.01856403529132
+ -0.02842811351896   0.00955778877493  -0.02595592336736
+  0.04099115239273  -0.00243828875158   0.03144735290467
+  0.04582734762634   0.00495442143830  -0.04414714952556
+ -0.01916002320564  -0.03905364704902   0.00685887960548
+ -0.00215058834154   0.02871572883800  -0.04274463485595
+  0.02266794738984  -0.01917183556450   0.01709658205956
+ -0.02267873181113   0.01076704648679   0.02259678778905
+  0.00603098793943   0.01329229875443  -0.01451357795407
+ -0.02487939446154  -0.00889413845432   0.02048656697606
+ -0.01932950078144   0.03266498743846   0.00737734338479
+ -0.03195571655674  -0.00644492948695  -0.01834848405740
+  0.01294335364757  -0.04047718519457   0.04379255648374
+ -0.03862722516858  -0.01545755241808   0.02740355044623
+ -0.00023908759577  -0.00191307039040  -0.00206923262317
+  0.01703507533007  -0.04072341652532   0.01725845389702
+ -0.05236306655850  -0.04627506065845   0.00824660258636
+  0.02940905155918  -0.01970696402675   0.02682575906404
+ -0.02752841386468  -0.03186909057327   0.03490162238619
+ -0.01035272577032   0.05076872772984  -0.01159096470332
+ -0.03020886311371  -0.02610614919694  -0.03274181216037
+  0.03659786630240  -0.02964317078513   0.04611013831100
+ -0.03086415583427   0.02185961597196   0.00621882874868
+ -0.00325267190970  -0.01319941537641   0.02321356595547
+ -0.01590900932582   0.04377517824775  -0.02659830245155
+  0.00058518036379  -0.02230145319042  -0.02024503090019
+  0.02372423837954  -0.03516756070278   0.00446355928160
+ -0.02777371933363   0.02231638059080   0.00352011644771
+ -0.00591160778771   0.04262999560414  -0.01493406935424
+  0.03007961987609  -0.02344982862358  -0.00269774247843
+ -0.00601172657541  -0.01821717831670  -0.03460371001355
+  0.02108768351123  -0.02709230691271   0.00088030689410
+ -0.03868280782194   0.00627190294099   0.02258323910167
+ -0.01285052296077  -0.01790956001255   0.03716516620237
+ -0.00558565864561  -0.03188447979388  -0.02242331098377
+ -0.02974389059728  -0.00554984519889   0.01683283551124
+ -0.02596955205482   0.03080050161529   0.03008776284638
+  0.01327171986105  -0.00929353761363   0.00923756670314
+ -0.03039918587892   0.00172676472218   0.00226454997227
+  0.00990361491583  -0.01327648117248   0.01844372998001
+ -0.05132793326187  -0.02903889148305  -0.04298858978518
+  0.06063857949892  -0.03843780331121   0.03440457126626
+  0.02167817998082   0.00086205471014  -0.00592838852318
+ -0.01851730198791  -0.00840863111872  -0.02428808206553
+ -0.04509200085198   0.05694945823949   0.02725318044142
+  0.03030752698363   0.00948381913401  -0.01735771636962
+  0.01237566491733   0.04794032308092  -0.04456114719607
+ -0.04399555277114   0.01902359375556   0.02296869931646
+ -0.04036796791358  -0.04548237481752   0.01681986168948
+ -0.00912956739563  -0.00025890709376   0.01410651552047
+  0.01536387115533   0.01551345289306  -0.01738208873734
+  0.01564667966488  -0.01900785902718  -0.02481584552572
+  0.01794760059253  -0.02718400062998  -0.00041566804479
+  0.03201661156142  -0.05407981363910  -0.03108645583154
+  0.02446173741107   0.03077020298228   0.01548446567966
+ -0.01805099692765   0.02599473086132  -0.02757643295066
+  0.00029638366775   0.00032482209033   0.02737964762347
+  0.00775589824705  -0.03586261934289  -0.00052445944045
+ -0.05052065832569   0.03847722492377   0.00539668051855
+  0.04595593697680   0.01283486572730   0.03728308950756
+  0.01282517390250   0.03830752772912  -0.05875106300787
+ -0.00301153249152  -0.03704974342100  -0.00582048681496
+ -0.02731926048309   0.01756125286527  -0.00717375175535
+ -0.02365893451772   0.03710805319138  -0.01996459259707
+  0.05144630294832   0.02643704448166   0.03380200589706
+ -0.04005168272161   0.01771595150507  -0.01108853892646
+  0.02849861912673  -0.01153627308950   0.03465052515527
+ -0.04995344343988   0.00638840618597  -0.00109906877248
+  0.00592739175765   0.05200995004903   0.01975654561475
+ -0.01969554277290  -0.00865187308556  -0.01112296607859
+ -0.01037178188719  -0.01715321995493   0.02274068425385
+ -0.03341198728211  -0.00315846511676  -0.01717106546409
+  0.03032745909897  -0.02726399633887   0.04386148541642
+  0.01246547051636  -0.00208695906300  -0.06729060479844
+  0.04346082964775   0.00479816200920   0.00135895805719
+  0.04019857205789  -0.07538370962313  -0.03373666401362
+  0.03863964859787  -0.03625622843460   0.02030608629335
+  0.04834361404324   0.01697756704265  -0.02826217059571
+ -0.01185321802369  -0.02796295331642   0.02158860156716
+ -0.01236997171182   0.01078895226925  -0.00310457281167
+  0.02612889730333  -0.03385082713990   0.00335231629708
+  0.02435176214388   0.05055370453465   0.01119606337198
+ -0.05272064967183   0.06538928929414  -0.01934139848141
+ -0.01067375575569   0.06612001381943   0.04222662536646
+  0.03339471227347   0.02186983583171  -0.01382664793022
+  0.03071803795862   0.02570131097622  -0.02031505037754
+ -0.03090691842733   0.00956225172314   0.02249469195296
+  0.00807183076754  -0.02039857324130  -0.00538492147376
+ -0.01425108753562  -0.02333639173932   0.03914122016522
+ -0.05273392136046  -0.02786391871106  -0.04165469290890
+ -0.02350190343869  -0.00139476938847  -0.01671481283825
+  0.03073988103567  -0.00064060189859  -0.00080427524583
+ -0.01205178760178   0.01945948990154  -0.00851544020597
+ -0.00651896562727  -0.01219712806006  -0.00285888206069
+ -0.03277718838713  -0.00803920278558  -0.05587526306326
+  0.02452197179499   0.03289049580043   0.00789760183395
+  0.03896536032807   0.02566409151103   0.02526503495463
+  0.02688458084310   0.04352266893238  -0.01025197474878
+  0.01744847685581   0.04380982945992  -0.01000068232657
+ -0.01735184228801  -0.01418888230389  -0.03271289235180
+ -0.00368114354402   0.03828317675929   0.00491534619504
+  0.03398644303066   0.01633495223730  -0.02209469967314
+ -0.02782935006059  -0.02061706549115  -0.03160345002742
+ -0.00868228664225   0.00376940345666   0.03956506967392
+ -0.00027346138838  -0.00730680955061  -0.02842129539618
+  0.00100041363643  -0.00137237215040  -0.00607406074771
+ -0.00359674566776  -0.00997382147122  -0.02028328850805
+ -0.00696414513939  -0.00107235368145   0.01527376198484
+  0.00424884545358  -0.00602332602843  -0.03234861223239
+  0.02373528243518  -0.03059580247622   0.04552699541311
+  0.01970504682720   0.00547929183069  -0.01144368558199
+ -0.01944122990349  -0.05044827935668  -0.05965206720333
+  0.01948899781732   0.02915934861709   0.02167395744450
+ -0.02596217055766  -0.02067627284638   0.01650999120019
+  0.01206360389436   0.03631049139527   0.03441457030393
+  0.00079346953429   0.00919311599320  -0.00135810533842
+ -0.02685759529084   0.01581064604201  -0.03118003406864
+  0.04548109908844  -0.00920956740462   0.01325755379158
+ -0.01168010951853   0.04674942094004   0.04576287218805
+  0.00900357632723  -0.05848456604391   0.05201591059285
+ -0.05526439174435  -0.01542185142707   0.03249860702546
+  0.00286010655989  -0.01217467953055  -0.01864113076823
+  0.06615608738462  -0.03398720161040  -0.01272098999511
+ -0.00715210536165   0.03058596538005  -0.00780804456788
+ -0.02424449754161   0.03391493337980   0.02600999442933
+ -0.00910630860156   0.01426144815149  -0.02735720040510
+ -0.05473055801501  -0.02019681843036   0.00457042049685
+  0.06180032532252  -0.07124227264769   0.03758364632515
+  0.01842312442154  -0.03673235895633  -0.01761408822015
+ -0.01490759620008  -0.02119154874856   0.02603216845120
+ -0.01071030195616  -0.03166596195326  -0.00406258520931
+ -0.02061590068362  -0.03289589344140   0.00690308039000
+  0.00450237175797  -0.00364810028839  -0.02145638140110
+ -0.02840424466416   0.00719638476388  -0.02474599858789
+ -0.02886805270415   0.05608359465596   0.00580074982753
+ -0.00567043315267   0.04447216446198  -0.00862021202173
+ -0.00046693047235  -0.01686523621633   0.00653904012132
+ -0.03160159815500   0.01309835892645  -0.01486411213014
+ -0.00154136209703  -0.01844136478697   0.03415641315395
+ -0.03635578833726  -0.01034217073584   0.00506778342210
+ -0.02673542499157   0.00102969705696  -0.01908349058208
+  0.00736481840351  -0.02985296891006   0.01747861055014
+ -0.02421813465341   0.02867060181521  -0.02654206071865
+  0.00998417706741   0.00944644500525   0.01052787641052
+  0.01497239044998   0.00940867183851   0.00862945308127
+  0.01817551698869  -0.04976121839668  -0.05525623568551
+ -0.01703108022301   0.03316494304402   0.02251048685614
+  0.02758210691834   0.00634816467033   0.00840275291712
+ -0.02848727129512   0.00910012925066  -0.02165525460273
+ -0.01954012019463  -0.00712443810632  -0.00703071149368
+  0.03111052640477   0.05385487118048   0.04438516771863
+  0.03172753788137  -0.00839779651219  -0.04140003371588
+  0.02968993318761  -0.04211393771162   0.05738117517406
+  0.03269280268205   0.02266573044868  -0.02308544385460
+ -0.03186654650108  -0.02495166361035   0.00648644811378
+  0.02457357400347   0.03067031753665  -0.06200932996696
+ -0.02877925932406  -0.02183478144388  -0.00054651875309
+ -0.00233584256270   0.01458674776235  -0.01571644521376
+ -0.03151914437432   0.00767490167832   0.03084529343658
+ -0.01427401586186  -0.00814516011198  -0.03372047648300
+ -0.01976700843121  -0.01873613994288   0.03612569602096
+  0.00217850599872   0.00904081929123   0.01811002085496
+  0.01233443042249   0.05379066733384  -0.05589522060877
+  0.00183985234881  -0.02002280058400   0.05731421315014
+  0.02254862245453   0.01688566550426  -0.04174152158524
+ -0.00001166949684   0.00514566593273  -0.02971699062104
+ -0.00336830614213  -0.02551833851454  -0.00962683329616
+  0.03850947409384   0.00814195259985   0.03126361739621
+ -0.01748950091386   0.03728532070767  -0.00187130498710
+  0.00604875950924   0.01804400719602   0.00416322029215
+ -0.05326098892087  -0.02589920035542   0.03292796197291
+  0.03900427600272  -0.06289969905908  -0.00959696747681
+ -0.01545727801247  -0.02091864356346  -0.03952387457307
+  0.01316103377841  -0.01958982751067  -0.00237787368832
+  0.02949857081678  -0.00049034748023  -0.03031160580857
+ -0.03353923157936   0.04323532989627   0.02080783563888
+  0.00351749203966   0.02897407484396  -0.01783905245212
+  0.04099335704968   0.03824944743150   0.02779667384762
+ -0.00784113364271   0.02205964034823   0.00722263425181
+  0.00755118706661  -0.01422138213689   0.01477741140018
+ -0.01838766756602  -0.00838282796699  -0.05641873755499
+  0.05877568692441  -0.02735441723379   0.03589201182356
+ -0.02433469272962   0.03571561389235   0.03511628384103
+  0.02597615744749  -0.01415418439288   0.04650876361949
+ -0.02699815041201  -0.00623116810205   0.02324587536013
+  0.01300741153932  -0.00657176133990  -0.00992873704332
+ -0.02264148681786   0.02318125156746  -0.02022701413462
+force_loc = 
+  0.00020252463716  -0.00343035594308  -0.00685400212750
+  0.00683774875200  -0.00189826489258  -0.00001761626056
+ -0.00512581229005  -0.00247925834689   0.00198120613238
+ -0.00448150442594  -0.00100910416929  -0.00120193961825
+ -0.00139691355709   0.00136580992463  -0.00295016310961
+ -0.00783270211950   0.00095716259049  -0.00683002716187
+ -0.00744393310927  -0.00092172983601  -0.00210819343671
+  0.00045802702238  -0.00058511684243   0.00032704868516
+  0.00044517574014   0.00705572534703   0.00299042421615
+  0.00078463981909  -0.00215068531222   0.00206643812013
+  0.00114303893197   0.00204072484823   0.00192761047926
+ -0.00002590195542  -0.00315494298391   0.00300108541214
+ -0.00239325170061  -0.00275997224693   0.00385871341991
+  0.00562289731509  -0.00197517124191  -0.00024439996244
+ -0.00694843684159  -0.00145076396083  -0.00578640582316
+ -0.00372872601129  -0.00596619321757  -0.00418848989732
+ -0.00448235952014  -0.00117777102388  -0.00463174717335
+ -0.00247780850269  -0.00382209922438  -0.00646099351410
+ -0.00377768111170   0.00645659647464   0.00183044195719
+  0.00010801611922   0.00154547840694  -0.00200698482543
+  0.00662019618202  -0.00436708016064   0.00519486084241
+  0.00627280379746  -0.00082427206076  -0.00264954539431
+ -0.00151970638432  -0.00059397584655   0.00443367902269
+  0.00372009788566   0.00468710518751  -0.00362559040807
+  0.00055771144611   0.00026039350860  -0.00123981700808
+ -0.01303662554404  -0.00934485319056  -0.00619030538811
+  0.00094876496109   0.00099122696802  -0.00122600048374
+ -0.00748843518567   0.00060684910518  -0.00436430481907
+ -0.00008789939680  -0.00047405449221   0.00148036976668
+  0.00070116822553   0.00489972196343  -0.00134773465255
+ -0.00038014604767  -0.00090602634625   0.00385631329095
+  0.00187711363594   0.00423650395014  -0.00027357591098
+  0.00062590286579   0.00480296346897  -0.00308230969798
+  0.00326733184700  -0.00118773043823  -0.00218082216725
+  0.00197877093986   0.00007575655853   0.00800340901160
+ -0.00391853238786   0.00403265798387   0.00118653329160
+ -0.00155772901807   0.00084684303443   0.00315945871455
+ -0.00683268084443  -0.00115858311144   0.00193663534663
+ -0.00898509024050   0.00103272718544  -0.00152799769473
+ -0.00094444056892  -0.00737811859381   0.00003488710135
+  0.00869445666076   0.00265156569871   0.00243260365130
+  0.00557467479064  -0.00401876207037   0.00116433754073
+ -0.00159131726611   0.00691118166060  -0.00163732226203
+  0.00720318176617  -0.00737673406241   0.00126593834954
+ -0.00824541191642  -0.00029910319668  -0.00395442881381
+ -0.00286699066501   0.00187181367902   0.00284523516617
+ -0.00205028286915   0.00237872075897  -0.00176174991641
+  0.00115247151055  -0.00102442284736   0.00145457518391
+ -0.00455099435606  -0.00033835065576  -0.01130137062081
+ -0.00273098162503  -0.00383578347342   0.00114309063858
+ -0.00380149685855  -0.00852781494711   0.00328241491697
+  0.00182950004501  -0.00379449367381  -0.00218748955566
+ -0.00485988393561   0.00085352958026   0.00019897876332
+ -0.00521345145306  -0.00418368183970   0.00108125486648
+ -0.00088818939120   0.00685631762852  -0.00049658908285
+ -0.00138203793212   0.00218025248780   0.00499827588782
+  0.00297551119013   0.00161592942702  -0.00257591683083
+  0.01049381448067   0.00662118111684  -0.00444481889074
+  0.00250391280519  -0.00601221194592   0.00030118330524
+  0.00478712607441   0.00124443572663   0.00439409730428
+  0.00426724362864   0.00191838984236   0.00259395016982
+ -0.00014127414890  -0.00345256356426   0.00285313176654
+  0.00779554459982  -0.00116758960048  -0.00252473772442
+ -0.00134441319651   0.00456825506630   0.00312415380794
+ -0.00110720249285   0.00209297460821  -0.00270968299390
+  0.00527427014318   0.00146743685377  -0.00125905382088
+ -0.00147898984203   0.00000875421427  -0.00278721421037
+  0.00321464210717  -0.00397691511923  -0.00435411016610
+  0.00069983962328  -0.00411714326930  -0.00232234057981
+ -0.00022722674202  -0.00458592780398  -0.00103155900386
+ -0.00098121833372  -0.00862603618138   0.00021649583545
+ -0.00439077587527  -0.00008186319360   0.00073760304829
+ -0.00036032923969   0.00090146346995   0.00115084925752
+  0.00224037279602   0.00173750142274  -0.00344763928344
+  0.00073898272355   0.00152367301612  -0.00302871189243
+ -0.00394977988236   0.00317822607491  -0.00226185345072
+  0.00676521942805  -0.00489424822477  -0.00145554269451
+  0.00005841831346  -0.00312348139943   0.00812039091795
+ -0.00265585024421   0.00300102266146  -0.00133430675984
+  0.00364235106038  -0.00693794433398   0.00563202424833
+  0.00377903323421  -0.00194746821688  -0.00090233636009
+  0.00886814626051  -0.00126357574464   0.00321054069648
+ -0.00201854077613   0.00326477580991  -0.00154820331442
+  0.00083573946929   0.00120144878615   0.00045381870665
+ -0.00287857234458   0.00236625828760   0.00241270781103
+ -0.00376540471446  -0.00975300126772  -0.00028964820181
+ -0.00124220610464   0.00042792731548  -0.00523608507015
+  0.00157420001785   0.00500867466246  -0.00507239388099
+  0.00121877562742  -0.00034001231351   0.00030261976923
+ -0.00381657555786   0.00025688103603  -0.00137820723014
+  0.00293639813614   0.00377062607653   0.00191119869663
+  0.00477906444851  -0.00077957117442   0.00099329084300
+  0.00158951425453   0.00606657255806  -0.00578324363757
+ -0.00386145478234  -0.00129031927510   0.00403968030422
+ -0.00302226108888   0.00317993863136   0.00396958358517
+ -0.00443018432026   0.00478761201251   0.00088966402413
+  0.00694103606659  -0.00113528912957  -0.00433179760203
+  0.00202195552846  -0.00025224087789   0.00693314585488
+ -0.00327042591041   0.00276714303348  -0.00120133010046
+ -0.00087653986031  -0.00445279457116   0.00548523253893
+  0.00099801089332   0.00511868752433   0.00535660373387
+ -0.00559802545793   0.00072406542020   0.00802624287244
+  0.00326731045060   0.00592802253927  -0.00442866938491
+ -0.00468812440368   0.00206823791686   0.00226809304861
+  0.00666133685716  -0.00244409990876  -0.00562670430428
+  0.00155568106784  -0.00033306031730  -0.00105424163902
+ -0.00905349742961   0.00346713505429  -0.00167881507669
+  0.00483910975038  -0.00015781922826   0.00007935417952
+  0.00133077944481   0.00476409419704  -0.00581674480212
+  0.00028925713449  -0.00111675694681  -0.00498585679743
+  0.01487497172766  -0.00385120137963   0.00225168664845
+ -0.00498412559108  -0.00357565929841  -0.00025570185650
+  0.00637526345939  -0.00005771195261   0.00153387463664
+ -0.00653104478483   0.00373798318163  -0.00030973380331
+ -0.00304632724017  -0.00485791487142   0.00001434915845
+  0.00710747046851   0.00081890662360  -0.00529226212572
+ -0.00291233154567  -0.00441590191839   0.00802074671285
+  0.00382924141449  -0.00034787883983   0.00391680282906
+  0.00173477695289   0.00156304043623  -0.00108479461005
+ -0.00441213173466  -0.00000487540934   0.00338704677363
+ -0.00577106764100   0.00464565786609   0.00752327481523
+ -0.00657131920927   0.00137184668300   0.00010885938329
+  0.00365815167181  -0.00489265371728   0.00219285304304
+  0.00106149142228  -0.00232496565529  -0.00701001904117
+  0.01076805170761  -0.00159527071411   0.00132674002729
+  0.00456408653606   0.00162198780809  -0.00245541050982
+  0.00327778772311   0.00345901141490  -0.00287598418191
+ -0.00441407441700   0.00432028537997  -0.00063676677089
+ -0.00312464113557  -0.00010646308421  -0.00081341120898
+  0.00121147197596   0.00477091699207   0.00248716074881
+ -0.00019495665439  -0.00248267808115  -0.00403144039893
+  0.00567925420884   0.00171344242958   0.00489289821465
+ -0.00583474058213  -0.00145990460279  -0.00237471884031
+  0.00250178800468   0.00721084590242  -0.00082302550646
+  0.00061577301855  -0.00617207719231  -0.00279868269620
+ -0.00481767649897   0.00824237297543  -0.00128765081942
+  0.00216021889298  -0.00305192126959   0.00198695622100
+  0.00671765299368  -0.00092266984494  -0.00384292011021
+  0.00493851443684   0.00102214889354   0.00096190115702
+  0.00232476570545   0.00236964743622  -0.00514686793309
+ -0.00431108621958  -0.00131093541442  -0.00009089250315
+  0.00006897610696   0.00276955324373  -0.00239233931625
+  0.00234664967958  -0.00208325410600   0.00313622783086
+ -0.00739040287215  -0.00189561949986  -0.00431285746048
+  0.00533587450752  -0.01157386222535  -0.00253886538658
+ -0.00001999198922  -0.00119122587669  -0.00515156676114
+ -0.00001320341767  -0.00867628213723   0.00077593492077
+ -0.00106534848564   0.00949715593277  -0.00169941712588
+ -0.00051204826336   0.00098868861207   0.00108927947654
+ -0.00471065146347   0.00453496211811   0.00482808810597
+ -0.00471444540007  -0.00276444589179   0.00103332522194
+ -0.00893130769288   0.00397763864849   0.00384914734851
+ -0.00076344818395  -0.00094988646400  -0.00000580114816
+ -0.00369793273191   0.00454405824445   0.00901429724840
+ -0.00301337843369  -0.00123186254871   0.00321223502225
+  0.00039148308656   0.00750278161031  -0.00625178112533
+ -0.00526501719885   0.00400770540058   0.00573597792663
+ -0.00590767028087  -0.00243823386829  -0.00000776678018
+ -0.00388328815403  -0.00272715890078  -0.00656657034126
+  0.00369118895538  -0.00273199866604  -0.00001297224221
+  0.00385462539883   0.00606157046652   0.00047476986145
+  0.00203667409594  -0.00434810346513  -0.00114307741646
+  0.00052602080508   0.00206065379819   0.00308881306171
+ -0.00491580132917  -0.00563744969022  -0.00347124355572
+ -0.00146516810443  -0.00417257918540   0.00189088191183
+ -0.00274687241341   0.00105138851309  -0.00128874061587
+ -0.00563054220978  -0.00198762469225   0.00551249483418
+  0.00390892093492  -0.00042990405366   0.00601431851785
+ -0.00083570784311  -0.00224578304590   0.00637113622360
+  0.00051098000723  -0.00370908227367  -0.00295658004491
+ -0.00272606721254  -0.00057347179903  -0.00100262595499
+  0.00549852059552   0.00494983274249   0.00300916207372
+  0.00341100019013   0.00038834177572   0.00091530930006
+ -0.00080158811464   0.00773666990805   0.00378049223994
+ -0.00059000604571   0.00272140894157   0.00272785277847
+  0.00466151874453   0.00052049857337  -0.00061311000232
+  0.00435549317700   0.00044314247409  -0.00088445271109
+  0.00019641581292  -0.00434876054904  -0.00236244985488
+ -0.00275963224495  -0.00048836118836   0.00087613422381
+ -0.00221828033241  -0.00226515686493  -0.00050664019544
+ -0.00042490269438  -0.00062503956739  -0.00878486571567
+ -0.00028429141671  -0.00383830697979   0.00119878272219
+  0.00415497862631   0.00269407063461  -0.00491014438899
+ -0.00187438529315  -0.00316472091495  -0.00185732397080
+ -0.00186979325869   0.00008585243739   0.00297289687772
+  0.00108785312668  -0.00377587462542   0.00083582562205
+ -0.00206821541630   0.00000120774407  -0.00003549475608
+  0.00206327867481   0.00428956802884   0.00552481312024
+  0.00126291151194  -0.00155190967771   0.00434462337319
+  0.00137500943677   0.00141834605368   0.00565827905523
+ -0.00097368995974   0.00367575162291   0.00519224442148
+ -0.00324963612908  -0.00251564343751  -0.00515056530201
+  0.00163114720431  -0.00800749023951  -0.00260238889437
+ -0.00436028345725   0.00164845498001  -0.00040796541467
+  0.00184277480934  -0.00200671058860   0.00525383218251
+ -0.00720196452940   0.00119092068876   0.00038498352257
+  0.00260974072616  -0.01148197587932   0.01044258000769
+ -0.00200153224762   0.00322776133342   0.00048952433983
+  0.00175805648332   0.00135471901718   0.00031868720734
+  0.00428225411320   0.00365596435812   0.00272998114804
+  0.00964840964983   0.00496499408742  -0.00097016267441
+ -0.00502846171491  -0.00122004875462   0.00626640104784
+ -0.00124419420841  -0.00295096337968   0.00604871551380
+ -0.00845492507999   0.00591211730658  -0.00174555185963
+ -0.00222482074846  -0.00739856827702   0.00275137644831
+  0.00045426707029  -0.00024860541153  -0.00199607249765
+  0.00468939428045  -0.00081744736198   0.00751870274174
+  0.00377527236181   0.00325918124522  -0.01005416129685
+  0.00436531186027   0.00785688158202   0.00039358599398
+  0.00711851579032   0.00021662905336   0.00646119989781
+ -0.00202885841157   0.00296856489416  -0.00166088200005
+  0.00388877747926  -0.00598162728101   0.00143286283160
+ -0.00444989762918  -0.00053799005407  -0.00401405344373
+ -0.00645754672643  -0.00370507267785  -0.00233501923612
+  0.00058884989053  -0.00500654546391  -0.00983019237764
+ -0.00255970737866  -0.00330339097963  -0.00402828184266
+ -0.00393169886787   0.00076956888312   0.00154190654798
+  0.00744994950480  -0.00239541016000   0.00213903751744
+  0.00131315284230   0.00383099539938  -0.00231870719588
+ -0.00291530849124   0.00405446741168   0.00920291073554
+  0.00585217954494   0.00223873112634  -0.00236434393406
+  0.00102560681887  -0.00273596518777   0.01195975674737
+ -0.00734064833139  -0.00148455806678  -0.00279575746593
+  0.00087701657778   0.00152766151859   0.00168257096427
+ -0.00016107943688   0.00784209953065  -0.00714895092711
+  0.00586568021014   0.00429180055958   0.00603563482073
+  0.00380242406175   0.00391266628225   0.00252949811885
+  0.00203513916573   0.00494928714420  -0.00520985993201
+  0.00124150578385   0.00242176703885   0.00970040524194
+ -0.00122231651290   0.00431078556296  -0.00887999111869
+ -0.00034097733963  -0.00006342790365  -0.00333398660505
+  0.00532172854257   0.00874401688684  -0.00117977943021
+  0.00546668183531  -0.00296004005944  -0.00055418391150
+ -0.00105545347395  -0.00367148929738  -0.00014746560043
+ -0.00013373084556  -0.00105117795791   0.00672431557589
+  0.00389300594753   0.00509564303362  -0.00186482908516
+ -0.00456993708877  -0.00236070511347  -0.00359235341088
+  0.00066106743625  -0.00504885116779   0.00362663668158
+  0.00100512510600  -0.00411544404250   0.00109156745817
+  0.00012679021035   0.00290249521541   0.00085342955050
+  0.00144889552308   0.00085485689765   0.00121942722960
+  0.00431417958949   0.00282495159772   0.00020940192839
+  0.00165015759913   0.00679003345543   0.00133222741173
+ -0.00416424963439  -0.00325639820580   0.00268429297550
+ -0.00490545849369   0.00223275887023  -0.00221502782567
+ -0.00353863679494  -0.00342063422244  -0.00119883030798
+ -0.00319281600325   0.00514792324013   0.00353092132025
+ -0.00010322842180  -0.00262906379017  -0.00360052852366
+  0.00433428162890   0.00336252479523  -0.00028452173512
+  0.00417188765214  -0.00432162931652   0.00547653982180
+ -0.00083413429568   0.00309281844099   0.00503457818591
+ -0.00066178556680  -0.00257128340400   0.00011989835510
+  0.00305802285172  -0.00474820969403   0.00226571343772
+  0.00413249624561  -0.00790943598324  -0.00011705705403
+  0.00305339535331   0.00233689381929   0.00381589221936
+ -0.00273937374296  -0.00063443423791   0.00233638095622
+Time for calculating nonlocal force components: 89.011 ms
+[32mforces_xc: 
+[0m[32m  0.00132013380449   0.00181468619607  -0.00358640224503
+[0m[32m  0.00231957564629   0.00173711843510  -0.00071484743447
+[0m[32m -0.00304772540282  -0.00091024545278   0.00146032479527
+[0m[32m -0.00190285635363  -0.00035588646051   0.00040014895807
+[0m[32m -0.00221866689254   0.00277034225421  -0.00032775045535
+[0m[32m -0.00161706189618   0.00396495447981  -0.00236158580020
+[0m[32m -0.00372164786656   0.00297816734076  -0.00130943527127
+[0m[32m -0.00443533098434  -0.00188504142389   0.00515324623119
+[0m[32m  0.00072590525779   0.00102198836720   0.00161240726008
+[0m[32m  0.00096545056596  -0.00131187998468   0.00107973300781
+[0m[32m -0.00301912132823   0.00031682637289   0.00207726793103
+[0m[32m  0.00273995460595  -0.00027978767786   0.00347330284333
+[0m[32m -0.00120173563237  -0.00401457923706   0.00050708791515
+[0m[32m  0.00563435133406  -0.00215182749306  -0.00204347961316
+[0m[32m -0.00282312477652  -0.00248748231495  -0.00440845187200
+[0m[32m -0.00048604679673  -0.00151924659789  -0.00198135265592
+[0m[32m -0.00160049003175   0.00152116002094  -0.00030848189575
+[0m[32m -0.00063318265281  -0.00057815301936  -0.00147060313394
+[0m[32m -0.00198343428704   0.00274072163979   0.00674440431867
+[0m[32m -0.00328887158712   0.00355304213830  -0.00380717887478
+[0m[32m  0.00174731452942  -0.00285268529415   0.00313830873357
+[0m[32m  0.00414993379476  -0.00165639344182   0.00281335260585
+[0m[32m -0.00221633182646  -0.00065429318291   0.00255717969391
+[0m[32m  0.00254398260709   0.00196861018654   0.00081245205575
+[0m[32m  0.00442540574820   0.00468286030965  -0.00037072147632
+[0m[32m  0.00764547216015   0.00643467163405   0.00023723091962
+[0m[32m -0.00386343742621   0.00083222658316  -0.00652100128034
+[0m[32m -0.00279157009617  -0.00260525579793  -0.00088350935603
+[0m[32m -0.00391147659088  -0.00359198146282  -0.00170179205494
+[0m[32m  0.00578825050502   0.00373795530093   0.00308732596130
+[0m[32m -0.00636433060141   0.00152342104396  -0.00058327482767
+[0m[32m  0.00080631944428   0.00303104071849   0.00036471880982
+[0m[32m  0.00692385996568  -0.00162615203787  -0.00152392474100
+[0m[32m  0.00061871293890   0.00173616093864  -0.00579346789852
+[0m[32m  0.00124762385438   0.00051723006555   0.00341470593446
+[0m[32m -0.00466315891214   0.00077267141688   0.00087176640917
+[0m[32m -0.00112726020144  -0.00037729780318   0.00152701962411
+[0m[32m  0.00491851964320   0.00004995211337  -0.00352016395097
+[0m[32m -0.00411208515086  -0.00052992551634  -0.00262585000950
+[0m[32m  0.00184745172801  -0.00212398900922  -0.00191120904252
+[0m[32m  0.00364041557702  -0.00054930693666   0.00454937118316
+[0m[32m  0.00060144670249  -0.00290500051690  -0.00153075234452
+[0m[32m -0.00319226969527   0.00362721557287  -0.00333113339516
+[0m[32m  0.00377994683643  -0.00451103579654  -0.00163127893928
+[0m[32m -0.00211769061653   0.00299213502648   0.00192502096099
+[0m[32m -0.00313783401164   0.00211946447005   0.00180232516158
+[0m[32m  0.00649655435379   0.00241216384915   0.00512494755547
+[0m[32m -0.00424046289634   0.00268077938747  -0.00619823286103
+[0m[32m -0.00147455951700  -0.00266427737043  -0.00357017771438
+[0m[32m -0.00636395173189  -0.00000644566158   0.00097871256676
+[0m[32m -0.00230837316850  -0.00144611368839   0.00411497444705
+[0m[32m  0.00122098703268  -0.00104324916591  -0.00513760692805
+[0m[32m -0.00329630910588   0.00046348950330   0.00173458172640
+[0m[32m -0.00135379402675  -0.00263349339177   0.00083849045902
+[0m[32m  0.00029736238463   0.00352567144574  -0.00039814035738
+[0m[32m -0.00468772859809   0.00260121633490   0.00061554224783
+[0m[32m  0.00179565991484  -0.00379779932983   0.00337979209438
+[0m[32m -0.00674992310929  -0.00651189433781  -0.00228871545797
+[0m[32m  0.00124603091278  -0.00343097012215  -0.00198849442804
+[0m[32m  0.00207950807302  -0.00107101389986   0.00182714282991
+[0m[32m -0.00136419020650   0.00191649971232   0.00293853372643
+[0m[32m  0.00031227626277  -0.00241787612674   0.00104978119513
+[0m[32m -0.00231633191884  -0.00295105543203   0.00395277928912
+[0m[32m -0.00327099247863   0.00358384503263   0.00147422216903
+[0m[32m -0.00309252202105  -0.00083284202641  -0.00254160436447
+[0m[32m -0.00065782057514   0.00094300261081   0.00125596106749
+[0m[32m  0.00091590636931  -0.00664855000942   0.00472515264966
+[0m[32m -0.00076926607944  -0.00396546337673   0.00092998058546
+[0m[32m  0.00589664573789   0.00116181670119   0.00426671276099
+[0m[32m -0.00044910935031  -0.00036761234366  -0.00226786546188
+[0m[32m  0.00349276484448  -0.00094596470278   0.00288335432143
+[0m[32m -0.00502725221780   0.00041713892225  -0.00359991280496
+[0m[32m -0.00553865574720  -0.00057881753939   0.00555744855895
+[0m[32m  0.00230591455339   0.00506885395233  -0.00091047937433
+[0m[32m  0.00025131643912  -0.00356129114945   0.00532516841352
+[0m[32m -0.00281683959705   0.00243876006595  -0.00224177549669
+[0m[32m  0.00277869944575  -0.00135759937007  -0.00273428027322
+[0m[32m -0.00070481777101  -0.00184711221790   0.00166577849312
+[0m[32m  0.00313774302747   0.00116050991075  -0.00259268683732
+[0m[32m  0.00241964994489  -0.00419047145460  -0.00123723062071
+[0m[32m  0.00411625165423   0.00100576620286   0.00248575482201
+[0m[32m -0.00151165091477   0.00493570314120  -0.00554570055206
+[0m[32m  0.00471117618150   0.00199516288656  -0.00329212895332
+[0m[32m -0.00005463221584   0.00032316789559   0.00049426150187
+[0m[32m -0.00202639180145   0.00537351123513  -0.00230828629273
+[0m[32m  0.00685779791254   0.00587466948509  -0.00124488528487
+[0m[32m -0.00409177504486   0.00260531052261  -0.00339485193962
+[0m[32m  0.00352382796553   0.00397440135349  -0.00447867457078
+[0m[32m  0.00152715346050  -0.00658602922692   0.00133182318822
+[0m[32m  0.00372552499429   0.00344137031200   0.00398414544397
+[0m[32m -0.00424785861875   0.00370870141331  -0.00587633018695
+[0m[32m  0.00384670937169  -0.00272146083809  -0.00081750182093
+[0m[32m  0.00048573867599   0.00143793443014  -0.00314872181815
+[0m[32m  0.00209916290082  -0.00542809303931   0.00317563986042
+[0m[32m -0.00019128479534   0.00278849866808   0.00284102829098
+[0m[32m -0.00312624590448   0.00476158959551  -0.00068661370999
+[0m[32m  0.00355217343085  -0.00297881485131  -0.00030522154417
+[0m[32m  0.00069172383124  -0.00574065894433   0.00173347404498
+[0m[32m -0.00402803066901   0.00295670676668   0.00050405891474
+[0m[32m  0.00086049303849   0.00243057974478   0.00434649456585
+[0m[32m -0.00285640193190   0.00340539047522  -0.00020541703430
+[0m[32m  0.00517489858518  -0.00072373865235  -0.00299061693603
+[0m[32m  0.00153538671701   0.00247113423513  -0.00488285891769
+[0m[32m  0.00079485355962   0.00432133949809   0.00267807359026
+[0m[32m  0.00381550503656   0.00074047541881  -0.00224753965289
+[0m[32m  0.00315016698770  -0.00367421314714  -0.00401212592803
+[0m[32m -0.00157068942628   0.00121742736281  -0.00136681324937
+[0m[32m  0.00406346363802  -0.00026271705296  -0.00032539947692
+[0m[32m -0.00124910039289   0.00148695438638  -0.00251692012021
+[0m[32m  0.00637391013833   0.00403000990616   0.00520497787242
+[0m[32m -0.00740500953185   0.00493580342882  -0.00390087199923
+[0m[32m -0.00269797836690   0.00001685002629   0.00063121439814
+[0m[32m  0.00221618203018   0.00123290649732   0.00332236879977
+[0m[32m  0.00576453464394  -0.00693991482131  -0.00349044908613
+[0m[32m -0.00368884911473  -0.00117952013793   0.00181887576668
+[0m[32m -0.00160480365805  -0.00608272875970   0.00579231818505
+[0m[32m  0.00594959518721  -0.00249457120327  -0.00305287341164
+[0m[32m  0.00499126343410   0.00541209136109  -0.00231024787526
+[0m[32m  0.00132076306258   0.00010684762246  -0.00182798975140
+[0m[32m -0.00196230719797  -0.00202574523672   0.00203894506083
+[0m[32m -0.00205431234103   0.00226778589126   0.00315361090311
+[0m[32m -0.00209429058689   0.00367740430744   0.00008846389470
+[0m[32m -0.00402410359500   0.00663812137694   0.00399280039545
+[0m[32m -0.00302213118621  -0.00377857570252  -0.00214417510605
+[0m[32m  0.00209808817978  -0.00316904834072   0.00366309518934
+[0m[32m -0.00018284495179   0.00005301024295  -0.00343579096531
+[0m[32m -0.00112227699073   0.00434588680783   0.00019938548695
+[0m[32m  0.00633226186024  -0.00473348693803  -0.00073037917287
+[0m[32m -0.00590760693946  -0.00156548905153  -0.00469499700552
+[0m[32m -0.00139819128306  -0.00467373433664   0.00755888608109
+[0m[32m  0.00021621845094   0.00455556397834   0.00065577093743
+[0m[32m  0.00344613898050  -0.00233752029718   0.00096614871678
+[0m[32m  0.00316993997032  -0.00477536633548   0.00249871969459
+[0m[32m -0.00650507905548  -0.00330337125860  -0.00425467841432
+[0m[32m  0.00556610629329  -0.00240492711885   0.00142575896705
+[0m[32m -0.00379031086343   0.00136442305305  -0.00437373098805
+[0m[32m  0.00645850191561  -0.00105890114631   0.00030356435545
+[0m[32m -0.00072136276044  -0.00681511662648  -0.00244511057977
+[0m[32m  0.00248617300652   0.00119544695271   0.00167565988728
+[0m[32m  0.00113407987792   0.00216320604544  -0.00299381171359
+[0m[32m  0.00439736857976   0.00068659764328   0.00188144398098
+[0m[32m -0.00381751277943   0.00360978878051  -0.00554937352368
+[0m[32m -0.00156735152604   0.00003250375612   0.00863948201491
+[0m[32m -0.00586936834976  -0.00060314980592   0.00010281540860
+[0m[32m -0.00447605300981   0.00915532202752   0.00433804525893
+[0m[32m -0.00487499628733   0.00476551081179  -0.00258223600727
+[0m[32m -0.00599784350103  -0.00197221786975   0.00331227714313
+[0m[32m  0.00168460223072   0.00334640696133  -0.00274910175949
+[0m[32m  0.00165864091678  -0.00135699640934   0.00035787869453
+[0m[32m -0.00337775517441   0.00411340207179  -0.00037511233127
+[0m[32m -0.00309278994066  -0.00645971275382  -0.00122480608645
+[0m[32m  0.00626836986305  -0.00794802648924   0.00269862998401
+[0m[32m  0.00109924446080  -0.00830571686729  -0.00549381678167
+[0m[32m -0.00408623020234  -0.00290825313290   0.00177144962002
+[0m[32m -0.00384715053397  -0.00335467829130   0.00260511650806
+[0m[32m  0.00402461265991  -0.00139107815421  -0.00273551467844
+[0m[32m -0.00099040434201   0.00257273289141   0.00064493568598
+[0m[32m  0.00158616114168   0.00302278290925  -0.00495983873736
+[0m[32m  0.00629452382653   0.00400496102194   0.00471550394855
+[0m[32m  0.00296717270888   0.00011482174022   0.00220095569951
+[0m[32m -0.00416137826746  -0.00017989100992   0.00016593398492
+[0m[32m  0.00167255370040  -0.00244053637553   0.00122304402427
+[0m[32m  0.00087083865714   0.00143134990893   0.00016551448399
+[0m[32m  0.00409776093005   0.00096453476055   0.00707435498120
+[0m[32m -0.00316052694461  -0.00405112290877  -0.00080517648022
+[0m[32m -0.00489148043016  -0.00325912910051  -0.00320092250423
+[0m[32m -0.00356009708544  -0.00540410312542   0.00122404066486
+[0m[32m -0.00233595793954  -0.00570038953428   0.00116375084016
+[0m[32m  0.00200909350300   0.00220793609906   0.00427044351771
+[0m[32m  0.00049098069103  -0.00477469623708  -0.00033796222952
+[0m[32m -0.00457187399083  -0.00224359494800   0.00271598671515
+[0m[32m  0.00360123798635   0.00257120705279   0.00414179564964
+[0m[32m  0.00112828815730  -0.00036093057759  -0.00552171145788
+[0m[32m  0.00007177670600   0.00075381678070   0.00372271187292
+[0m[32m -0.00026512918872  -0.00001582810444   0.00073004663778
+[0m[32m  0.00037938664470   0.00127739822592   0.00271121352051
+[0m[32m  0.00098673675934   0.00016690507633  -0.00213743302807
+[0m[32m -0.00045389943760   0.00089065116178   0.00429090442579
+[0m[32m -0.00301022938884   0.00371735734575  -0.00571823164877
+[0m[32m -0.00257347701578  -0.00069740167315   0.00156035715031
+[0m[32m  0.00235650029392   0.00593160662142   0.00702099417182
+[0m[32m -0.00233115129087  -0.00361390548339  -0.00291394333828
+[0m[32m  0.00334260593870   0.00245155957527  -0.00192923942902
+[0m[32m -0.00136040505244  -0.00443923149720  -0.00457940833875
+[0m[32m  0.00009639442995  -0.00130266491083  -0.00009243711500
+[0m[32m  0.00338188331594  -0.00178488992157   0.00402327916965
+[0m[32m -0.00577725615407   0.00095346340110  -0.00152740500279
+[0m[32m  0.00139534742090  -0.00555061030040  -0.00552221494252
+[0m[32m -0.00120519104509   0.00713296250159  -0.00624712337710
+[0m[32m  0.00694927508680   0.00193673612134  -0.00385556552225
+[0m[32m -0.00024750652065   0.00149177963845   0.00242589076571
+[0m[32m -0.00821317427712   0.00404605036780   0.00139968390536
+[0m[32m  0.00115829538629  -0.00376985082447   0.00109641376771
+[0m[32m  0.00303946099425  -0.00460599221496  -0.00348745997870
+[0m[32m  0.00090692398217  -0.00174055841251   0.00349498943028
+[0m[32m  0.00702792861782   0.00274234792991  -0.00049458647660
+[0m[32m -0.00774567595134   0.00871836096996  -0.00450003584823
+[0m[32m -0.00193852937987   0.00453875326419   0.00249581801641
+[0m[32m  0.00206083101567   0.00276375855786  -0.00345994283906
+[0m[32m  0.00141001579466   0.00436002315779   0.00034326137831
+[0m[32m  0.00232267935830   0.00447317305777  -0.00086947752808
+[0m[32m -0.00061063248604   0.00067507090230   0.00272411247257
+[0m[32m  0.00356442043569  -0.00084286187953   0.00296623535391
+[0m[32m  0.00368194175004  -0.00710108120486  -0.00094257284055
+[0m[32m  0.00063078757424  -0.00557792770631   0.00097933462585
+[0m[32m  0.00012221770338   0.00176458961447  -0.00090877387032
+[0m[32m  0.00415377650013  -0.00170261819398   0.00184597665271
+[0m[32m  0.00012727313850   0.00263588351362  -0.00443712063894
+[0m[32m  0.00482896344596   0.00127238364518  -0.00047261661947
+[0m[32m  0.00334367622026  -0.00015516341221   0.00218396993467
+[0m[32m -0.00090009715582   0.00389365131526  -0.00219641076753
+[0m[32m  0.00288578238424  -0.00351389896110   0.00362041578523
+[0m[32m -0.00128290982178  -0.00133936383033  -0.00128264052975
+[0m[32m -0.00182424937591  -0.00112655696905  -0.00107518140743
+[0m[32m -0.00258021590513   0.00577161495755   0.00657920039854
+[0m[32m  0.00209885314219  -0.00428044228696  -0.00289045732645
+[0m[32m -0.00368608677512  -0.00105783486399  -0.00117912184210
+[0m[32m  0.00361746913444  -0.00111099121715   0.00283263360039
+[0m[32m  0.00233022475824   0.00088766003566   0.00078325356550
+[0m[32m -0.00396174638280  -0.00651619610688  -0.00510116127886
+[0m[32m -0.00394098629241   0.00105910704542   0.00537202100744
+[0m[32m -0.00368598752166   0.00522803358064  -0.00712932799734
+[0m[32m -0.00411974949512  -0.00278832830094   0.00303673648431
+[0m[32m  0.00415612242678   0.00321261837528  -0.00083666281527
+[0m[32m -0.00307898207887  -0.00366849951757   0.00744791362086
+[0m[32m  0.00365977718159   0.00268545014231   0.00005895662276
+[0m[32m  0.00011188880870  -0.00218604465176   0.00186541967100
+[0m[32m  0.00406183597626  -0.00116370253483  -0.00403969117967
+[0m[32m  0.00201600696850   0.00092814522032   0.00414148219545
+[0m[32m  0.00255675120349   0.00244095923825  -0.00419352058001
+[0m[32m -0.00036576693118  -0.00136474963468  -0.00233035098169
+[0m[32m -0.00133351784098  -0.00669289175823   0.00688999006116
+[0m[32m -0.00032307449252   0.00248042093914  -0.00725908242341
+[0m[32m -0.00301029287816  -0.00199569651121   0.00534100481115
+[0m[32m  0.00014436703117  -0.00078300289158   0.00370148873515
+[0m[32m  0.00033222589202   0.00323138873779   0.00116115996783
+[0m[32m -0.00461391538598  -0.00059132870557  -0.00405368387310
+[0m[32m  0.00232504508036  -0.00478551378539   0.00025522104037
+[0m[32m -0.00067924151036  -0.00248619226416  -0.00070600946250
+[0m[32m  0.00680135290801   0.00302900839110  -0.00411352772889
+[0m[32m -0.00475654855412   0.00788688215377   0.00088986744539
+[0m[32m  0.00169317088261   0.00243075453950   0.00514254526659
+[0m[32m -0.00181276827551   0.00241981688076   0.00022882180384
+[0m[32m -0.00368568888535   0.00043263804762   0.00361886303444
+[0m[32m  0.00395506210697  -0.00522758936792  -0.00273683738470
+[0m[32m -0.00021850732261  -0.00371560026192   0.00221990194313
+[0m[32m -0.00507277648910  -0.00492167947096  -0.00328603702424
+[0m[32m  0.00134705411597  -0.00273014305720  -0.00078750516554
+[0m[32m -0.00126073359933   0.00168034765770  -0.00182191181308
+[0m[32m  0.00225615258251   0.00081206602934   0.00722118058393
+[0m[32m -0.00704579280820   0.00367902329707  -0.00395292832942
+[0m[32m  0.00310869540082  -0.00453934870926  -0.00418470378432
+[0m[32m -0.00300499433305   0.00173613093344  -0.00593237294293
+[0m[32m  0.00333200855592   0.00082785862455  -0.00297177395833
+[0m[32m -0.00189466713928   0.00078138501366   0.00124665717701
+[0m[32m  0.00269692101312  -0.00271939918878   0.00265896631473
+[0mTime for calculating XC forces components: 38.262 ms
+ Cartesian force = 
+ -0.00915625648879  -0.01457376300959   0.01951234022579
+ -0.00913095652124  -0.01269224166023   0.00512103633688
+  0.01621773536274   0.00405814965629  -0.00889281340554
+  0.00949352054760   0.00028049663008  -0.00420893800624
+  0.01298320131729  -0.01863654282046  -0.00055142121715
+  0.00508351935990  -0.02566795103310   0.01088647489930
+  0.01854966489792  -0.02302563077020   0.00618689284478
+  0.03208867023747   0.01096103188781  -0.03693577494289
+ -0.00383354719632  -0.00141608624797  -0.00905973386001
+ -0.00649834935966   0.00758387855328  -0.00521260563701
+  0.01822587599630  -0.00142933334569  -0.01305665024131
+ -0.01830201554628   0.00013136640918  -0.02215424954252
+  0.00514891749744   0.02359480048983  -0.00065862742297
+ -0.02980121106958   0.01290376354730   0.01469493800537
+  0.01470515254373   0.01400839755712   0.02414740697639
+ -0.00049957250528   0.00524844236034   0.00967694947068
+  0.00575679835982  -0.01127579991730  -0.00260257764924
+  0.00192574332818   0.00115404773046   0.00410133499201
+  0.01051417202665  -0.01606091084209  -0.04305355125113
+  0.02271388583450  -0.02195711964966   0.02456699794757
+ -0.00498929782736   0.01695119060630  -0.01912717219471
+ -0.02309995267525   0.01177246688075  -0.02155977612320
+  0.01219418329889   0.00424454797015  -0.01365625810142
+ -0.01321665275617  -0.00856563834092  -0.00932190272255
+ -0.03136469576144  -0.03117481315366   0.00278201394102
+ -0.06978006806959  -0.05466329420821  -0.00925133478908
+  0.03065613495722  -0.00334468261953   0.04411481136703
+  0.01214816687028   0.01761424865407   0.00203275362041
+  0.02589464762757   0.02471588687738   0.01171552106899
+ -0.03799465680546  -0.02107377339619  -0.02379439797231
+  0.04338676778356  -0.01142865905404   0.00852140638412
+ -0.00339253171033  -0.01530581856316  -0.00234330878937
+ -0.04558398727579   0.01605223422675   0.00810479191531
+ -0.00118862622678  -0.01384624708005   0.03782838911271
+ -0.00825273172073  -0.00318188648009  -0.01607435242030
+  0.02797887556255  -0.00179314965770  -0.00435796472203
+  0.00513142274486   0.00321355324769  -0.00776478642997
+ -0.04110563396907  -0.00268147786386   0.02639696279499
+  0.01887862772325   0.00421785353307   0.01571222594599
+ -0.01379165878135   0.00628981049943   0.01223130213420
+ -0.01586789374581   0.00430414195084  -0.02951018877214
+ -0.00021832775133   0.01530061281574   0.01098232475396
+  0.02145887582012  -0.01799129778345   0.02224191290325
+ -0.02017363219725   0.02116368401545   0.01380951878973
+  0.00658007057601  -0.02230915029637  -0.01696861581060
+  0.01798140451698  -0.01473635429451  -0.00818516691487
+ -0.04717573503488  -0.01491109660180  -0.03672950752262
+  0.03042955956654  -0.01935857127034   0.04655242801383
+  0.00677794174722   0.01907831381606   0.01475921429840
+  0.03934514700840  -0.00472507045812  -0.00506681043804
+  0.01473976199032   0.00161136271206  -0.02455276265396
+ -0.00774908905556   0.00592523211041   0.03467568063957
+  0.01676263879175  -0.00227892595721  -0.01142060078545
+  0.00377476765206   0.01369481706865  -0.00453820626218
+ -0.00244418988422  -0.01613964817136   0.00214021203024
+  0.03017413758198  -0.01755829824810   0.00020122123924
+ -0.01003678607346   0.02655885130954  -0.02639777776218
+  0.06027052378836   0.05328796236922   0.01264669096497
+ -0.00692803325766   0.01773772555261   0.01264423974821
+ -0.00978994731244   0.00846765215425  -0.00769613421661
+  0.01214454057940  -0.01264246105319  -0.01804569781964
+ -0.00174439477859   0.01367606071298  -0.00530316912516
+  0.02175108716937   0.01898856018096  -0.02677203037940
+  0.01910551294185  -0.01914018564310  -0.00545262525581
+  0.01874029143316   0.00829392923894   0.01585585353519
+  0.00865595511169  -0.00483687252549  -0.00842079826884
+ -0.00976493132757   0.04582628017835  -0.03588645668177
+  0.00604784520223   0.02476917023384  -0.01126914528259
+ -0.03898743399862  -0.01040534584872  -0.03374963741394
+  0.00149776968160  -0.00228648276845   0.01528472147372
+ -0.02590999663004  -0.00002042908933  -0.02283596256235
+  0.03157969467783  -0.00210923000303   0.02860515379614
+  0.03993493301762   0.00527085038876  -0.03741874106095
+ -0.01460716547805  -0.03225350865406   0.00252087159586
+ -0.00115371880069   0.02667189372457  -0.04042806768671
+  0.01590789828860  -0.01356106640374   0.01261306376030
+ -0.01312824255915   0.00450898191185   0.01842707546946
+  0.00539115886005   0.00831548815700  -0.00470729789486
+ -0.02439093130011  -0.00473882286222   0.01657968402704
+ -0.01326092939799   0.02153035466977   0.01179224766055
+ -0.02405386129012  -0.00739284848108  -0.01674495494734
+  0.02030641937148  -0.03681127477811   0.04147750727630
+ -0.03592801938504  -0.01020383070171   0.02258332882663
+  0.00054859003585  -0.00039467068875  -0.00110104176651
+  0.01213668156221  -0.03298986398270   0.01738298606346
+ -0.04926410298225  -0.05015960942118   0.00673217974782
+  0.02408164078786  -0.01667994316876   0.01821493270242
+ -0.02242381550313  -0.02289223153743   0.02537066458256
+ -0.00760022630424   0.04383646920931  -0.00993641109773
+ -0.03029334329910  -0.02241411482902  -0.03011576329840
+  0.03529297619796  -0.02217006027540   0.04216511746882
+ -0.02223181163590   0.01835236697934   0.00641472841888
+ -0.00117084860100  -0.00570112536831   0.01430171114790
+ -0.01766473082917   0.03705054895323  -0.01936287163877
+ -0.00262179514227  -0.01633923287109  -0.01341430837590
+  0.01617437853297  -0.02562457607486   0.00468672024388
+ -0.01727393945802   0.01819605962981  -0.00109679205036
+ -0.00319135804983   0.03663087880182  -0.00624733880623
+  0.02278773367484  -0.01773219580352  -0.00337490301602
+ -0.00602120301907  -0.02024561012318  -0.02475187226062
+  0.01923586285083  -0.01857444589327   0.00605160424181
+ -0.03909936431652   0.00626601272873   0.02763897568622
+ -0.00804125541499  -0.00951662021825   0.02787374854791
+ -0.00947235911150  -0.02550111935903  -0.01745703369677
+ -0.01926047832539  -0.00725968666894   0.00897870220221
+ -0.02125713362110   0.02678701117075   0.02504150592747
+  0.00265410338332  -0.00461519217663   0.00621204902523
+ -0.02149004211235   0.00130001146086   0.00203861532301
+  0.00999186434591  -0.00703164956917   0.01013017570582
+ -0.04465819561088  -0.02613185550380  -0.04274935806205
+  0.06811511207290  -0.03735941824213   0.03277549656362
+  0.01400264640101  -0.00270297154209  -0.00553276533340
+ -0.00991928612017  -0.00723965355410  -0.01941172798098
+ -0.04585194061470   0.05374130961970   0.02347310820012
+  0.02357892100691   0.00344016714456  -0.01550438079635
+  0.01788490210595   0.04267028396471  -0.04404098048860
+ -0.04095171875143   0.01210690365379   0.02795668326581
+ -0.03154089268681  -0.04042437927636   0.01844652729143
+ -0.00606745700199   0.00140476398483   0.01121384180716
+  0.00899600260088   0.01347661526690  -0.01193598625474
+  0.00782787006102  -0.01210063224994  -0.01411884915923
+  0.00928856117454  -0.02214096661965  -0.00019823411867
+  0.03165723001640  -0.05234056295955  -0.02488069174492
+  0.02250766802531   0.02466044464436   0.00635038218059
+ -0.00517828666208   0.02122419482638  -0.02256648708589
+  0.00468419563020   0.00199360316127   0.02150855679647
+  0.00991797935760  -0.02806393810026  -0.00318094748727
+ -0.04859590050427   0.03805780638561   0.00404964522293
+  0.03693025927994   0.01115669661145   0.03179479194120
+  0.01264502497356   0.03839849340445  -0.04868490552983
+ -0.00298370031681  -0.03498307450391  -0.00917604562831
+ -0.01818729691558   0.01693095801756  -0.00129459417578
+ -0.02631716475136   0.03086656527300  -0.01982048109465
+  0.04744958227569   0.03033830214538   0.02874441262442
+ -0.03386323303159   0.00913273021380  -0.01244135200748
+  0.01989720214250  -0.00193569404112   0.02900925399594
+ -0.04132815225312   0.00227136678997   0.00121156245210
+  0.01193025236906   0.04426594659751   0.01348862557291
+ -0.01226428495137  -0.00644049421941  -0.00846529438615
+ -0.00690636592566  -0.01262658345337   0.01462011525531
+ -0.03331913454375  -0.00378901986801  -0.01536040333812
+  0.02658549280467  -0.02089087129473   0.03593988322463
+  0.01325133904808  -0.00414392639299  -0.05549478430453
+  0.03020762880402   0.00229317572331  -0.00283097334655
+  0.04106496393376  -0.07780846680106  -0.03191737349313
+  0.03375123069948  -0.03268816047961   0.01259239417308
+  0.04233913750271   0.00632285005556  -0.02415384788366
+ -0.01122739390045  -0.01512560740243   0.01716019332993
+ -0.01121680868023   0.01041442749189  -0.00163730399246
+  0.01804706104362  -0.02520867993010   0.00782540271993
+  0.01655109718131   0.04132332890893   0.01102469315562
+ -0.05537701712348   0.06141268447329  -0.01277351050075
+ -0.01033138910067   0.05685819350804   0.03674711808477
+  0.02561711971739   0.02349942396316  -0.00302079041367
+  0.02386407936913   0.02110855315611  -0.01447758819909
+ -0.02648425230270   0.01566773819914   0.01352750679733
+  0.00182297960485  -0.01382435192941   0.00101610278700
+ -0.01856602629664  -0.02275805967846   0.03419372529582
+ -0.05031611530979  -0.02659233357000  -0.04348564865347
+ -0.01683697139626  -0.00401816329439  -0.01450671873280
+  0.03043969854521   0.00523486057791  -0.00014346075132
+ -0.00833598942727   0.01266463308078  -0.00841536295001
+ -0.00511553578688  -0.00871134133304   0.00041555613314
+ -0.03358865840808  -0.01271833469535  -0.05225204098964
+  0.01990284712413   0.02466057672615   0.00900341791371
+  0.03133357786266   0.02345013394351   0.02079548248267
+  0.01770051192606   0.03612472413462  -0.00349532860161
+  0.01902801022936   0.03767331889188  -0.00280250232041
+ -0.01617188624995  -0.01423294623084  -0.02205120196235
+ -0.00267261246760   0.02979318126844   0.00164091456875
+  0.02669507220546   0.01351166851017  -0.02036122826484
+ -0.01872302110055  -0.01310224267597  -0.02443238165592
+ -0.00413642791665   0.00379059767469   0.03497877816424
+ -0.00099670241884   0.00117746015803  -0.02089798063518
+  0.00015184878017   0.00132699170662  -0.00259605068332
+  0.00145073009964  -0.00818214165203  -0.01816507434172
+ -0.00161534482488  -0.00046852311113   0.01227198689382
+  0.00399793220707  -0.00948765239579  -0.03040004701334
+  0.01797199117956  -0.02737302329893   0.04070500863629
+  0.01491985985718   0.00251051631251  -0.01036985797897
+ -0.01750306192578  -0.04514792928275  -0.06139582809903
+  0.01688012548791   0.02170091917380   0.01997890747655
+ -0.01845801561449  -0.01553685961659   0.00969071803033
+  0.00883538392693   0.02870032200302   0.02799794864253
+ -0.00097335891628   0.00797008653966   0.00154246507245
+ -0.02238128847005   0.01024366451491  -0.02630081862879
+  0.03764219789623  -0.00826111323956   0.01171476468084
+ -0.00821491304465   0.04548216168837   0.04578558101391
+  0.00906786717225  -0.05290973020013   0.05013352123708
+ -0.04693353684260  -0.01207298623215   0.03432143120657
+  0.00164548045766  -0.00701336524931  -0.01100288493290
+  0.05469984735659  -0.03246301166021  -0.01645176074362
+ -0.00435609239288   0.01880240733597  -0.00929390904640
+ -0.02555874962644   0.03095117916475   0.02213467968411
+ -0.00635003943188   0.01050796217029  -0.01858826814416
+ -0.05489802354842  -0.01626976679179   0.00448092819096
+  0.05667096047551  -0.07401210453715   0.04354630113275
+  0.01448963317221  -0.02897206133882  -0.01460863521578
+ -0.01108213832292  -0.01707928815363   0.02291102346763
+ -0.00501146167013  -0.02365619141745  -0.00096923203483
+ -0.00863824129732  -0.02346394327631   0.00508355083565
+ -0.00113015206481  -0.00419929512081  -0.01244575723254
+Broadcasting the input parameters took 1.173 ms
+Bcast pre-info. took 10.942 ms
+MPI_Bcast packed buff of length 63484 took 0.477 ms
+ -0.02607744805871   0.00339634252457  -0.01571093707203
+ -0.03363446565593   0.05488841377758   0.00313273577548
+ -0.00725789594872   0.03148945149855  -0.00486939029942
+  0.00011612467948  -0.01535546899349   0.00365430440149
+ -0.02275185699624   0.01057207639038  -0.00547932208755
+  0.00236775378145  -0.01255251700823   0.01968524186630
+ -0.02715494265286  -0.00121912248874   0.00500886344476
+ -0.01626666260282   0.00108494571801  -0.01041821010145
+  0.00444243321429  -0.02299696968074   0.01364142843069
+ -0.01743700441174   0.01916885859300  -0.02146867145368
+  0.00425793999462   0.00756287414074   0.00525129308519
+  0.00669716472582   0.00457082521150   0.00523936308586
+  0.01619072135225  -0.04900236588315  -0.05848711701646
+ -0.01748536408132   0.02557489279733   0.01561185833516
+  0.01997089165352   0.00605368170936   0.00878564827115
+ -0.01741328227772   0.00558751089341  -0.01666347283675
+ -0.01589017221593  -0.00241199965138  -0.00854605447592
+  0.02424004190890   0.05138692550517   0.04850702782345
+  0.03364530151207  -0.00510617532054  -0.03837224599435
+  0.02703612286298  -0.03962808629885   0.06223171457224
+  0.02123897523371   0.01838662710085  -0.02282435418809
+ -0.02682683711836  -0.02021760069658   0.00735246691092
+  0.02134008286588   0.03483770056963  -0.06169025662507
+ -0.01924723155415  -0.01486374772209   0.00556818333853
+  0.00158504068592   0.01630715241273  -0.01130141677577
+ -0.02541559885416   0.01145426930760   0.02161585297304
+ -0.01100993273133  -0.00480146483292  -0.01985847839747
+ -0.01842600336245  -0.01199061212177   0.02307229497040
+  0.00147833210608   0.00760642477279   0.01246579391637
+  0.01632921150226   0.05583557548235  -0.05016489932968
+  0.00699003006977  -0.02050863668440   0.04952105746338
+  0.01848944648060   0.01121226271558  -0.03652787172638
+  0.00000553706694   0.00330526810314  -0.01927107566186
+  0.00086349607560  -0.01719752372322  -0.01031039176535
+  0.02933219199726   0.00518370180070   0.02363769076037
+ -0.01449681801908   0.02744473877439   0.00203066338299
+  0.00638121348305   0.01143615390925   0.00456888893597
+ -0.04632627542433  -0.01997391372902   0.02968797444267
+  0.03570319334985  -0.05416417698777  -0.00746756215368
+ -0.00944335716220  -0.01566915440635  -0.03415181672995
+  0.01300499348020  -0.01038619415458  -0.00079671382462
+  0.02165520267521  -0.00332032461852  -0.02398833915049
+ -0.03448305758791   0.04023428241847   0.01587608107665
+ -0.00023308169972   0.02183162337950  -0.01679787016883
+  0.03273433493549   0.03846947422057   0.02806166879178
+ -0.00659073757036   0.01669421652075   0.00285471121075
+  0.01063130547435  -0.00918472666406   0.01269108850012
+ -0.01195305695320  -0.01189860823426  -0.04370090650112
+  0.05090233019870  -0.02058879247584   0.03699377232818
+ -0.02188121251743   0.02859876479899   0.03107158905995
+  0.02603575634433  -0.01717248013357   0.04286221476241
+ -0.01952707523231  -0.01331896244084   0.02017715499591
+  0.01417271013152  -0.00345969948704  -0.00484607699881
+ -0.02267736916952   0.01982120116067  -0.01521155621553
+The program took 17.842 s.

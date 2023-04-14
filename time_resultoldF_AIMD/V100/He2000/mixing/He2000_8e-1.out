@@ -1,0 +1,119 @@
+***************************************************************************
+*                       SPARC (version Apr 23, 2021)                      *
+*   Copyright (c) 2020 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Mon Jan 23 12:14:02 2023                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 39.1486737772564 39.1486737772564 39.1486737772564 
+LATVEC:
+1 0 0 
+0 1 0 
+0 0 1 
+FD_GRID: 130 130 130
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 1 1 1
+KPOINT_SHIFT: 0 0 0
+SPIN_TYP: 0
+ELEC_TEMP_TYPE: Fermi-Dirac
+SMEARING: 0.007600347752
+CHEB_DEGREE: 25
+NSTATES: 2200
+#WARNING: Number of bands may be insufficient for efficient SCF convergence.
+EXCHANGE_CORRELATION: GGA_PBE
+CALC_STRESS: 0
+CALC_PRES: 0
+CHEFSI_BOUND_FLAG: 0
+MAXIT_SCF: 20
+MINIT_SCF: 3
+MAXIT_POISSON: 3000
+TOL_SCF: 3.00E-03
+POISSON_SOLVER: AAR
+TOL_POISSON: 3.00E-05
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 3.00E-05
+MIXING_VARIABLE: potential
+MIXING_PRECOND: none
+#WARNING: the preconditioner for SCF has been turned off, this 
+#might lead to slow SCF convergence. To specify SCF preconditioner, 
+#use 'MIXING_PRECOND' in the .inpt file
+MIXING_PARAMETER: 0.8
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 1
+PRINT_ATOMS: 0
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: He2000
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 1
+NP_KPOINT_PARAL: 1
+NP_BAND_PARAL: 384
+NP_DOMAIN_PARAL: 1 1 1
+NP_DOMAIN_PHI_PARAL: 6 8 8
+EIG_SERIAL_MAXNS: 2000
+EIG_PARAL_BLKSZ: 128
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  384
+Mesh spacing                       :  0.301144 (Bohr)
+Number of symmetry adapted k-points:  1
+Output printed to                  :  He2000.out
+Total number of atom types         :  1
+Total number of atoms              :  2000
+Total number of electrons          :  4000
+Atom type 1  (valence electrons)   :  He 2
+Pseudopotential                    :  ../02_He_2_1.1_1.2_pbe_v1.0.psp8
+Pseudocharge radii of atom type 1  :  2.71 2.71 2.71 (x, y, z dir)
+Number of atoms of type 1          :  2000
+Estimated total memory usage       :  216.53 GB
+Estimated memory per processor     :  577.41 MB
+===================================================================
+                    Self Consistent Field (SCF#1)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -2.8210825372E+00        3.520E-02        91.087
+2            -2.8211973518E+00        7.102E-03        20.059
+3            -2.8211982497E+00        1.316E-03        20.291
+Total number of SCF: 3     
+
+k = [0.000, 0.000, 0.000]
+Occupation of state 1980 = 2.000000000000000.
+Occupation of state 2200 = 0.000000000695916.
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -2.8211982497E+00 (Ha/atom)
+Total free energy                  : -5.6423964995E+03 (Ha)
+Band structure energy              : -1.7919484527E+03 (Ha)
+Exchange correlation energy        : -2.1238522416E+03 (Ha)
+Self and correction energy         : -5.7261391361E+03 (Ha)
+Entropy*kb*T                       : -6.0004743979E-04 (Ha)
+Fermi level                        :  2.2753015989E-01 (Ha)
+RMS force                          :  3.9949489946E-02 (Ha/Bohr)
+Maximum force                      :  1.2196760957E-01 (Ha/Bohr)
+Time for force calculation         :  0.499 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  132.949 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*                Main Developers: Qimen Xu, Abhiraj Sharma                *
+*     Collaborators: J.E. Pask (LLNL), A.J. Medford (GT), E. Chow (GT)    *
+*  Acknowledgements: U.S. DOE (DE-SC0019410); U.S. NSF (1333500,1553212)  *
+***************************************************************************
+                                                                           

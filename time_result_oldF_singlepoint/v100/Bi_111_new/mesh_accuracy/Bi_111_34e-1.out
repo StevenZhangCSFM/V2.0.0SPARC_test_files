@@ -1,0 +1,131 @@
+***************************************************************************
+*                       SPARC (version Apr 23, 2021)                      *
+*   Copyright (c) 2020 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Mon Jan 16 16:40:13 2023                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 25.144879151142 30.5910856870902 31.8217984677594 
+LATVEC:
+1 0 0 
+0.427397267517084 0.904063922363308 0 
+0 0 1 
+FD_GRID: 74 90 94
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 1 1 1
+KPOINT_SHIFT: 0 0 0
+SPIN_TYP: 0
+ELEC_TEMP_TYPE: Gaussian
+SMEARING: 0.003674926479
+CHEB_DEGREE: 25
+NSTATES: 293
+EXCHANGE_CORRELATION: GGA_PBE
+CALC_STRESS: 0
+CALC_PRES: 0
+CHEFSI_BOUND_FLAG: 0
+MAXIT_SCF: 1000
+MINIT_SCF: 3
+MAXIT_POISSON: 3000
+TOL_SCF: 1.00E-05
+POISSON_SOLVER: AAR
+TOL_POISSON: 1.00E-07
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-07
+MIXING_VARIABLE: density
+MIXING_PRECOND: kerker
+TOL_PRECOND: 1.15E-04
+PRECOND_KERKER_KTF: 1
+PRECOND_KERKER_THRESH: 0.1
+MIXING_PARAMETER: 0.5
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: Bi_111
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 1
+NP_KPOINT_PARAL: 1
+NP_BAND_PARAL: 76
+NP_DOMAIN_PARAL: 1 1 5
+NP_DOMAIN_PHI_PARAL: 6 8 8
+EIG_SERIAL_MAXNS: 2000
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  384
+Mesh spacing in x-direction        :  0.339796 (Bohr)
+Mesh spacing in y-direction        :  0.339901 (Bohr)
+Mesh spacing in z direction        :  0.33853 (Bohr)
+Number of symmetry adapted k-points:  1
+Output printed to                  :  Bi_111.out
+Total number of atom types         :  1
+Total number of atoms              :  32
+Total number of electrons          :  480
+Atom type 1  (valence electrons)   :  Bi 15
+Pseudopotential                    :  ../83_Bi_15_2.4_2.8_pbe_n_v1.0.psp8
+Pseudocharge radii of atom type 1  :  7.48 7.48 7.45 (x, y, z dir)
+Number of atoms of type 1          :  32
+Estimated total memory usage       :  8.33 GB
+Estimated memory per processor     :  22.21 MB
+===================================================================
+                    Self Consistent Field (SCF#1)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -7.6718037889E+01        1.827E-02        3.458
+2            -7.6730408146E+01        1.007E-02        0.848
+3            -7.6732018576E+01        4.344E-03        0.840
+4            -7.6732216035E+01        2.082E-03        0.861
+5            -7.6732235697E+01        8.777E-04        0.832
+6            -7.6732237626E+01        4.329E-04        0.824
+7            -7.6732237282E+01        2.703E-04        0.826
+8            -7.6732236550E+01        1.484E-04        0.824
+9            -7.6732236008E+01        8.746E-05        0.824
+10           -7.6732235939E+01        5.828E-05        0.827
+11           -7.6732236192E+01        3.478E-05        0.821
+12           -7.6732236381E+01        2.525E-05        0.813
+13           -7.6732236541E+01        1.783E-05        0.809
+14           -7.6732236797E+01        1.268E-05        0.820
+15           -7.6732237127E+01        8.662E-06        0.765
+Total number of SCF: 15    
+
+k = [0.000, 0.000, 0.000]
+Occupation of state 264 = 0.000000000000000.
+Occupation of state 293 = 0.000000000000000.
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -7.6732237522E+01 (Ha/atom)
+Total free energy                  : -2.4554316007E+03 (Ha)
+Band structure energy              : -3.1676797585E+02 (Ha)
+Exchange correlation energy        : -5.9979872030E+02 (Ha)
+Self and correction energy         : -2.5431511430E+03 (Ha)
+Entropy*kb*T                       : -3.4909212650E-03 (Ha)
+Fermi level                        : -4.2434840812E-02 (Ha)
+RMS force                          :  2.1373468096E-02 (Ha/Bohr)
+Maximum force                      :  2.9441455461E-02 (Ha/Bohr)
+Time for force calculation         :  0.043 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  15.556 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*                Main Developers: Qimen Xu, Abhiraj Sharma                *
+*     Collaborators: J.E. Pask (LLNL), A.J. Medford (GT), E. Chow (GT)    *
+*  Acknowledgements: U.S. DOE (DE-SC0019410); U.S. NSF (1333500,1553212)  *
+***************************************************************************
+                                                                           

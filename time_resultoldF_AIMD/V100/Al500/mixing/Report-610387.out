@@ -1,0 +1,22 @@
+---------------------------------------
+Begin Slurm Prolog: Jan-29-2023 18:30:45
+Job ID:    610387
+User ID:   bzhang376
+Account:   gts-phanish6-coda20
+Job name:  Al500_scf
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+---------------------------------------
+Begin Slurm Epilog: Jan-29-2023 18:31:03
+Job ID:        610387
+Array Job ID:  _4294967294
+User ID:       bzhang376
+Account:       gts-phanish6-coda20
+Job name:      Al500_scf
+Resources:     cpu=312,mem=3744G,node=26
+Rsrc Used:     cput=01:38:48,vmem=1144K,walltime=00:00:19,mem=0,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-01-004-1-2,atl1-1-01-004-2-[1-2],atl1-1-01-004-3-[1-2],atl1-1-01-004-4-[1-2],atl1-1-01-004-6-[1-2],atl1-1-01-004-8-1,atl1-1-01-004-9-[1-2],atl1-1-01-004-17-2,atl1-1-01-004-18-[1-2],atl1-1-01-004-19-[1-2],atl1-1-01-004-20-1,atl1-1-01-004-24-2,atl1-1-01-004-25-[1-2],atl1-1-01-004-26-[1-2],atl1-1-01-004-27-[1-2],atl1-1-01-004-28-1
+---------------------------------------

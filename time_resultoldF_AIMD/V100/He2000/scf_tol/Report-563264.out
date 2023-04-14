@@ -1,0 +1,73 @@
+---------------------------------------
+Begin Slurm Prolog: Jan-22-2023 17:19:07
+Job ID:    563264
+User ID:   bzhang376
+Account:   gts-phanish6-coda20
+Job name:  He2000_mesh
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+
+Lmod is automatically replacing "gcc/10.3.0-o57x6h" with "intel/20.0.4".
+
+
+The following have been reloaded with a version change:
+  1) mvapich2/2.3.6-ouywal => mvapich2/2.3.6-z2duuy
+
+Warning! : Core id 64 does not exist on this architecture! 
+CPU Affinity is undefined 
+slurmstepd: error: *** STEP 563264.0 ON atl1-1-02-012-1-1 CANCELLED AT 2023-01-22T17:19:09 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+Warning! : Core id 65 does not exist on this architecture! 
+CPU Affinity is undefined 
+Warning! : Core id 10037776 does not exist on this architecture! 
+CPU Affinity is undefined 
+Warning! : Core id 10038288 does not exist on this architecture! 
+CPU Affinity is undefined 
+Warning! : Core id 9840880 does not exist on this architecture! 
+CPU Affinity is undefined 
+srun: error: atl1-1-02-012-1-1: tasks 0-11: Killed
+srun: error: atl1-1-02-012-3-2: tasks 60-71: Killed
+srun: error: atl1-1-02-012-2-1: tasks 24-35: Killed
+srun: error: atl1-1-02-012-19-2: tasks 276-287: Killed
+srun: error: atl1-1-02-012-18-1: tasks 240-251: Killed
+srun: error: atl1-1-02-012-17-1: tasks 228-239: Killed
+srun: error: atl1-1-02-012-22-1: tasks 336-347: Killed
+srun: error: atl1-1-02-012-13-2: tasks 144-155: Killed
+srun: error: atl1-1-02-012-20-1: tasks 288-299: Killed
+srun: error: atl1-1-02-012-15-2: tasks 192-203: Killed
+srun: error: atl1-1-02-012-16-1: tasks 204-215: Killed
+srun: error: atl1-1-02-012-12-2: tasks 120-131: Killed
+srun: error: atl1-1-02-012-4-2: tasks 84-95: Killed
+srun: error: atl1-1-02-012-21-2: tasks 324-335: Killed
+srun: error: atl1-1-02-012-14-2: tasks 168-179: Killed
+srun: error: atl1-1-02-012-11-2: tasks 96-107: Killed
+srun: error: atl1-1-02-012-3-1: tasks 48-59: Killed
+srun: error: atl1-1-02-012-12-1: tasks 108-119: Killed
+srun: error: atl1-1-02-012-15-1: tasks 180-191: Killed
+srun: error: atl1-1-02-012-18-2: tasks 252-263: Killed
+srun: error: atl1-1-02-012-23-2: tasks 372-383: Killed
+srun: error: atl1-1-02-012-23-1: tasks 360-371: Killed
+srun: error: atl1-1-02-012-20-2: tasks 300-311: Killed
+srun: error: atl1-1-02-012-4-1: tasks 72-83: Killed
+srun: error: atl1-1-02-012-21-1: tasks 312-323: Killed
+srun: error: atl1-1-02-012-13-1: tasks 132-143: Killed
+srun: error: atl1-1-02-012-16-2: tasks 216-227: Killed
+srun: error: atl1-1-02-012-2-2: tasks 36-47: Killed
+srun: error: atl1-1-02-012-22-2: tasks 348-359: Killed
+srun: error: atl1-1-02-012-1-2: tasks 12-23: Killed
+srun: error: atl1-1-02-012-19-1: tasks 264-275: Killed
+srun: error: atl1-1-02-012-14-1: tasks 156-167: Killed
+---------------------------------------
+Begin Slurm Epilog: Jan-22-2023 17:19:10
+Job ID:        563264
+Array Job ID:  _4294967294
+User ID:       bzhang376
+Account:       gts-phanish6-coda20
+Job name:      He2000_mesh
+Resources:     cpu=384,mem=2688G,node=32
+Rsrc Used:     cput=00:19:12,vmem=1244K,walltime=00:00:03,mem=0,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-02-012-1-[1-2],atl1-1-02-012-2-[1-2],atl1-1-02-012-3-[1-2],atl1-1-02-012-4-[1-2],atl1-1-02-012-11-2,atl1-1-02-012-12-[1-2],atl1-1-02-012-13-[1-2],atl1-1-02-012-14-[1-2],atl1-1-02-012-15-[1-2],atl1-1-02-012-16-[1-2],atl1-1-02-012-17-1,atl1-1-02-012-18-[1-2],atl1-1-02-012-19-[1-2],atl1-1-02-012-20-[1-2],atl1-1-02-012-21-[1-2],atl1-1-02-012-22-[1-2],atl1-1-02-012-23-[1-2]
+---------------------------------------

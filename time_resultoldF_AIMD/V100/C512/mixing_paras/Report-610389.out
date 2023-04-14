@@ -1,0 +1,22 @@
+---------------------------------------
+Begin Slurm Prolog: Jan-29-2023 18:33:37
+Job ID:    610389
+User ID:   bzhang376
+Account:   gts-phanish6-coda20
+Job name:  C512_384
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+---------------------------------------
+Begin Slurm Epilog: Jan-29-2023 18:34:13
+Job ID:        610389
+Array Job ID:  _4294967294
+User ID:       bzhang376
+Account:       gts-phanish6-coda20
+Job name:      C512_384
+Resources:     cpu=384,mem=2688G,node=32
+Rsrc Used:     cput=03:50:24,vmem=12292K,walltime=00:00:36,mem=11352K,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-02-005-1-[1-2],atl1-1-02-005-2-[1-2],atl1-1-02-005-3-[1-2],atl1-1-02-005-4-2,atl1-1-02-005-5-[1-2],atl1-1-02-005-6-[1-2],atl1-1-02-005-7-1,atl1-1-02-005-9-[1-2],atl1-1-02-005-11-[1-2],atl1-1-02-005-12-[1-2],atl1-1-02-005-14-[1-2],atl1-1-02-005-15-[1-2],atl1-1-02-005-17-[1-2],atl1-1-02-005-18-1,atl1-1-02-005-20-[1-2],atl1-1-02-005-22-[1-2],atl1-1-02-005-23-[1-2],atl1-1-02-005-24-1
+---------------------------------------

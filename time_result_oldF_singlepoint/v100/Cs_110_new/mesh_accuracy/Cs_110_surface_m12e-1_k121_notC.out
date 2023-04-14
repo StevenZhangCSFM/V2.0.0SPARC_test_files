@@ -1,0 +1,93 @@
+***************************************************************************
+*                       SPARC (version Apr 23, 2021)                      *
+*   Copyright (c) 2020 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Tue Jan 17 11:55:23 2023                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 50.6009011099014 30.9865970610724 37.1855889672006 
+LATVEC:
+1 0 0 
+0 1 0 
+0 0 1 
+FD_GRID: 422 258 310
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 1 2 1
+KPOINT_SHIFT: 0 0 0
+SPIN_TYP: 0
+ELEC_TEMP_TYPE: Gaussian
+SMEARING: 0.003674926479
+CHEB_DEGREE: 46
+NSTATES: 161
+EXCHANGE_CORRELATION: GGA_PBE
+CALC_STRESS: 0
+CALC_PRES: 0
+CHEFSI_BOUND_FLAG: 0
+MAXIT_SCF: 1000
+MINIT_SCF: 3
+MAXIT_POISSON: 3000
+TOL_SCF: 2.09E-04
+POISSON_SOLVER: AAR
+TOL_POISSON: 2.09E-06
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 2.09E-06
+MIXING_VARIABLE: density
+MIXING_PRECOND: kerker
+TOL_PRECOND: 1.44E-05
+PRECOND_KERKER_KTF: 1
+PRECOND_KERKER_THRESH: 0.1
+MIXING_PARAMETER: 0.5
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: Cs_110_surface
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 1
+NP_KPOINT_PARAL: 2
+NP_BAND_PARAL: 27
+NP_DOMAIN_PARAL: 7 1 1
+NP_DOMAIN_PHI_PARAL: 8 6 8
+EIG_SERIAL_MAXNS: 2000
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  384
+Mesh spacing in x-direction        :  0.119907 (Bohr)
+Mesh spacing in y-direction        :  0.120103 (Bohr)
+Mesh spacing in z direction        :  0.119954 (Bohr)
+Number of symmetry adapted k-points:  2
+Output printed to                  :  Cs_110_surface.out
+Total number of atom types         :  1
+Total number of atoms              :  29
+Total number of electrons          :  261
+Atom type 1  (valence electrons)   :  Cs 9
+Pseudopotential                    :  ../55_Cs_9_2.2_2.5_pbe_n_v1.0.psp8
+Pseudocharge radii of atom type 1  :  6.24 6.25 6.24 (x, y, z dir)
+Number of atoms of type 1          :  29
+Estimated total memory usage       :  978.72 GB
+Estimated memory per processor     :  2.55 GB
+===================================================================
+                    Self Consistent Field (SCF#1)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -2.2855968458E+01        1.629E-01        572.150
+2            -2.3188241126E+01        2.964E-02        146.615
+3            -2.3240882625E+01        1.829E-02        147.032
+4            -2.3255840471E+01        1.217E-02        146.755
+5            -2.3263390056E+01        6.809E-03        146.202
+6            -2.3267752072E+01        3.613E-03        146.636
+7            -2.3270383583E+01        2.582E-03        147.096
+8            -2.3272025929E+01        2.372E-03        147.964
+9            -2.3273074366E+01        2.195E-03        147.601

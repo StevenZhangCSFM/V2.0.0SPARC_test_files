@@ -1,0 +1,10 @@
+
+fchrg = 5.00000000 > 0.0 (icmod != 0)
+This pseudopotential contains non-linear core correction. 
+
+fchrg = 5.000000, READING MODEL CORE CHARGE!
+
+#WARNING: Number of bands may be insufficient for efficient SCF convergence.
+
+WARNING: REFERENCE _CUFOFF (0.500000 Bohr) < MESH_SPACING (dx 0.510000 Bohr, dy 0.510000 Bohr, dz 0.510000 Bohr) in SCF#1
+The program took 0.102 s.

@@ -1,0 +1,3 @@
+WARNING: "CALC_PRES" is obsolete, use "CALC_STRESS" instead!
+#WARNING: Number of bands may be insufficient for efficient SCF convergence.
+The program took 257.659 s.

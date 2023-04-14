@@ -1,0 +1,29 @@
+---------------------------------------
+Begin Slurm Prolog: Jan-22-2023 17:23:52
+Job ID:    563282
+User ID:   bzhang376
+Account:   gts-phanish6-coda20
+Job name:  He2000_mesh
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+
+Lmod is automatically replacing "gcc/10.3.0-o57x6h" with "intel/20.0.4".
+
+
+The following have been reloaded with a version change:
+  1) mvapich2/2.3.6-ouywal => mvapich2/2.3.6-z2duuy
+
+---------------------------------------
+Begin Slurm Epilog: Jan-22-2023 17:25:59
+Job ID:        563282
+Array Job ID:  _4294967294
+User ID:       bzhang376
+Account:       gts-phanish6-coda20
+Job name:      He2000_mesh
+Resources:     cpu=384,mem=2688G,node=32
+Rsrc Used:     cput=13:39:12,vmem=12472K,walltime=00:02:08,mem=11396K,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-02-009-1-[1-2],atl1-1-02-009-2-[1-2],atl1-1-02-009-3-[1-2],atl1-1-02-009-4-[1-2],atl1-1-02-009-5-[1-2],atl1-1-02-009-6-[1-2],atl1-1-02-009-7-[1-2],atl1-1-02-009-8-2,atl1-1-02-009-9-[1-2],atl1-1-02-009-10-2,atl1-1-02-009-11-[1-2],atl1-1-02-009-12-[1-2],atl1-1-02-009-13-[1-2],atl1-1-02-009-14-[1-2],atl1-1-02-009-15-[1-2],atl1-1-02-009-16-[1-2],atl1-1-02-009-17-[1-2]
+---------------------------------------

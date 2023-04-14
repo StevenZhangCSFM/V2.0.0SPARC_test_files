@@ -1,0 +1,29 @@
+---------------------------------------
+Begin Slurm Prolog: Jan-30-2023 22:24:51
+Job ID:    622128
+User ID:   bzhang376
+Account:   gts-phanish6-coda20
+Job name:  Al4_mesh
+Partition: cpu-medium
+QOS:       inferno
+---------------------------------------
+
+Lmod is automatically replacing "gcc/10.3.0-o57x6h" with "intel/20.0.4".
+
+
+The following have been reloaded with a version change:
+  1) mvapich2/2.3.6-ouywal => mvapich2/2.3.6-z2duuy
+
+---------------------------------------
+Begin Slurm Epilog: Jan-30-2023 22:24:54
+Job ID:        622128
+Array Job ID:  _4294967294
+User ID:       bzhang376
+Account:       gts-phanish6-coda20
+Job name:      Al4_mesh
+Resources:     cpu=96,mem=1152G,node=8
+Rsrc Used:     cput=00:06:24,vmem=1132K,walltime=00:00:04,mem=0,energy_used=0
+Partition:     cpu-medium
+QOS:           inferno
+Nodes:         atl1-1-02-002-1-1,atl1-1-02-002-3-[1-2],atl1-1-02-002-5-1,atl1-1-02-002-6-1,atl1-1-02-002-9-[1-2],atl1-1-02-002-12-1
+---------------------------------------

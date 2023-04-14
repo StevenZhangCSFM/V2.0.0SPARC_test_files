@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH -JAl500_30
+#SBATCH --account=gts-phanish6-coda20
+#SBATCH -N 3 --ntasks-per-node=10
+#SBATCH --mem-per-cpu=12G
+#SBATCH -t1:30:00
+#SBATCH -oReport-%j.out
+cd $SLURM_SUBMIT_DIR
+
+module purge
+module load intel
+module load mvapich2
+
+srun ../../../lib/sparc -name Al500 > Al500.log

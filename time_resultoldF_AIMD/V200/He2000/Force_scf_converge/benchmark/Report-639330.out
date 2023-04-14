@@ -1,0 +1,41 @@
+---------------------------------------
+Begin Slurm Prolog: Feb-05-2023 17:35:52
+Job ID:    639330
+User ID:   bzhang376
+Account:   gts-phanish6-coda20
+Job name:  He2000_275
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda deactivate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+---------------------------------------
+Begin Slurm Epilog: Feb-05-2023 17:38:21
+Job ID:        639330
+Array Job ID:  _4294967294
+User ID:       bzhang376
+Account:       gts-phanish6-coda20
+Job name:      He2000_275
+Resources:     cpu=275,mem=1925G,node=25
+Rsrc Used:     cput=11:22:55,vmem=10860K,walltime=00:02:29,mem=10720K,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-02-007-2-[1-2],atl1-1-02-007-5-[1-2],atl1-1-02-007-6-[1-2],atl1-1-02-007-15-2,atl1-1-02-007-16-[1-2],atl1-1-02-007-17-[1-2],atl1-1-02-007-18-[1-2],atl1-1-02-007-19-[1-2],atl1-1-02-007-20-[1-2],atl1-1-02-007-21-1,atl1-1-02-007-23-2,atl1-1-02-007-24-1,atl1-1-02-007-26-2,atl1-1-02-007-27-[1-2],atl1-1-02-007-28-[1-2]
+---------------------------------------

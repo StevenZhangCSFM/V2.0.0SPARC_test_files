@@ -1,0 +1,136 @@
+***************************************************************************
+*                       SPARC (version Apr 23, 2021)                      *
+*   Copyright (c) 2020 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Sun Jan 22 18:47:35 2023                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 53.55 53.55 53.55 
+LATVEC:
+1 0 0 
+0 1 0 
+0 0 1 
+FD_GRID: 268 268 268
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 1 1 1
+KPOINT_SHIFT: 0 0 0
+SPIN_TYP: 0
+ELEC_TEMP_TYPE: Gaussian
+SMEARING: 0.007349864435
+CHEB_DEGREE: 35
+NSTATES: 2496
+EXCHANGE_CORRELATION: GGA_PBE
+CALC_STRESS: 0
+CALC_PRES: 0
+CHEFSI_BOUND_FLAG: 0
+MAXIT_SCF: 100
+MINIT_SCF: 3
+MAXIT_POISSON: 3000
+TOL_SCF: 1.00E-04
+POISSON_SOLVER: AAR
+TOL_POISSON: 1.00E-06
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-06
+MIXING_VARIABLE: density
+MIXING_PRECOND: kerker
+TOL_PRECOND: 3.99E-05
+PRECOND_KERKER_KTF: 1
+PRECOND_KERKER_THRESH: 0
+MIXING_PARAMETER: 1
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 1
+PRINT_ATOMS: 0
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: Al1372
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 1
+NP_KPOINT_PARAL: 1
+NP_BAND_PARAL: 384
+NP_DOMAIN_PARAL: 1 1 1
+NP_DOMAIN_PHI_PARAL: 6 8 8
+EIG_SERIAL_MAXNS: 2000
+EIG_PARAL_BLKSZ: 128
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  384
+Mesh spacing                       :  0.199813 (Bohr)
+Number of symmetry adapted k-points:  1
+Output printed to                  :  Al1372.out_1
+Total number of atom types         :  1
+Total number of atoms              :  1372
+Total number of electrons          :  4116
+Atom type 1  (valence electrons)   :  Al 3
+Pseudopotential                    :  ../13_Al_3_1.9_1.9_pbe_n_v1.0.psp8
+Pseudocharge radii of atom type 1  :  6.39 6.39 6.39 (x, y, z dir)
+Number of atoms of type 1          :  1372
+Estimated total memory usage       :  2.10 TB
+Estimated memory per processor     :  5.60 GB
+===================================================================
+                    Self Consistent Field (SCF#1)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -2.2790264127E+00        1.399E-01        858.524
+2            -2.3049450290E+00        3.382E-02        215.077
+3            -2.3125605960E+00        7.843E-03        214.908
+4            -2.3150857354E+00        3.289E-03        214.979
+5            -2.3160579727E+00        1.306E-03        216.788
+6            -2.3164699919E+00        1.065E-03        216.492
+7            -2.3166565353E+00        4.344E-04        216.412
+8            -2.3167453725E+00        9.297E-04        216.421
+9            -2.3167893508E+00        1.807E-03        216.466
+10           -2.3168109029E+00        7.051E-04        216.037
+11           -2.3168221485E+00        8.012E-04        215.802
+12           -2.3168279541E+00        8.964E-04        216.062
+13           -2.3168310126E+00        7.689E-04        216.247
+14           -2.3168325771E+00        5.658E-04        216.134
+15           -2.3168334452E+00        5.595E-04        216.381
+16           -2.3168338883E+00        4.751E-04        216.033
+17           -2.3168341112E+00        3.705E-04        214.111
+18           -2.3168342445E+00        3.385E-04        213.967
+19           -2.3168343308E+00        3.261E-04        214.475
+20           -2.3168343552E+00        1.777E-04        214.379
+21           -2.3168343767E+00        8.535E-05        213.333
+Total number of SCF: 21    
+
+k = [0.000, 0.000, 0.000]
+Occupation of state 2246 = 0.000003204471460.
+Occupation of state 2496 = 0.000000000000000.
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -2.3168342840E+00 (Ha/atom)
+Total free energy                  : -3.1786966376E+03 (Ha)
+Band structure energy              :  8.9565473464E+01 (Ha)
+Exchange correlation energy        : -1.5040533256E+03 (Ha)
+Self and correction energy         : -4.2871271696E+03 (Ha)
+Entropy*kb*T                       : -4.3520708691E-01 (Ha)
+Fermi level                        :  1.8518014790E-01 (Ha)
+RMS force                          :  3.6448850224E-02 (Ha/Bohr)
+Maximum force                      :  1.4931431398E-01 (Ha/Bohr)
+Time for force calculation         :  5.312 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  5182.291 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*                Main Developers: Qimen Xu, Abhiraj Sharma                *
+*     Collaborators: J.E. Pask (LLNL), A.J. Medford (GT), E. Chow (GT)    *
+*  Acknowledgements: U.S. DOE (DE-SC0019410); U.S. NSF (1333500,1553212)  *
+***************************************************************************
+                                                                           

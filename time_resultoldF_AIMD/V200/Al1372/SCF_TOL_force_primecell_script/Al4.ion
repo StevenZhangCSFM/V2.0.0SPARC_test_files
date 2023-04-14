@@ -1,0 +1,10 @@
+
+ATOM_TYPE: Al                # atom type followed with valence charge
+N_TYPE_ATOM: 4            # number of atoms of this type
+PSEUDO_POT: ../13_Al_3_1.9_1.9_pbe_n_v1.0.psp8
+ATOMIC_MASS: 26.9815385
+COORD_FRAC:                       # coordinates follows
+ 0.05 -0.01 0.02
+ 0.03 0.51 0.49
+ 0.47 0.01 0.50
+ 0.53 0.48 0.02

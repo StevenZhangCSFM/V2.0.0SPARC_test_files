@@ -1,0 +1,24 @@
+doing SCF_TOL_force_primecell_script
+starts sparc fdn test
+running tol_scf 0.00001, mesh 0.150000
+indx -1
+tol = 1.000000e-03
+running mesh 0.30000, tol_scf 0.00050
+Eerr 1.89e-05, Ferr 1.44e-04, wtime 0.24 s
+running mesh 0.30000, tol_scf 0.00100
+Eerr 1.85e-05, Ferr 1.24e-04, wtime 0.22 s
+running mesh 0.30000, tol_scf 0.00300
+Eerr 1.61e-05, Ferr 3.98e-04, wtime 0.20 s
+running mesh 0.40000, tol_scf 0.00050
+Eerr 2.26e-05, Ferr 1.88e-04, wtime 0.16 s
+running mesh 0.40000, tol_scf 0.00100
+Eerr 2.14e-05, Ferr 1.69e-04, wtime 0.16 s
+running mesh 0.40000, tol_scf 0.00300
+Eerr 1.74e-05, Ferr 1.77e-04, wtime 0.14 s
+running mesh 0.50000, tol_scf 0.00050
+Eerr 3.07e-04, Ferr 4.42e-04, wtime 0.12 s
+running mesh 0.50000, tol_scf 0.00100
+Eerr 3.07e-04, Ferr 4.44e-04, wtime 0.11 s
+running mesh 0.50000, tol_scf 0.00300
+Eerr 3.08e-04, Ferr 4.69e-04, wtime 0.10 s
+wtime_list:  [0.242, 0.222, 0.199, 0.158, 0.164, 0.138, 0.117, 0.114, 0.101]

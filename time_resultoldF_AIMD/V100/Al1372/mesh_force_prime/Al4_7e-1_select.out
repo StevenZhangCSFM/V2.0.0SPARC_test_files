@@ -1,0 +1,122 @@
+***************************************************************************
+*                       SPARC (version Apr 23, 2021)                      *
+*   Copyright (c) 2020 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Wed Jan 25 17:44:32 2023                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+CELL: 7.65 7.65 7.65 
+LATVEC:
+1 0 0 
+0 1 0 
+0 0 1 
+FD_GRID: 11 11 11
+FD_ORDER: 12
+BC: P P P
+KPOINT_GRID: 1 1 1
+KPOINT_SHIFT: 0 0 0
+SPIN_TYP: 0
+ELEC_TEMP_TYPE: Gaussian
+SMEARING: 0.007349864435
+CHEB_DEGREE: 14
+NSTATES: 10
+#WARNING: Number of bands may be insufficient for efficient SCF convergence.
+EXCHANGE_CORRELATION: GGA_PBE
+CALC_STRESS: 0
+CALC_PRES: 0
+CHEFSI_BOUND_FLAG: 0
+MAXIT_SCF: 100
+MINIT_SCF: 3
+MAXIT_POISSON: 3000
+TOL_SCF: 1.00E-04
+POISSON_SOLVER: AAR
+TOL_POISSON: 1.00E-06
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-06
+MIXING_VARIABLE: density
+MIXING_PRECOND: kerker
+TOL_PRECOND: 4.84E-04
+PRECOND_KERKER_KTF: 1
+PRECOND_KERKER_THRESH: 0
+MIXING_PARAMETER: 1
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 1
+PRINT_ATOMS: 0
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+OUTPUT_FILE: Al4
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 1
+NP_KPOINT_PARAL: 1
+NP_BAND_PARAL: 10
+NP_DOMAIN_PARAL: 1 1 1
+NP_DOMAIN_PHI_PARAL: 1 1 1
+EIG_SERIAL_MAXNS: 2000
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  96
+Mesh spacing                       :  0.695455 (Bohr)
+Number of symmetry adapted k-points:  1
+Output printed to                  :  Al4.out
+Total number of atom types         :  1
+Total number of atoms              :  4
+Total number of electrons          :  12
+Atom type 1  (valence electrons)   :  Al 3
+Pseudopotential                    :  ../13_Al_3_1.9_1.9_pbe_n_v1.0.psp8
+Pseudocharge radii of atom type 1  :  6.95 6.95 6.95 (x, y, z dir)
+Number of atoms of type 1          :  4
+Estimated total memory usage       :  915.06 kB
+Estimated memory per processor     :  9.53 kB
+===================================================================
+                    Self Consistent Field (SCF#1)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -2.2654893086E+00        1.490E-01        0.012
+2            -2.2640985192E+00        7.602E-02        0.003
+3            -2.2639073883E+00        5.459E-02        0.004
+4            -2.2637559313E+00        4.166E-03        0.004
+5            -2.2637549370E+00        2.577E-03        0.003
+6            -2.2637546173E+00        6.069E-04        0.003
+7            -2.2637545990E+00        7.149E-05        0.001
+Total number of SCF: 7     
+
+k = [0.000, 0.000, 0.000]
+Occupation of state 9 = 0.000000000000000.
+Occupation of state 10 = 0.000000000000000.
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -2.2637545394E+00 (Ha/atom)
+Total free energy                  : -9.0550181576E+00 (Ha)
+Band structure energy              :  5.3980094899E-01 (Ha)
+Exchange correlation energy        : -4.3686370288E+00 (Ha)
+Self and correction energy         : -1.2497958871E+01 (Ha)
+Entropy*kb*T                       : -1.1257011228E-02 (Ha)
+Fermi level                        :  1.2969310664E-01 (Ha)
+RMS force                          :  1.2015493007E-02 (Ha/Bohr)
+Maximum force                      :  1.6363724544E-02 (Ha/Bohr)
+Time for force calculation         :  0.029 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  0.150 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*                Main Developers: Qimen Xu, Abhiraj Sharma                *
+*     Collaborators: J.E. Pask (LLNL), A.J. Medford (GT), E. Chow (GT)    *
+*  Acknowledgements: U.S. DOE (DE-SC0019410); U.S. NSF (1333500,1553212)  *
+***************************************************************************
+                                                                           
