@@ -1,0 +1,12 @@
+[33m
+WARNING: Pseudopotential file for atom type Ni has pspxc = 11,
+not equal to input ixc = -263267 (SCAN). Be careful with the result.
+[0m[33m
+WARNING: Pseudopotential file for atom type C has pspxc = 11,
+not equal to input ixc = -263267 (SCAN). Be careful with the result.
+[0m[33m
+WARNING: Pseudopotential file for atom type O has pspxc = 11,
+not equal to input ixc = -263267 (SCAN). Be careful with the result.
+[0m
+pSPARC->dV=1.182614088E-02, cell_measure=2.598771989E+04
+The program took 625.247 s.
