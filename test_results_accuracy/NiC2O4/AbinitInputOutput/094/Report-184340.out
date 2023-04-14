@@ -1,0 +1,2470 @@
+---------------------------------------
+Begin Slurm Prolog: Dec-14-2022 23:01:18
+Job ID:    184340
+User ID:   bzhang376
+Account:   gts-phanish6-coda20
+Job name:  Abi094
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+  ABINIT 9.6.2
+  
+ DeprecationWarning: 
+
+     The files file has been deprecated in Abinit9 and will be removed in Abinit10.
+     Use the syntax `abinit t01.abi` where t01.abi is an input with pseudopotentials e.g.
+
+            pseudos = "al.psp8, as.psp8"
+
+
+  Give name for formatted input file: 
+NiC2O4.in
+  Give name for formatted output file:
+NiC2O4.out
+  Give root name for generic input files:
+abi
+  Give root name for generic output files:
+abo
+  Give root name for generic temporary files:
+tmp
+
+.Version 9.6.2 of ABINIT 
+.(MPI version, prepared for a x86_64_linux_gnu10.3 computer) 
+
+.Copyright (C) 1998-2021 ABINIT group . 
+ ABINIT comes with ABSOLUTELY NO WARRANTY.
+ It is free software, and you are welcome to redistribute it
+ under certain conditions (GNU General Public License,
+ see ~abinit/COPYING or http://www.gnu.org/copyleft/gpl.txt).
+
+ ABINIT is a project of the Universite Catholique de Louvain,
+ Corning Inc. and other collaborators, see ~abinit/doc/developers/contributors.txt .
+ Please read https://docs.abinit.org/theory/acknowledgments for suggested
+ acknowledgments of the ABINIT effort.
+ For more information, see https://www.abinit.org .
+
+.Starting date : Wed 14 Dec 2022.
+- ( at 23h01 )
+  
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ === Build Information === 
+  Version       : 9.6.2
+  Build target  : x86_64_linux_gnu10.3
+  Build date    : 20221111
+
+ === Compiler Suite === 
+  C compiler       : gnu10.3
+  C++ compiler     : gnu10.3
+  Fortran compiler : gnu10.3
+  CFLAGS           : -g -O2 -mtune=native -march=native
+  CXXFLAGS         : -g -O2 -mtune=native -march=native
+  FCFLAGS          : -g -ffree-line-length-none -fallow-argument-mismatch     -I/usr/loc ...
+  FC_LDFLAGS       : 
+
+ === Optimizations === 
+  Debug level        : basic
+  Optimization level : standard
+  Architecture       : intel_xeon
+
+ === Multicore === 
+  Parallel build : yes
+  Parallel I/O   : 
+  openMP support : no
+  GPU support    : 
+
+ === Connectors / Fallbacks === 
+  LINALG flavor  : openblas
+  FFT flavor     : fftw3
+  HDF5           : yes
+  NetCDF         : yes
+  NetCDF Fortran : yes
+  LibXC          : yes
+  Wannier90      : no
+
+ === Experimental features === 
+  Exports             : 
+  GW double-precision : 
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Default optimizations:
+   -O2 -mtune=native -march=native
+
+
+ Optimizations for 43_ptgroups:
+   -O0
+
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ CPP options activated during the build:
+
+                    CC_GNU                   CXX_GNU                    FC_GNU
+ 
+              HAVE_ATOMPAW HAVE_FC_ALLOCATABLE_DT...             HAVE_FC_ASYNC
+ 
+         HAVE_FC_BACKTRACE  HAVE_FC_COMMAND_ARGUMENT      HAVE_FC_COMMAND_LINE
+ 
+        HAVE_FC_CONTIGUOUS           HAVE_FC_CPUTIME              HAVE_FC_EXIT
+ 
+             HAVE_FC_FLUSH             HAVE_FC_GAMMA            HAVE_FC_GETENV
+ 
+   HAVE_FC_IEEE_ARITHMETIC   HAVE_FC_IEEE_EXCEPTIONS          HAVE_FC_INT_QUAD
+ 
+             HAVE_FC_IOMSG     HAVE_FC_ISO_C_BINDING  HAVE_FC_ISO_FORTRAN_2008
+ 
+        HAVE_FC_LONG_LINES        HAVE_FC_MOVE_ALLOC  HAVE_FC_ON_THE_FLY_SHAPE
+ 
+           HAVE_FC_PRIVATE         HAVE_FC_PROTECTED           HAVE_FC_SHIFTLR
+ 
+         HAVE_FC_STREAM_IO            HAVE_FC_SYSTEM                HAVE_FFTW3
+ 
+          HAVE_FORTRAN2003                 HAVE_HDF5        HAVE_LIBPAW_ABINIT
+ 
+      HAVE_LIBTETRA_ABINIT                HAVE_LIBXC         HAVE_LINALG_AXPBY
+ 
+        HAVE_LINALG_GEMM3M                  HAVE_MPI                 HAVE_MPI2
+ 
+       HAVE_MPI_IALLGATHER       HAVE_MPI_IALLREDUCE        HAVE_MPI_IALLTOALL
+ 
+       HAVE_MPI_IALLTOALLV           HAVE_MPI_IBCAST         HAVE_MPI_IGATHERV
+ 
+        HAVE_MPI_INTEGER16               HAVE_MPI_IO HAVE_MPI_TYPE_CREATE_S...
+ 
+               HAVE_NETCDF       HAVE_NETCDF_FORTRAN             HAVE_OS_LINUX
+ 
+         HAVE_TIMER_ABINIT                                                      
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+- input  file    -> NiC2O4.in
+- output file    -> NiC2O4.out
+- root for input  files -> abi
+- root for output files -> abo
+
+-instrng: 90 lines of input have been read from file NiC2O4.in
+
+
+ Please give name of formatted atomic psp file (and finish with a newline character)
+ For atom type 1, psp file is ../Ni.pot
+
+ Please give name of formatted atomic psp file (and finish with a newline character)
+ For atom type 2, psp file is ../C.pot
+
+ Please give name of formatted atomic psp file (and finish with a newline character)
+ For atom type 3, psp file is ../O.pot
+  read the values zionpsp= 18.0 , pspcod=   8 , lmax=   2
+  read the values zionpsp=  4.0 , pspcod=   8 , lmax=   1
+  read the values zionpsp=  6.0 , pspcod=   8 , lmax=   1
+
+ inpspheads: deduce mpsang = 3, n1xccc = 0.
+
+======================================================= 
+ invars1m : enter jdtset= 0
+
+ symlatt: the Bravais lattice is mP (primitive monoclinic)
+  xred   is defined in input file
+ ingeo: takes atomic coordinates from input array xred
+
+ symlatt: the Bravais lattice is mP (primitive monoclinic)
+
+ symlatt: the Bravais lattice is mP (primitive monoclinic)
+
+--- !COMMENT
+src_file: m_symfind.F90
+src_line: 1020
+message: |
+    The Bravais lattice determined only from the primitive
+    vectors, bravais(1)=  2, is more symmetric
+    than the real one, iholohedry=  1, obtained by taking into
+    account the atomic positions. Start deforming the primitive vector set.
+...
+
+
+ symlatt: the Bravais lattice is aP (primitive triclinic)
+ symspgr: spgroup=   1  P1   (=C1^1)
+ initocc_chkneu: initialized the occupation numbers for occopt= 3
+    spin up   values:
+ getmpw sequential formula gave: 150936
+
+ ====================================================================================================
+ Searching for all possible proc distributions for this input with #CPUs<=10:
+
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ |       np_spkpt|       npfft|      npband|      bandpp|  #MPI(proc)|    WEIGHT|
+ |    1<<    8|    1<<   10|    1<<   10|    1<<   65|    1<<   10|  <=    10|
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ |           8|           1|           1|           1|           8|     7.767|
+ |           1|           2|           5|           1|          10|     6.684|
+ |           5|           2|           1|           1|          10|     6.574|
+ |           4|           2|           1|           1|           8|     5.917|
+ |           2|           1|           5|           1|          10|     5.002|
+ |           3|           3|           1|           1|           9|     4.841|
+ |           7|           1|           1|           1|           7|     4.788|
+ |           2|           5|           1|           1|          10|     4.632|
+ |           6|           1|           1|           1|           6|     4.560|
+ |           5|           1|           1|           1|           5|     4.275|
+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ Only the best possible choices for nproc are printed...
+
+ >>> Possible (best) choices for the number of bands (nband) are:
+     with: np_spkpt=8 npfft=1
+     nband=    64 using      8 CPUs =     8 MPI x  1 threads (npband=    1)
+     nband=    66 using      8 CPUs =     8 MPI x  1 threads (npband=    1)
+     nband=    65 using      8 CPUs =     8 MPI x  1 threads (npband=    1)
+ >>> The present nband value (    65) seems to be the best choice!
+ ====================================================================================================
+
+
+ For input ecut=  2.500000E+02 best grid ngfft=     144     135     160
+       max ecut=  2.713199E+02
+
+ ==== FFT mesh ====
+  FFT mesh divisions ........................   144  135  160
+  Augmented FFT divisions ...................   145  135  160
+  FFT algorithm .............................   312
+  FFT cache size ............................    16
+ getmpw: optimal value of mpw= 150947
+
+ Symmetries : space group P1 (#  1); Bravais aP (primitive triclinic)
+
+ getdim_nloc : deduce lmnmax  =  18, lnmax  =   6,
+                      lmnmaxso=  18, lnmaxso=   6.
+memory: analysis of memory needs
+================================================================================
+ Values of the parameters that define the memory need of the present run
+     intxc =       0    ionmov =       0      iscf =       7    lmnmax =       6
+     lnmax =       6     mgfft =     160  mpssoang =       3    mqgrid =    6609
+     natom =      14  nloc_mem =       1    nspden =       2   nspinor =       1
+    nsppol =       2      nsym =       1    n1xccc =       0    ntypat =       3
+    occopt =       3   xclevel =       2
+-    mband =          65        mffmem =           1         mkmem =           1
+       mpw =      150947          nfft =     3110400          nkpt =           4
+================================================================================
+P This job should need less than                    1823.650 Mbytes of memory.
+  Rough estimation (10% accuracy) of disk space for files :
+_ WF disk file :   1197.702 Mbytes ; DEN or POT disk file :     47.463 Mbytes.
+================================================================================
+
+ Biggest array : f_fftgr(disk), with    759.3770 MBytes.
+ memana : allocated an array of    759.377 Mbytes, for testing purposes.
+ memana: allocated    1823.650Mbytes, for testing purposes. 
+ The job will continue.
+--------------------------------------------------------------------------------
+------------- Echo of variables that govern the present computation ------------
+--------------------------------------------------------------------------------
+-
+- outvars: echo of selected default values                                      
+-   iomode0 =  0 , fftalg0 =312 , wfoptalg0 =  0
+-
+- outvars: echo of global parameters not present in the input file              
+-  max_nthreads =    0
+-
+ -outvars: echo values of preprocessed input variables --------
+ 
+ These variables are accessible in NetCDF format (abo_OUT.nc)
+
+            acell      9.4000000000E-01  9.4000000000E-01  9.4000000000E-01 Bohr
+              amu      5.86900000E+01  1.20110000E+01  1.59994000E+01
+        autoparal           1
+           diemac      1.00000000E+00
+           diemix      4.00000000E-01
+             ecut      2.50000000E+02 Hartree
+           ecutsm      5.00000000E-01 Hartree
+-          fftalg         312
+              ixc     -263267
+              kpt      2.50000000E-01  2.50000000E-01  2.50000000E-01
+                      -2.50000000E-01  2.50000000E-01  2.50000000E-01
+                       2.50000000E-01 -2.50000000E-01  2.50000000E-01
+                      -2.50000000E-01 -2.50000000E-01  2.50000000E-01
+         kptrlatt        2    0    0      0    2    0      0    0    2
+          kptrlen      1.80716943E+01
+P           mkmem           1
+            natom          14
+            nband          65
+            ngfft         144     135     160
+             nkpt           4
+-        np_spkpt           8
+           nspden           2
+           nsppol           2
+            nstep          60
+             nsym           1
+           ntypat           3
+              occ      1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000
+           occopt           3
+           prtden           0
+           prteig           0
+          prtkden           1
+            prtwf           0
+            rprim      0.0000000000E+00  1.0137047334E+01  0.0000000000E+00
+                       9.6126033568E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00 -5.7455806104E+00 -9.8776109362E+00
+           shiftk      5.00000000E-01  5.00000000E-01  5.00000000E-01
+          spgroup           1
+           spinat      0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+           toldfe      1.00000000E-06 Hartree
+           tsmear      1.00000000E-03 Hartree
+            typat      1  1  2  2  2  2  3  3  3  3  3  3  3  3
+          usekden           1
+              wtk        0.25000    0.25000    0.25000    0.25000
+           xangst      2.3907821875E+00 -1.4290022453E+00 -2.4566930939E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       2.9668985343E+00  1.1195575430E+00 -2.0185615342E+00
+                       5.7611634684E-01  2.4938769586E+00 -4.3813155975E-01
+                       1.8146658406E+00  1.0648747133E+00 -2.8948246537E+00
+                       4.2054480281E+00 -3.0944470233E-01 -4.4752546281E+00
+                       1.3988657841E+00  2.1004969827E+00 -3.3340175048E+00
+                       3.7896479716E+00 -1.3450669718E+00 -4.0360617769E+00
+                       3.3826985908E+00  8.3935273528E-02 -1.5793686830E+00
+                       9.9191640332E-01  3.5294992280E+00 -8.7732441092E-01
+                       3.4220508656E+00  2.1925805700E+00 -1.7996701795E+00
+                       1.0312686781E+00  1.4208539315E+00 -6.5702291442E-01
+                       1.3595135093E+00 -8.1483137821E-03 -3.1137160083E+00
+                       3.7502956968E+00  7.6357832473E-01 -4.2563632734E+00
+            xcart      4.5179235777E+00 -2.7004228869E+00 -4.6424771400E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       5.6066256939E+00  2.1156571462E+00 -3.8145284819E+00
+                       1.0887021162E+00  4.7127444608E+00 -8.2794865811E-01
+                       3.4292214615E+00  2.0123215739E+00 -5.4704257981E+00
+                       7.9471450391E+00 -5.8476574067E-01 -8.4570056220E+00
+                       2.6434732287E+00  3.9693640403E+00 -6.3003800064E+00
+                       7.1613968064E+00 -2.5418082070E+00 -7.6270514137E+00
+                       6.3923739267E+00  1.5861467986E-01 -2.9845742737E+00
+                       1.8744503490E+00  6.6697869272E+00 -1.6579028663E+00
+                       6.4667389488E+00  4.1433768016E+00 -3.4008837687E+00
+                       1.9488153711E+00  2.6850248054E+00 -1.2415933713E+00
+                       2.5691082066E+00 -1.5398081493E-02 -5.8840705113E+00
+                       7.0870317843E+00  1.4429539147E+00 -8.0433609088E+00
+             xred      2.7020217699E-17  5.0000000000E-01  5.0000000000E-01
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       4.5488100000E-01  6.2048700000E-01  4.1082900000E-01
+                       5.4511900000E-01  1.2048700000E-01  8.9171000000E-02
+                       5.4511900000E-01  3.7951300000E-01  5.8917100000E-01
+                       4.5488100000E-01  8.7951300000E-01  9.1082900000E-01
+                       8.0116400000E-01  2.9255400000E-01  6.7855800000E-01
+                       1.9883600000E-01  7.9255400000E-01  8.2144200000E-01
+                       1.9883600000E-01  7.0744600000E-01  3.2144200000E-01
+                       8.0116400000E-01  2.0744600000E-01  1.7855800000E-01
+                       6.4242900000E-01  7.1567600000E-01  3.6627900000E-01
+                       3.5757100000E-01  2.1567600000E-01  1.3372100000E-01
+                       3.5757100000E-01  2.8432400000E-01  6.3372100000E-01
+                       6.4242900000E-01  7.8432400000E-01  8.6627900000E-01
+            znucl       28.00000    6.00000    8.00000
+
+================================================================================
+
+ chkinp: Checking input parameters for consistency.
+ DATA TYPE INFORMATION: 
+ REAL:      Data type name: REAL(DP) 
+            Kind value:      8
+            Precision:      15
+            Smallest nonnegligible quantity relative to 1: 0.22204460E-015
+            Smallest positive number:                      0.22250739E-307
+            Largest representable number:                  0.17976931E+309
+ INTEGER:   Data type name: INTEGER(default) 
+            Kind value: 4
+            Bit size:   32
+            Largest representable number: 2147483647
+ LOGICAL:   Data type name: LOGICAL 
+            Kind value: 4
+ CHARACTER: Data type name: CHARACTER             Kind value: 1
+
+  ==== OpenMP parallelism is OFF ====
+ 
+  ==== Using MPI-2 specifications ==== 
+  MPI-IO support is ON
+  xmpi_tag_ub ................    268435455
+  xmpi_bsize_ch ..............            1
+  xmpi_bsize_int .............            4
+  xmpi_bsize_sp ..............            4
+  xmpi_bsize_dp ..............            8
+  xmpi_bsize_spc .............            8
+  xmpi_bsize_dpc .............           16
+  xmpio_bsize_frm ............            4
+  xmpi_address_kind ..........            8
+  xmpi_offset_kind ...........            8
+  MPI_WTICK ..................    1.0000000000000001E-009
+
+================================================================================
+== DATASET  1 ==================================================================
+-   mpi_nproc: 8, omp_nthreads: -1 (-1 if OMP is not activated)
+
+
+--- !COMMENT
+src_file: m_xgScalapack.F90
+src_line: 236
+message: |
+    xgScalapack in auto mode
+...
+
+
+ getdim_nloc : deduce lmnmax  =  18, lnmax  =   6,
+                      lmnmaxso=  18, lnmaxso=   6.
+ SCAN exchange of Sun, Ruzsinszky, and Perdew
+ J. Sun, A. Ruzsinszky, and J. P. Perdew, Phys. Rev. Lett. 115, 036402 (2015)
+ SCAN correlation of Sun, Ruzsinszky, and Perdew
+ J. Sun, A. Ruzsinszky, and J. P. Perdew, Phys. Rev. Lett. 115, 036402 (2015)
+
+ Unit cell volume ucvol=  7.9944386E+02 bohr^3
+ Angles (23,13,12)=  9.00000000E+01  1.20185586E+02  9.00000000E+01 degrees
+
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft= 144 135 160
+         ecut(hartree)=    250.000   => boxcut(ratio)=   2.08353
+- pspini: atom type   1  psp file is ../Ni.pot
+- pspatm: opening atomic psp file    ../Ni.pot
+- Ni    ONCVPSP-4.0.1  r_core=   2.18101   2.18101   2.24723
+- 28.00000  18.00000    200312                znucl, zion, pspdat
+    8   11    2    4       600   0.00000      pspcod,pspxc,lmax,lloc,mmax,r2well
+
+--- !WARNING
+src_file: m_pspini.F90
+src_line: 1039
+message: |
+    Pseudopotential file pspxc: 11, not equal to input ixc: -263267.
+    These parameters must agree to get the same xc in ABINIT code as in psp construction.
+    Action: check psp design or input file.
+    Assume experienced user. Execution will continue.
+...
+
+    5.99000000000000    0.00000000000000    0.00000000000000   rchrg,fchrg,qchrg
+     nproj     2     2     2
+     extension_switch     1
+  valence charge integrates to:    17.968162128216466     
+  pspatm : epsatm=   38.47316822
+         --- l  ekb(1:nproj) -->
+             0   -3.440917   -0.196078
+             1   -5.406223   -1.725842
+             2   -7.274254   -2.503385
+ pspatm: atomic psp has been read  and splines computed
+
+- pspini: atom type   2  psp file is ../C.pot
+- pspatm: opening atomic psp file    ../C.pot
+- C     ONCVPSP-4.0.1  r_core=   1.42727   1.38521
+-  6.00000   4.00000    200312                znucl, zion, pspdat
+    8   11    1    4       600   0.00000      pspcod,pspxc,lmax,lloc,mmax,r2well
+
+--- !WARNING
+src_file: m_pspini.F90
+src_line: 1039
+message: |
+    Pseudopotential file pspxc: 11, not equal to input ixc: -263267.
+    These parameters must agree to get the same xc in ABINIT code as in psp construction.
+    Action: check psp design or input file.
+    Assume experienced user. Execution will continue.
+...
+
+    5.99000000000000    0.00000000000000    0.00000000000000   rchrg,fchrg,qchrg
+     nproj     2     2
+     extension_switch     1
+  valence charge integrates to:    3.9929454931231523     
+  pspatm : epsatm=    2.26998732
+         --- l  ekb(1:nproj) -->
+             0    7.571912    0.889574
+             1   -3.169338   -0.856835
+ pspatm: atomic psp has been read  and splines computed
+
+- pspini: atom type   3  psp file is ../O.pot
+- pspatm: opening atomic psp file    ../O.pot
+- O     ONCVPSP-4.0.1  r_core=   1.28926   1.47061
+-  8.00000   6.00000    200312                znucl, zion, pspdat
+    8   11    1    4       600   0.00000      pspcod,pspxc,lmax,lloc,mmax,r2well
+
+--- !WARNING
+src_file: m_pspini.F90
+src_line: 1039
+message: |
+    Pseudopotential file pspxc: 11, not equal to input ixc: -263267.
+    These parameters must agree to get the same xc in ABINIT code as in psp construction.
+    Action: check psp design or input file.
+    Assume experienced user. Execution will continue.
+...
+
+    5.99000000000000    0.00000000000000    0.00000000000000   rchrg,fchrg,qchrg
+     nproj     2     2
+     extension_switch     1
+  valence charge integrates to:    5.9990318584788609     
+  pspatm : epsatm=    3.44365635
+         --- l  ekb(1:nproj) -->
+             0    9.802940    1.339963
+             1   -3.661294   -1.085684
+ pspatm: atomic psp has been read  and splines computed
+
+   1.13575537E+04                                ecore*ucvol(ha*bohr**3)
+ ==== Info on pseudopotentials ====
+  Norm-conserving pseudopotentials
+  Number of pseudopotentials ..    3
+  Number of types of atoms   ..    3
+  Scalar calculation (no spin-orbit term)
+  Nonlocal part applied using Legendre polynomials
+  Max number of non-local projectors over l and type   2
+  Highest angular momentum +1 .......   3
+  Max number of (l,n)   components ..   6
+  Max number of (l,m,n) components ..   6
+
+ Info on the Q-grid used for form factors in spline form: 
+   Number of q-points for radial functions ffspl ..   6609
+   Number of q-points for vlspl ...................   6609
+   vloc is computed in Reciprocal Space
+   model core charge treated in real-space
+
+  XC functional for type 1 is 11
+  Pseudo valence available: yes
+  XC functional for type 2 is 11
+  Pseudo valence available: yes
+  XC functional for type 3 is 11
+  Pseudo valence available: yes
+
+ newkpt: spin channel isppol2 =     1
+ wfconv:    65 bands initialized randomly with npw=150947, for ikpt=     1
+ newkpt: spin channel isppol2 =     2
+_setup2: Arith. and geom. avg. npw (full set) are  150943.500  150943.500
+ initro: for itypat=  1, take pseudo charge density from pp file
+ initro: for itypat=  2, take pseudo charge density from pp file
+ initro: for itypat=  3, take pseudo charge density from pp file
+
+================================================================================
+
+ getcut: wavevector=  0.0000  0.0000  0.0000  ngfft= 144 135 160
+         ecut(hartree)=    250.000   => boxcut(ratio)=   2.08353
+
+ 1/G**2 cut-off applied in the following step : cutoff-mode = CRYSTAL
+
+ 1/G**2 cut-off applied in the following step : cutoff-mode = CRYSTAL
+
+ 1/G**2 cut-off applied in the following step : cutoff-mode = CRYSTAL
+
+ ITER STEP NUMBER     1
+ Max number of non-self-consistent loops: 2
+ newocc: new Fermi energy is       0.192502 , with nelect=    100.000000, Number of bisection calls: 48
+ mkrho: echo density (plane-wave part only)
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0244E+00  at reduced coord.    0.0278    0.4519    0.5438
+      Minimum=    2.6836E-03  at reduced coord.    0.0347    0.0074    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.5299E+00  at reduced coord.    0.9375    0.5037    0.5000
+      Minimum=    1.2672E-03  at reduced coord.    0.0417    0.0074    0.5000
+   Integrated=    5.0557E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.4982E+00  at reduced coord.    0.0278    0.4519    0.5438
+      Minimum=    1.4142E-03  at reduced coord.    0.0347    0.0000    0.5000
+   Integrated=    4.9443E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    2.1022E-01  at reduced coord.    0.9306    0.5481    0.4750
+      Minimum=   -1.0674E-02  at reduced coord.    0.0069    0.1111    0.0188
+   Integrated=    1.1147E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    1.2432E-01  at reduced coord.    0.1111    0.4222    0.5438
+      Minimum=   -7.7819E-02  at reduced coord.    0.1181    0.0444    0.3563
+ mkrho: echo density (plane-wave part only)
+ Total kinetic energy density [Ha/Bohr^3]
+      Maximum=    1.9928E+01  at reduced coord.    0.0069    0.5111    0.5125
+      Minimum=    2.0730E-03  at reduced coord.    0.0208    0.5037    0.9938
+   Integrated=    2.4502E+02
+ Spin up density      [Ha/Bohr^3]
+      Maximum=    1.0052E+01  at reduced coord.    0.0069    0.5111    0.5125
+      Minimum=    9.9778E-04  at reduced coord.    0.0278    0.5037    0.9938
+   Integrated=    1.2586E+02
+ Spin down density    [Ha/Bohr^3]
+      Maximum=    9.8887E+00  at reduced coord.    0.9931    0.4963    0.4938
+      Minimum=    1.0741E-03  at reduced coord.    0.0208    0.5037    0.9938
+   Integrated=    1.1916E+02
+ Magnetization (spin up - spin down) [Ha/Bohr^3]
+      Maximum=    7.7599E-01  at reduced coord.    0.9653    0.5185    0.5188
+      Minimum=   -2.2351E-03  at reduced coord.    0.9931    0.8296    0.9813
+   Integrated=    6.7069E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    1.0333E-01  at reduced coord.    0.8403    0.6074    0.4438
+      Minimum=   -5.4736E-02  at reduced coord.    0.1042    0.5037    0.9250
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0244E+00  at reduced coord.    0.0278    0.4519    0.5438
+      Minimum=    2.6836E-03  at reduced coord.    0.0347    0.0074    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.5299E+00  at reduced coord.    0.9375    0.5037    0.5000
+      Minimum=    1.2672E-03  at reduced coord.    0.0417    0.0074    0.5000
+   Integrated=    5.0557E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.4982E+00  at reduced coord.    0.0278    0.4519    0.5438
+      Minimum=    1.4142E-03  at reduced coord.    0.0347    0.0000    0.5000
+   Integrated=    4.9443E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    2.1022E-01  at reduced coord.    0.9306    0.5481    0.4750
+      Minimum=   -1.0674E-02  at reduced coord.    0.0069    0.1111    0.0188
+   Integrated=    1.1147E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    1.2432E-01  at reduced coord.    0.1111    0.4222    0.5438
+      Minimum=   -7.7819E-02  at reduced coord.    0.1181    0.0444    0.3563
+
+ 1/G**2 cut-off applied in the following step : cutoff-mode = CRYSTAL
+ ETOT  1  -457.02343543871    -4.57E+02 4.29E-01 1.60E+05 1.115
+ scprqt: <Vxc>= -4.4148334E-01 hartree
+
+ Simple mixing update:
+  residual square of the potential:    25665.834657036972
+{SCF_istep: 1 , Vnl|psi>: 650 , wall_time: ' 06:35 [minutes] '} <<< TIME
+
+ ITER STEP NUMBER     2
+ Max number of non-self-consistent loops: 2
+ newocc: new Fermi energy is       0.154054 , with nelect=    100.000000, Number of bisection calls: 48
+ mkrho: echo density (plane-wave part only)
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0740E+00  at reduced coord.    0.0208    0.0296    0.9625
+      Minimum=    2.1214E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.5478E+00  at reduced coord.    0.0486    0.9926    0.9813
+      Minimum=    9.8829E-04  at reduced coord.    0.0000    0.4963    0.0000
+   Integrated=    5.1097E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5348E+00  at reduced coord.    0.0208    0.0296    0.9625
+      Minimum=    1.1331E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    4.8903E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    2.3505E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -2.3438E-03  at reduced coord.    0.9931    0.5037    0.4813
+   Integrated=    2.1942E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    1.2554E-01  at reduced coord.    0.1111    0.4370    0.5438
+      Minimum=   -6.8948E-02  at reduced coord.    0.9931    0.0296    0.5188
+ mkrho: echo density (plane-wave part only)
+ Total kinetic energy density [Ha/Bohr^3]
+      Maximum=    2.0246E+01  at reduced coord.    0.9861    0.0148    0.9813
+      Minimum=    1.6773E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    2.4350E+02
+ Spin up density      [Ha/Bohr^3]
+      Maximum=    1.0267E+01  at reduced coord.    0.9931    0.0074    0.9750
+      Minimum=    7.9658E-04  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.2670E+02
+ Spin down density    [Ha/Bohr^3]
+      Maximum=    1.0003E+01  at reduced coord.    0.9931    0.0148    0.9875
+      Minimum=    8.8075E-04  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.1679E+02
+ Magnetization (spin up - spin down) [Ha/Bohr^3]
+      Maximum=    1.0959E+00  at reduced coord.    0.9722    0.5185    0.5250
+      Minimum=   -1.4159E-01  at reduced coord.    0.0694    0.4519    0.5250
+   Integrated=    9.9073E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    1.5334E-01  at reduced coord.    0.8194    0.6074    0.4313
+      Minimum=   -5.2300E-02  at reduced coord.    0.9792    0.4741    0.0000
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0740E+00  at reduced coord.    0.0208    0.0296    0.9625
+      Minimum=    2.1214E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.5478E+00  at reduced coord.    0.0486    0.9926    0.9813
+      Minimum=    9.8829E-04  at reduced coord.    0.0000    0.4963    0.0000
+   Integrated=    5.1097E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5348E+00  at reduced coord.    0.0208    0.0296    0.9625
+      Minimum=    1.1331E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    4.8903E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    2.3505E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -2.3438E-03  at reduced coord.    0.9931    0.5037    0.4813
+   Integrated=    2.1942E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    1.2554E-01  at reduced coord.    0.1111    0.4370    0.5438
+      Minimum=   -6.8948E-02  at reduced coord.    0.9931    0.0296    0.5188
+ ETOT  2  -458.43249074564    -1.41E+00 1.99E-02 2.50E+05 2.194
+ scprqt: <Vxc>= -4.4472026E-01 hartree
+
+ Pulay update with  1 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.418      0.582
+{SCF_istep: 2 , Vnl|psi>: 650 , wall_time: ' 06:23 [minutes] '} <<< TIME
+
+ ITER STEP NUMBER     3
+ newocc: new Fermi energy is       0.196437 , with nelect=    100.000000, Number of bisection calls: 50
+ mkrho: echo density (plane-wave part only)
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0226E+00  at reduced coord.    0.0069    0.4370    0.5125
+      Minimum=    2.0782E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.5392E+00  at reduced coord.    0.9375    0.5333    0.4750
+      Minimum=    9.8032E-04  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    5.1469E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5096E+00  at reduced coord.    0.0278    0.4741    0.4688
+      Minimum=    1.0979E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    4.8531E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    4.7063E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -3.3729E-03  at reduced coord.    0.0000    0.4963    0.4875
+   Integrated=    2.9383E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    2.8344E-01  at reduced coord.    0.1111    0.4296    0.5438
+      Minimum=   -5.7152E-02  at reduced coord.    0.9722    0.4667    0.0188
+ mkrho: echo density (plane-wave part only)
+ Total kinetic energy density [Ha/Bohr^3]
+      Maximum=    1.9665E+01  at reduced coord.    0.0000    0.5111    0.4875
+      Minimum=    1.6593E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    2.4011E+02
+ Spin up density      [Ha/Bohr^3]
+      Maximum=    1.0116E+01  at reduced coord.    0.9931    0.5037    0.4750
+      Minimum=    7.9369E-04  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.2733E+02
+ Spin down density    [Ha/Bohr^3]
+      Maximum=    9.7538E+00  at reduced coord.    0.0000    0.4963    0.5000
+      Minimum=    8.6564E-04  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.1278E+02
+ Magnetization (spin up - spin down) [Ha/Bohr^3]
+      Maximum=    2.0386E+00  at reduced coord.    0.9722    0.5259    0.5250
+      Minimum=   -1.4636E-01  at reduced coord.    0.9236    0.5481    0.4688
+   Integrated=    1.4547E+01
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    2.4847E-01  at reduced coord.    0.8333    0.6000    0.4375
+      Minimum=   -4.6464E-02  at reduced coord.    0.9583    0.4667    0.0250
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0226E+00  at reduced coord.    0.0069    0.4370    0.5125
+      Minimum=    2.0782E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.5392E+00  at reduced coord.    0.9375    0.5333    0.4750
+      Minimum=    9.8032E-04  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    5.1469E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5096E+00  at reduced coord.    0.0278    0.4741    0.4688
+      Minimum=    1.0979E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    4.8531E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    4.7063E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -3.3729E-03  at reduced coord.    0.0000    0.4963    0.4875
+   Integrated=    2.9383E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    2.8344E-01  at reduced coord.    0.1111    0.4296    0.5438
+      Minimum=   -5.7152E-02  at reduced coord.    0.9722    0.4667    0.0188
+ ETOT  3  -458.93772776083    -5.05E-01 1.00E-02 1.15E+05 2.938
+ scprqt: <Vxc>= -4.4503314E-01 hartree
+
+ Pulay update with  2 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.424      0.128      0.448
+{SCF_istep: 3 , Vnl|psi>: 309 , wall_time: ' 03:13 [minutes] '} <<< TIME
+
+ ITER STEP NUMBER     4
+ newocc: new Fermi energy is       0.188476 , with nelect=    100.000000, Number of bisection calls: 49
+ mkrho: echo density (plane-wave part only)
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0506E+00  at reduced coord.    0.0278    0.0296    0.9688
+      Minimum=    2.0996E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.5576E+00  at reduced coord.    0.0625    0.0296    0.0250
+      Minimum=    9.9585E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    5.1571E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5265E+00  at reduced coord.    0.0278    0.0296    0.9688
+      Minimum=    1.1037E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    4.8429E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    4.6235E-01  at reduced coord.    0.9236    0.9556    0.9688
+      Minimum=   -7.3583E-03  at reduced coord.    0.9792    0.9778    0.0313
+   Integrated=    3.1425E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    2.9987E-01  at reduced coord.    0.9306    0.4074    0.3938
+      Minimum=   -5.1643E-02  at reduced coord.    0.9722    0.0296    0.5188
+ mkrho: echo density (plane-wave part only)
+ Total kinetic energy density [Ha/Bohr^3]
+      Maximum=    1.9837E+01  at reduced coord.    0.9931    0.0074    0.9813
+      Minimum=    1.6755E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    2.4092E+02
+ Spin up density      [Ha/Bohr^3]
+      Maximum=    1.0209E+01  at reduced coord.    0.9931    0.9926    0.9750
+      Minimum=    8.0434E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.2806E+02
+ Spin down density    [Ha/Bohr^3]
+      Maximum=    9.8253E+00  at reduced coord.    0.0000    0.0000    0.0000
+      Minimum=    8.7112E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.1286E+02
+ Magnetization (spin up - spin down) [Ha/Bohr^3]
+      Maximum=    2.0851E+00  at reduced coord.    0.9792    0.5259    0.5313
+      Minimum=   -2.4684E-01  at reduced coord.    0.0417    0.9481    0.0625
+   Integrated=    1.5197E+01
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    2.5943E-01  at reduced coord.    0.1736    0.1037    0.0688
+      Minimum=   -4.2121E-02  at reduced coord.    0.9653    0.4815    0.0125
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0506E+00  at reduced coord.    0.0278    0.0296    0.9688
+      Minimum=    2.0996E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.5576E+00  at reduced coord.    0.0625    0.0296    0.0250
+      Minimum=    9.9585E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    5.1571E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5265E+00  at reduced coord.    0.0278    0.0296    0.9688
+      Minimum=    1.1037E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    4.8429E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    4.6235E-01  at reduced coord.    0.9236    0.9556    0.9688
+      Minimum=   -7.3583E-03  at reduced coord.    0.9792    0.9778    0.0313
+   Integrated=    3.1425E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    2.9987E-01  at reduced coord.    0.9306    0.4074    0.3938
+      Minimum=   -5.1643E-02  at reduced coord.    0.9722    0.0296    0.5188
+ ETOT  4  -458.91813928819     1.96E-02 4.34E-03 1.03E+05 3.142
+ scprqt: <Vxc>= -4.4485125E-01 hartree
+
+ Pulay update with  3 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.438      0.105      0.419E-01  0.416
+{SCF_istep: 4 , Vnl|psi>: 319 , wall_time: ' 03:18 [minutes] '} <<< TIME
+
+ ITER STEP NUMBER     5
+ newocc: new Fermi energy is       0.192471 , with nelect=    100.000000, Number of bisection calls: 50
+ mkrho: echo density (plane-wave part only)
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0567E+00  at reduced coord.    0.9306    0.4815    0.4750
+      Minimum=    2.1040E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.5851E+00  at reduced coord.    0.9375    0.5333    0.4750
+      Minimum=    1.0009E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    5.1428E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5314E+00  at reduced coord.    0.0278    0.4741    0.4688
+      Minimum=    1.1031E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    4.8572E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    5.0800E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -1.0151E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    2.8556E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    3.0210E-01  at reduced coord.    0.9306    0.0889    0.8938
+      Minimum=   -5.0272E-02  at reduced coord.    0.9792    0.0222    0.5125
+ mkrho: echo density (plane-wave part only)
+ Total kinetic energy density [Ha/Bohr^3]
+      Maximum=    1.9962E+01  at reduced coord.    0.9861    0.4889    0.4813
+      Minimum=    1.6770E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    2.4091E+02
+ Spin up density      [Ha/Bohr^3]
+      Maximum=    1.0242E+01  at reduced coord.    0.0000    0.5259    0.4938
+      Minimum=    8.0636E-04  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.2744E+02
+ Spin down density    [Ha/Bohr^3]
+      Maximum=    9.8514E+00  at reduced coord.    0.9931    0.4963    0.4875
+      Minimum=    8.7066E-04  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.1347E+02
+ Magnetization (spin up - spin down) [Ha/Bohr^3]
+      Maximum=    1.9244E+00  at reduced coord.    0.9653    0.5185    0.5250
+      Minimum=   -2.2551E-01  at reduced coord.    0.0417    0.9481    0.0625
+   Integrated=    1.3974E+01
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    2.7228E-01  at reduced coord.    0.8264    0.6000    0.4313
+      Minimum=   -4.0434E-02  at reduced coord.    0.9653    0.0148    0.5125
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0567E+00  at reduced coord.    0.9306    0.4815    0.4750
+      Minimum=    2.1040E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.5851E+00  at reduced coord.    0.9375    0.5333    0.4750
+      Minimum=    1.0009E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    5.1428E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5314E+00  at reduced coord.    0.0278    0.4741    0.4688
+      Minimum=    1.1031E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    4.8572E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    5.0800E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -1.0151E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    2.8556E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    3.0210E-01  at reduced coord.    0.9306    0.0889    0.8938
+      Minimum=   -5.0272E-02  at reduced coord.    0.9792    0.0222    0.5125
+ ETOT  5  -458.85283463204     6.53E-02 1.54E-03 1.10E+05 2.856
+ scprqt: <Vxc>= -4.4486735E-01 hartree
+
+ Pulay update with  4 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.924       1.07      -1.14     -0.165      0.312
+{SCF_istep: 5 , Vnl|psi>: 319 , wall_time: ' 03:18 [minutes] '} <<< TIME
+
+ ITER STEP NUMBER     6
+ newocc: new Fermi energy is       0.196788 , with nelect=    100.000000, Number of bisection calls: 27
+ mkrho: echo density (plane-wave part only)
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0566E+00  at reduced coord.    0.0278    0.0296    0.9688
+      Minimum=    2.1407E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.5960E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0286E-03  at reduced coord.    0.0000    0.4963    0.0000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5317E+00  at reduced coord.    0.0000    0.9333    0.9938
+      Minimum=    1.1121E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    5.7799E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -1.3872E-02  at reduced coord.    0.9792    0.9778    0.0313
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.0710E-01  at reduced coord.    0.9306    0.4074    0.3938
+      Minimum=   -3.9933E-02  at reduced coord.    0.9653    0.0370    0.5188
+ mkrho: echo density (plane-wave part only)
+ Total kinetic energy density [Ha/Bohr^3]
+      Maximum=    1.9719E+01  at reduced coord.    0.0000    0.9926    0.9875
+      Minimum=    1.6942E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    2.4062E+02
+ Spin up density      [Ha/Bohr^3]
+      Maximum=    1.0237E+01  at reduced coord.    0.0000    0.9704    0.0000
+      Minimum=    8.2110E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.3017E+02
+ Spin down density    [Ha/Bohr^3]
+      Maximum=    9.8352E+00  at reduced coord.    0.0000    0.0000    0.0000
+      Minimum=    8.7304E-04  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.1045E+02
+ Magnetization (spin up - spin down) [Ha/Bohr^3]
+      Maximum=    2.7568E+00  at reduced coord.    0.9722    0.5185    0.5313
+      Minimum=   -1.5691E-01  at reduced coord.    0.0417    0.9481    0.0625
+   Integrated=    1.9725E+01
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    3.0327E-01  at reduced coord.    0.1111    0.8593    0.1625
+      Minimum=   -3.2830E-02  at reduced coord.    0.9514    0.0296    0.5188
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0566E+00  at reduced coord.    0.0278    0.0296    0.9688
+      Minimum=    2.1407E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.5960E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0286E-03  at reduced coord.    0.0000    0.4963    0.0000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5317E+00  at reduced coord.    0.0000    0.9333    0.9938
+      Minimum=    1.1121E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    5.7799E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -1.3872E-02  at reduced coord.    0.9792    0.9778    0.0313
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.0710E-01  at reduced coord.    0.9306    0.4074    0.3938
+      Minimum=   -3.9933E-02  at reduced coord.    0.9653    0.0370    0.5188
+ ETOT  6  -459.02965364585    -1.77E-01 3.34E-03 4.86E+04 4.000
+ scprqt: <Vxc>= -4.4491135E-01 hartree
+
+ Pulay update with  5 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=  0.678      0.471      0.387     -0.712     -0.817E-01
+{SCF_istep: 6 , Vnl|psi>: 319 , wall_time: ' 03:18 [minutes] '} <<< TIME
+
+ ITER STEP NUMBER     7
+ newocc: new Fermi energy is       0.196634 , with nelect=    100.000000, Number of bisection calls: 20
+ mkrho: echo density (plane-wave part only)
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0622E+00  at reduced coord.    0.0278    0.0296    0.9688
+      Minimum=    2.1541E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.5993E+00  at reduced coord.    0.9375    0.5333    0.4750
+      Minimum=    1.0386E-03  at reduced coord.    0.0000    0.4963    0.0000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5354E+00  at reduced coord.    0.0000    0.9333    0.9938
+      Minimum=    1.1155E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    5.9166E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -1.5801E-02  at reduced coord.    0.9792    0.9778    0.0313
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.1511E-01  at reduced coord.    0.9236    0.4074    0.3875
+      Minimum=   -3.6363E-02  at reduced coord.    0.9583    0.0444    0.5188
+ mkrho: echo density (plane-wave part only)
+ Total kinetic energy density [Ha/Bohr^3]
+      Maximum=    1.9721E+01  at reduced coord.    0.9861    0.9926    0.9875
+      Minimum=    1.6994E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    2.4077E+02
+ Spin up density      [Ha/Bohr^3]
+      Maximum=    1.0262E+01  at reduced coord.    0.9931    0.9926    0.9750
+      Minimum=    8.2530E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.3030E+02
+ Spin down density    [Ha/Bohr^3]
+      Maximum=    9.8510E+00  at reduced coord.    0.0000    0.0000    0.0000
+      Minimum=    8.7392E-04  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.1047E+02
+ Magnetization (spin up - spin down) [Ha/Bohr^3]
+      Maximum=    2.7932E+00  at reduced coord.    0.9722    0.5185    0.5313
+      Minimum=   -1.7256E-01  at reduced coord.    0.0000    0.0000    0.0000
+   Integrated=    1.9831E+01
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    3.0581E-01  at reduced coord.    0.1111    0.8593    0.1625
+      Minimum=   -2.9786E-02  at reduced coord.    0.9861    0.0296    0.5188
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0622E+00  at reduced coord.    0.0278    0.0296    0.9688
+      Minimum=    2.1541E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.5993E+00  at reduced coord.    0.9375    0.5333    0.4750
+      Minimum=    1.0386E-03  at reduced coord.    0.0000    0.4963    0.0000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5354E+00  at reduced coord.    0.0000    0.9333    0.9938
+      Minimum=    1.1155E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    5.9166E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -1.5801E-02  at reduced coord.    0.9792    0.9778    0.0313
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.1511E-01  at reduced coord.    0.9236    0.4074    0.3875
+      Minimum=   -3.6363E-02  at reduced coord.    0.9583    0.0444    0.5188
+ ETOT  7  -459.03805507224    -8.40E-03 1.06E-03 3.42E+04 4.000
+ scprqt: <Vxc>= -4.4486940E-01 hartree
+
+ Pulay update with  6 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   2.95      -2.14      0.317      0.346     -0.413
+{SCF_istep: 7 , Vnl|psi>: 317 , wall_time: ' 03:17 [minutes] '} <<< TIME
+
+ ITER STEP NUMBER     8
+ newocc: new Fermi energy is       0.204250 , with nelect=    100.000000, Number of bisection calls: 8
+ mkrho: echo density (plane-wave part only)
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0688E+00  at reduced coord.    0.9306    0.0222    0.9750
+      Minimum=    2.1902E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6102E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0685E-03  at reduced coord.    0.0000    0.4963    0.0000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5413E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    1.1217E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.3485E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -2.2597E-02  at reduced coord.    0.9792    0.9778    0.0313
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.5256E-01  at reduced coord.    0.9236    0.4074    0.3875
+      Minimum=   -2.8176E-02  at reduced coord.    0.8611    0.9852    0.6500
+ mkrho: echo density (plane-wave part only)
+ Total kinetic energy density [Ha/Bohr^3]
+      Maximum=    1.9707E+01  at reduced coord.    0.0000    0.9926    0.9875
+      Minimum=    1.7144E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    2.4067E+02
+ Spin up density      [Ha/Bohr^3]
+      Maximum=    1.0278E+01  at reduced coord.    0.0069    0.9704    0.0000
+      Minimum=    8.3926E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.3052E+02
+ Spin down density    [Ha/Bohr^3]
+      Maximum=    9.8802E+00  at reduced coord.    0.0000    0.0000    0.0000
+      Minimum=    8.7509E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.1015E+02
+ Magnetization (spin up - spin down) [Ha/Bohr^3]
+      Maximum=    2.9276E+00  at reduced coord.    0.9722    0.5185    0.5313
+      Minimum=   -2.4285E-01  at reduced coord.    0.0000    0.0000    0.0000
+   Integrated=    2.0375E+01
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    3.1341E-01  at reduced coord.    0.9306    0.0963    0.0875
+      Minimum=   -2.3134E-02  at reduced coord.    0.8056    0.9037    0.7000
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0688E+00  at reduced coord.    0.9306    0.0222    0.9750
+      Minimum=    2.1902E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6102E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0685E-03  at reduced coord.    0.0000    0.4963    0.0000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5413E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    1.1217E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.3485E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -2.2597E-02  at reduced coord.    0.9792    0.9778    0.0313
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.5256E-01  at reduced coord.    0.9236    0.4074    0.3875
+      Minimum=   -2.8176E-02  at reduced coord.    0.8611    0.9852    0.6500
+ ETOT  8  -459.05802444997    -2.00E-02 1.74E-03 8.09E+03 4.000
+ scprqt: <Vxc>= -4.4489599E-01 hartree
+
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.20     -0.190E-01 -0.359      0.296      0.350
+{SCF_istep: 8 , Vnl|psi>: 319 , wall_time: ' 03:19 [minutes] '} <<< TIME
+
+ ITER STEP NUMBER     9
+ newocc: new Fermi energy is       0.219702 , with nelect=    100.000000, Number of bisection calls: 6
+ mkrho: echo density (plane-wave part only)
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0718E+00  at reduced coord.    0.9306    0.0222    0.9750
+      Minimum=    2.2037E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6167E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0834E-03  at reduced coord.    0.0000    0.4963    0.0000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5435E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    1.1202E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.5245E-01  at reduced coord.    0.0347    0.9556    0.9625
+      Minimum=   -2.5357E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.6624E-01  at reduced coord.    0.9236    0.4074    0.3875
+      Minimum=   -2.6359E-02  at reduced coord.    0.8403    0.9111    0.7750
+ mkrho: echo density (plane-wave part only)
+ Total kinetic energy density [Ha/Bohr^3]
+      Maximum=    1.9696E+01  at reduced coord.    0.0000    0.9926    0.9875
+      Minimum=    1.7174E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    2.4077E+02
+ Spin up density      [Ha/Bohr^3]
+      Maximum=    1.0286E+01  at reduced coord.    0.0069    0.9704    0.0000
+      Minimum=    8.4548E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.3066E+02
+ Spin down density    [Ha/Bohr^3]
+      Maximum=    9.8877E+00  at reduced coord.    0.0000    0.0000    0.0000
+      Minimum=    8.7187E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.1011E+02
+ Magnetization (spin up - spin down) [Ha/Bohr^3]
+      Maximum=    2.9897E+00  at reduced coord.    0.0278    0.0222    0.9688
+      Minimum=   -2.7285E-01  at reduced coord.    0.0000    0.0000    0.0000
+   Integrated=    2.0555E+01
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    3.2011E-01  at reduced coord.    0.9306    0.0889    0.0875
+      Minimum=   -2.2229E-02  at reduced coord.    0.8056    0.8963    0.7063
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0718E+00  at reduced coord.    0.9306    0.0222    0.9750
+      Minimum=    2.2037E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6167E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0834E-03  at reduced coord.    0.0000    0.4963    0.0000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5435E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    1.1202E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.5245E-01  at reduced coord.    0.0347    0.9556    0.9625
+      Minimum=   -2.5357E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.6624E-01  at reduced coord.    0.9236    0.4074    0.3875
+      Minimum=   -2.6359E-02  at reduced coord.    0.8403    0.9111    0.7750
+ ETOT  9  -459.06222571809    -4.20E-03 3.61E-04 3.62E+03 4.000
+ scprqt: <Vxc>= -4.4478332E-01 hartree
+
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   2.45      -1.92      0.311     -0.526E-01  0.118
+{SCF_istep: 9 , Vnl|psi>: 319 , wall_time: ' 03:18 [minutes] '} <<< TIME
+
+ ITER STEP NUMBER    10
+ newocc: new Fermi energy is       0.219153 , with nelect=    100.000000, Number of bisection calls: 6
+ mkrho: echo density (plane-wave part only)
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0687E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    2.2004E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6185E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0872E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5417E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    1.1132E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.6088E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -2.5862E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.7473E-01  at reduced coord.    0.0764    0.9037    0.1125
+      Minimum=   -2.6428E-02  at reduced coord.    0.8403    0.9111    0.7750
+ mkrho: echo density (plane-wave part only)
+ Total kinetic energy density [Ha/Bohr^3]
+      Maximum=    1.9673E+01  at reduced coord.    0.0000    0.5111    0.4875
+      Minimum=    1.7137E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    2.4073E+02
+ Spin up density      [Ha/Bohr^3]
+      Maximum=    1.0273E+01  at reduced coord.    0.0139    0.5259    0.5063
+      Minimum=    8.4699E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.3064E+02
+ Spin down density    [Ha/Bohr^3]
+      Maximum=    9.8796E+00  at reduced coord.    0.0000    0.0000    0.0000
+      Minimum=    8.6666E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.1008E+02
+ Magnetization (spin up - spin down) [Ha/Bohr^3]
+      Maximum=    3.0203E+00  at reduced coord.    0.0278    0.0222    0.9688
+      Minimum=   -2.7823E-01  at reduced coord.    0.0000    0.0000    0.0000
+   Integrated=    2.0558E+01
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    3.2098E-01  at reduced coord.    0.9306    0.0889    0.0875
+      Minimum=   -2.0157E-02  at reduced coord.    0.8056    0.8963    0.7063
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0687E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    2.2004E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6185E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0872E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5417E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    1.1132E-03  at reduced coord.    0.0000    0.5037    0.0000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.6088E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -2.5862E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.7473E-01  at reduced coord.    0.0764    0.9037    0.1125
+      Minimum=   -2.6428E-02  at reduced coord.    0.8403    0.9111    0.7750
+ ETOT 10  -459.06392241498    -1.70E-03 5.05E-04 1.42E+03 4.000
+ scprqt: <Vxc>= -4.4467275E-01 hartree
+
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.50     -0.481      0.875E-01 -0.504E-01 -0.273
+{SCF_istep: 10 , Vnl|psi>: 319 , wall_time: ' 03:18 [minutes] '} <<< TIME
+
+ ITER STEP NUMBER    11
+ newocc: new Fermi energy is       0.218946 , with nelect=    100.000000, Number of bisection calls: 6
+ mkrho: echo density (plane-wave part only)
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0651E+00  at reduced coord.    0.9306    0.0222    0.9750
+      Minimum=    2.1972E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6184E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0871E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5400E+00  at reduced coord.    0.0278    0.4741    0.4688
+      Minimum=    1.1101E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.6209E-01  at reduced coord.    0.0764    0.4519    0.5313
+      Minimum=   -2.5647E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.7701E-01  at reduced coord.    0.0764    0.9037    0.1125
+      Minimum=   -2.6632E-02  at reduced coord.    0.8403    0.9111    0.7750
+ mkrho: echo density (plane-wave part only)
+ Total kinetic energy density [Ha/Bohr^3]
+      Maximum=    1.9661E+01  at reduced coord.    0.0000    0.5111    0.4875
+      Minimum=    1.7116E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    2.4066E+02
+ Spin up density      [Ha/Bohr^3]
+      Maximum=    1.0266E+01  at reduced coord.    0.0139    0.5259    0.5063
+      Minimum=    8.4708E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.3059E+02
+ Spin down density    [Ha/Bohr^3]
+      Maximum=    9.8765E+00  at reduced coord.    0.0000    0.0000    0.0000
+      Minimum=    8.6448E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.1007E+02
+ Magnetization (spin up - spin down) [Ha/Bohr^3]
+      Maximum=    3.0244E+00  at reduced coord.    0.0278    0.0222    0.9688
+      Minimum=   -2.7909E-01  at reduced coord.    0.0000    0.0000    0.0000
+   Integrated=    2.0527E+01
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    3.2021E-01  at reduced coord.    0.0694    0.5926    0.4125
+      Minimum=   -1.9315E-02  at reduced coord.    0.8056    0.8963    0.7063
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0651E+00  at reduced coord.    0.9306    0.0222    0.9750
+      Minimum=    2.1972E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6184E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0871E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5400E+00  at reduced coord.    0.0278    0.4741    0.4688
+      Minimum=    1.1101E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.6209E-01  at reduced coord.    0.0764    0.4519    0.5313
+      Minimum=   -2.5647E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.7701E-01  at reduced coord.    0.0764    0.9037    0.1125
+      Minimum=   -2.6632E-02  at reduced coord.    0.8403    0.9111    0.7750
+ ETOT 11  -459.06399796074    -7.55E-05 9.51E-05 8.60E+02 4.000
+ scprqt: <Vxc>= -4.4465040E-01 hartree
+
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.91      -1.64      0.661      0.187      0.198
+{SCF_istep: 11 , Vnl|psi>: 319 , wall_time: ' 03:18 [minutes] '} <<< TIME
+
+ ITER STEP NUMBER    12
+ newocc: new Fermi energy is       0.218552 , with nelect=    100.000000, Number of bisection calls: 6
+ mkrho: echo density (plane-wave part only)
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0667E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    2.2042E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6200E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0910E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5406E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    1.1133E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.6439E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -2.6617E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.7798E-01  at reduced coord.    0.9236    0.4074    0.3875
+      Minimum=   -2.8346E-02  at reduced coord.    0.8403    0.9111    0.7750
+ mkrho: echo density (plane-wave part only)
+ Total kinetic energy density [Ha/Bohr^3]
+      Maximum=    1.9662E+01  at reduced coord.    0.0000    0.4889    0.5125
+      Minimum=    1.7157E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    2.4066E+02
+ Spin up density      [Ha/Bohr^3]
+      Maximum=    1.0269E+01  at reduced coord.    0.0139    0.5259    0.5063
+      Minimum=    8.4944E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.3063E+02
+ Spin down density    [Ha/Bohr^3]
+      Maximum=    9.8885E+00  at reduced coord.    0.0000    0.0000    0.0000
+      Minimum=    8.6624E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.1004E+02
+ Magnetization (spin up - spin down) [Ha/Bohr^3]
+      Maximum=    3.0313E+00  at reduced coord.    0.0278    0.0222    0.9688
+      Minimum=   -2.9280E-01  at reduced coord.    0.0000    0.0000    0.0000
+   Integrated=    2.0590E+01
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    3.2235E-01  at reduced coord.    0.9306    0.4074    0.5813
+      Minimum=   -2.0449E-02  at reduced coord.    0.8056    0.8963    0.7063
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0667E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    2.2042E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6200E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0910E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5406E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    1.1133E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.6439E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -2.6617E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.7798E-01  at reduced coord.    0.9236    0.4074    0.3875
+      Minimum=   -2.8346E-02  at reduced coord.    0.8403    0.9111    0.7750
+ ETOT 12  -459.06417232590    -1.74E-04 1.85E-04 1.40E+02 4.000
+ scprqt: <Vxc>= -4.4471589E-01 hartree
+
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.16     -0.429      0.640     -0.573      0.138
+{SCF_istep: 12 , Vnl|psi>: 319 , wall_time: ' 03:18 [minutes] '} <<< TIME
+
+ ITER STEP NUMBER    13
+ newocc: new Fermi energy is       0.218358 , with nelect=    100.000000, Number of bisection calls: 6
+ mkrho: echo density (plane-wave part only)
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0657E+00  at reduced coord.    0.9306    0.0222    0.9750
+      Minimum=    2.2030E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6192E+00  at reduced coord.    0.9375    0.9630    0.9750
+      Minimum=    1.0905E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5403E+00  at reduced coord.    0.0278    0.4741    0.4688
+      Minimum=    1.1125E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.6442E-01  at reduced coord.    0.0764    0.4519    0.5313
+      Minimum=   -2.6518E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.7846E-01  at reduced coord.    0.9236    0.0963    0.8875
+      Minimum=   -2.8245E-02  at reduced coord.    0.8403    0.9111    0.7750
+ mkrho: echo density (plane-wave part only)
+ Total kinetic energy density [Ha/Bohr^3]
+      Maximum=    1.9661E+01  at reduced coord.    0.0000    0.5111    0.4875
+      Minimum=    1.7149E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    2.4065E+02
+ Spin up density      [Ha/Bohr^3]
+      Maximum=    1.0269E+01  at reduced coord.    0.9861    0.4741    0.4938
+      Minimum=    8.4912E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.3061E+02
+ Spin down density    [Ha/Bohr^3]
+      Maximum=    9.8857E+00  at reduced coord.    0.0000    0.0000    0.0000
+      Minimum=    8.6574E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.1003E+02
+ Magnetization (spin up - spin down) [Ha/Bohr^3]
+      Maximum=    3.0324E+00  at reduced coord.    0.9722    0.9778    0.0313
+      Minimum=   -2.9231E-01  at reduced coord.    0.0000    0.0000    0.0000
+   Integrated=    2.0582E+01
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    3.2226E-01  at reduced coord.    0.0694    0.5926    0.4188
+      Minimum=   -2.0208E-02  at reduced coord.    0.8056    0.8963    0.7063
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0657E+00  at reduced coord.    0.9306    0.0222    0.9750
+      Minimum=    2.2030E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6192E+00  at reduced coord.    0.9375    0.9630    0.9750
+      Minimum=    1.0905E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5403E+00  at reduced coord.    0.0278    0.4741    0.4688
+      Minimum=    1.1125E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.6442E-01  at reduced coord.    0.0764    0.4519    0.5313
+      Minimum=   -2.6518E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.7846E-01  at reduced coord.    0.9236    0.0963    0.8875
+      Minimum=   -2.8245E-02  at reduced coord.    0.8403    0.9111    0.7750
+ ETOT 13  -459.06418085884    -8.53E-06 5.56E-05 4.63E+01 4.000
+ scprqt: <Vxc>= -4.4470514E-01 hartree
+
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.21     -0.193E-01 -0.405      0.452     -0.333
+{SCF_istep: 13 , Vnl|psi>: 316 , wall_time: ' 03:16 [minutes] '} <<< TIME
+
+ ITER STEP NUMBER    14
+ newocc: new Fermi energy is       0.218242 , with nelect=    100.000000, Number of bisection calls: 6
+ mkrho: echo density (plane-wave part only)
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0664E+00  at reduced coord.    0.9306    0.0222    0.9750
+      Minimum=    2.2030E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6192E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0905E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5404E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    1.1125E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.6446E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -2.6455E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.7850E-01  at reduced coord.    0.9236    0.4074    0.3875
+      Minimum=   -2.8110E-02  at reduced coord.    0.8403    0.9111    0.7750
+ mkrho: echo density (plane-wave part only)
+ Total kinetic energy density [Ha/Bohr^3]
+      Maximum=    1.9660E+01  at reduced coord.    0.0000    0.5111    0.4875
+      Minimum=    1.7149E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    2.4065E+02
+ Spin up density      [Ha/Bohr^3]
+      Maximum=    1.0268E+01  at reduced coord.    0.0139    0.5259    0.5063
+      Minimum=    8.4920E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.3061E+02
+ Spin down density    [Ha/Bohr^3]
+      Maximum=    9.8871E+00  at reduced coord.    0.0000    0.0000    0.0000
+      Minimum=    8.6570E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.1004E+02
+ Magnetization (spin up - spin down) [Ha/Bohr^3]
+      Maximum=    3.0313E+00  at reduced coord.    0.0278    0.0222    0.9688
+      Minimum=   -2.9187E-01  at reduced coord.    0.0000    0.0000    0.0000
+   Integrated=    2.0574E+01
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    3.2216E-01  at reduced coord.    0.0694    0.5926    0.4188
+      Minimum=   -2.0094E-02  at reduced coord.    0.8056    0.8963    0.7063
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0664E+00  at reduced coord.    0.9306    0.0222    0.9750
+      Minimum=    2.2030E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6192E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0905E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5404E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    1.1125E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.6446E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -2.6455E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.7850E-01  at reduced coord.    0.9236    0.4074    0.3875
+      Minimum=   -2.8110E-02  at reduced coord.    0.8403    0.9111    0.7750
+ ETOT 14  -459.06418614064    -5.28E-06 9.84E-05 1.23E+01 4.000
+ scprqt: <Vxc>= -4.4470393E-01 hartree
+
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.33     -0.148     -0.104     -0.130      0.999E-01
+{SCF_istep: 14 , Vnl|psi>: 319 , wall_time: ' 03:19 [minutes] '} <<< TIME
+
+ ITER STEP NUMBER    15
+ newocc: new Fermi energy is       0.218090 , with nelect=    100.000000, Number of bisection calls: 6
+ mkrho: echo density (plane-wave part only)
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0664E+00  at reduced coord.    0.9306    0.0222    0.9750
+      Minimum=    2.2032E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6192E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0909E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5405E+00  at reduced coord.    0.9306    0.0222    0.9750
+      Minimum=    1.1124E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.6460E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -2.6478E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.7846E-01  at reduced coord.    0.0764    0.5926    0.6125
+      Minimum=   -2.8023E-02  at reduced coord.    0.8403    0.9111    0.7750
+ mkrho: echo density (plane-wave part only)
+ Total kinetic energy density [Ha/Bohr^3]
+      Maximum=    1.9662E+01  at reduced coord.    0.0000    0.5111    0.4875
+      Minimum=    1.7150E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    2.4066E+02
+ Spin up density      [Ha/Bohr^3]
+      Maximum=    1.0269E+01  at reduced coord.    0.0139    0.5259    0.5063
+      Minimum=    8.4940E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.3061E+02
+ Spin down density    [Ha/Bohr^3]
+      Maximum=    9.8873E+00  at reduced coord.    0.0000    0.0000    0.0000
+      Minimum=    8.6557E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.1005E+02
+ Magnetization (spin up - spin down) [Ha/Bohr^3]
+      Maximum=    3.0317E+00  at reduced coord.    0.9722    0.9778    0.0313
+      Minimum=   -2.9212E-01  at reduced coord.    0.0000    0.0000    0.0000
+   Integrated=    2.0569E+01
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    3.2209E-01  at reduced coord.    0.0694    0.5926    0.4188
+      Minimum=   -1.9945E-02  at reduced coord.    0.8056    0.8963    0.7063
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0664E+00  at reduced coord.    0.9306    0.0222    0.9750
+      Minimum=    2.2032E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6192E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0909E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5405E+00  at reduced coord.    0.9306    0.0222    0.9750
+      Minimum=    1.1124E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.6460E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -2.6478E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.7846E-01  at reduced coord.    0.0764    0.5926    0.6125
+      Minimum=   -2.8023E-02  at reduced coord.    0.8403    0.9111    0.7750
+ ETOT 15  -459.06418881153    -2.67E-06 5.83E-05 2.51E+00 4.000
+ scprqt: <Vxc>= -4.4470157E-01 hartree
+
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   1.18     -0.295      0.821E-01  0.306E-01  0.406E-02
+{SCF_istep: 15 , Vnl|psi>: 319 , wall_time: ' 03:18 [minutes] '} <<< TIME
+
+ ITER STEP NUMBER    16
+ newocc: new Fermi energy is       0.217972 , with nelect=    100.000000, Number of bisection calls: 6
+ mkrho: echo density (plane-wave part only)
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0666E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    2.2033E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6193E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0910E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5406E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    1.1123E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.6466E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -2.6492E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.7852E-01  at reduced coord.    0.9236    0.4074    0.3875
+      Minimum=   -2.8025E-02  at reduced coord.    0.8403    0.9111    0.7750
+ mkrho: echo density (plane-wave part only)
+ Total kinetic energy density [Ha/Bohr^3]
+      Maximum=    1.9662E+01  at reduced coord.    0.0000    0.4889    0.5125
+      Minimum=    1.7150E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    2.4066E+02
+ Spin up density      [Ha/Bohr^3]
+      Maximum=    1.0269E+01  at reduced coord.    0.0139    0.5259    0.5063
+      Minimum=    8.4946E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.3062E+02
+ Spin down density    [Ha/Bohr^3]
+      Maximum=    9.8876E+00  at reduced coord.    0.0000    0.0000    0.0000
+      Minimum=    8.6554E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.1005E+02
+ Magnetization (spin up - spin down) [Ha/Bohr^3]
+      Maximum=    3.0317E+00  at reduced coord.    0.0278    0.0222    0.9688
+      Minimum=   -2.9236E-01  at reduced coord.    0.0000    0.0000    0.0000
+   Integrated=    2.0569E+01
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    3.2214E-01  at reduced coord.    0.9306    0.4074    0.5813
+      Minimum=   -1.9944E-02  at reduced coord.    0.8056    0.8963    0.7063
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0666E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    2.2033E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6193E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0910E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5406E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    1.1123E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.6466E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -2.6492E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.7852E-01  at reduced coord.    0.9236    0.4074    0.3875
+      Minimum=   -2.8025E-02  at reduced coord.    0.8403    0.9111    0.7750
+ ETOT 16  -459.06418943658    -6.25E-07 6.46E-05 1.75E+00 4.000
+ scprqt: <Vxc>= -4.4470160E-01 hartree
+
+ Pulay update with  7 previous iterations:
+ mixing of old trial potential: alpha(m:m-4)=   2.20      -1.02     -0.314      0.189     -0.713E-01
+{SCF_istep: 16 , Vnl|psi>: 319 , wall_time: ' 03:18 [minutes] '} <<< TIME
+
+ ITER STEP NUMBER    17
+ newocc: new Fermi energy is       0.217895 , with nelect=    100.000000, Number of bisection calls: 6
+ mkrho: echo density (plane-wave part only)
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0665E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    2.2032E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6193E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0910E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5405E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    1.1122E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.6469E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -2.6502E-02  at reduced coord.    0.9792    0.5185    0.5250
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.7854E-01  at reduced coord.    0.9236    0.4074    0.3875
+      Minimum=   -2.8003E-02  at reduced coord.    0.8403    0.9111    0.7750
+ mkrho: echo density (plane-wave part only)
+ Total kinetic energy density [Ha/Bohr^3]
+      Maximum=    1.9662E+01  at reduced coord.    0.0000    0.4889    0.5125
+      Minimum=    1.7150E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    2.4066E+02
+ Spin up density      [Ha/Bohr^3]
+      Maximum=    1.0269E+01  at reduced coord.    0.0139    0.5259    0.5063
+      Minimum=    8.4948E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.3061E+02
+ Spin down density    [Ha/Bohr^3]
+      Maximum=    9.8874E+00  at reduced coord.    0.0000    0.0000    0.0000
+      Minimum=    8.6547E-04  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.1005E+02
+ Magnetization (spin up - spin down) [Ha/Bohr^3]
+      Maximum=    3.0318E+00  at reduced coord.    0.0278    0.0222    0.9688
+      Minimum=   -2.9241E-01  at reduced coord.    0.0000    0.0000    0.0000
+   Integrated=    2.0567E+01
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    3.2215E-01  at reduced coord.    0.9306    0.4074    0.5813
+      Minimum=   -1.9913E-02  at reduced coord.    0.8056    0.8963    0.7063
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0665E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    2.2032E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6193E+00  at reduced coord.    0.0625    0.0370    0.0250
+      Minimum=    1.0910E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5405E+00  at reduced coord.    0.0694    0.9778    0.0250
+      Minimum=    1.1122E-03  at reduced coord.    0.0000    0.0000    0.5000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.6469E-01  at reduced coord.    0.9236    0.5481    0.4688
+      Minimum=   -2.6502E-02  at reduced coord.    0.9792    0.5185    0.5250
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.7854E-01  at reduced coord.    0.9236    0.4074    0.3875
+      Minimum=   -2.8003E-02  at reduced coord.    0.8403    0.9111    0.7750
+ ETOT 17  -459.06419006763    -6.31E-07 5.89E-05 6.42E-01 4.000
+ scprqt: <Vxc>= -4.4470099E-01 hartree
+
+ At SCF step   17, etot is converged : 
+  for the second time, diff in etot=  6.310E-07 < toldfe=  1.000E-06
+ 
+ -------------------------------------------------------------------------------------------------
+ Ekinetic   = :     2.406627E+02 Ha ,    6.548766E+03 eV
+ Evext_l    = :    -4.132399E+02 Ha ,   -1.124483E+04 eV
+ Evext_nl   = :    -1.109557E+02 Ha ,   -3.019258E+03 eV
+ Epsp_core  = :     1.420682E+01 Ha ,    3.865872E+02 eV
+ Ehartree   = :     1.596062E+02 Ha ,    4.343105E+03 eV
+ Exc_ks     = :    -6.629181E+01 Ha ,   -1.803892E+03 eV
+ Enn        = :    -2.830525E+02 Ha ,   -7.702251E+03 eV
+ -------------------------------------------------------------------------------------------------
+ Etot       = :    -4.590642E+02 Ha ,   -1.249177E+04 eV
+ -------------------------------------------------------------------------------------------------
+
+ Cartesian components of stress tensor (hartree/bohr^3)
+  sigma(1 1)=  1.46180787E-02  sigma(3 2)=  2.47184548E-04
+  sigma(2 2)=  1.26643958E-02  sigma(3 1)= -8.88498936E-08
+  sigma(3 3)=  1.48810493E-02  sigma(2 1)=  6.20781487E-07
+
+- Creating netcdf file WITHOUT MPI-IO support: abo_GSR.nc
+
+ fftdatar_write: About to write data to: abo_KDEN with iomode: IO_MODE_FORTRAN
+ IO operation completed. cpu:  0.03 [s] , wall:  0.15 [s] <<< TIME
+ Integrated electronic and magnetization densities in atomic spheres:
+ ---------------------------------------------------------------------
+ Radius=ratsph(iatom), smearing ratsm=  0.0000. Diff(up-dn)=approximate z local magnetic moment.
+ Atom    Radius    up_density   dn_density  Total(up+dn)  Diff(up-dn)
+    1   2.00000     8.957862     7.267045     16.224907     1.690818
+    2   2.00000     8.957384     7.266607     16.223992     1.690777
+    3   2.00000     3.218720     3.185942      6.404662     0.032779
+    4   2.00000     3.218648     3.185787      6.404435     0.032862
+    5   2.00000     3.218720     3.185945      6.404665     0.032775
+    6   2.00000     3.218649     3.185787      6.404436     0.032862
+    7   2.00000     3.446106     3.343889      6.789995     0.102217
+    8   2.00000     3.446511     3.344225      6.790736     0.102286
+    9   2.00000     3.446112     3.343898      6.790010     0.102215
+   10   2.00000     3.446523     3.344238      6.790761     0.102285
+   11   2.00000     3.453847     3.398090      6.851937     0.055756
+   12   2.00000     3.453977     3.398223      6.852199     0.055754
+   13   2.00000     3.453856     3.398098      6.851954     0.055758
+   14   2.00000     3.453990     3.398236      6.852226     0.055754
+ ---------------------------------------------------------------------
+  Sum:             58.390906    54.246009    112.636914     4.144897
+ Total magnetization (from the atomic spheres):             4.144897
+ Total magnetization (exact up - dn):                       4.000000
+================================================================================
+
+ ----iterations are completed or convergence reached----
+
+
+ === Gap info ===
+  >>>> For spin  1
+   Minimum direct gap =   3.7260 [eV], located at k-point      :   0.2500  0.2500  0.2500
+   Fundamental gap    =   3.7259 [eV], Top of valence bands at :   0.2500  0.2500  0.2500
+                                       Bottom of conduction at :   0.2500 -0.2500  0.2500
+  >>>> For spin  2
+   Minimum direct gap =   3.4275 [eV], located at k-point      :   0.2500  0.2500  0.2500
+   Fundamental gap    =   3.3624 [eV], Top of valence bands at :   0.2500  0.2500  0.2500
+                                       Bottom of conduction at :  -0.2500  0.2500  0.2500
+ Mean square residual over all n,k,spin=   33.050E-08; max=  58.928E-06
+   0.2500  0.2500  0.2500    1  1.46769E-06 kpt; spin; max resid(k); each band:
+  9.79E-10 4.06E-10 4.63E-10 1.02E-10 2.96E-10 1.10E-10 5.15E-10 1.61E-10
+  2.11E-10 2.35E-10 2.57E-10 2.52E-10 2.36E-10 2.33E-10 2.25E-10 2.58E-10
+  1.22E-10 1.37E-10 4.49E-10 3.48E-10 5.45E-10 5.16E-10 3.70E-10 5.97E-10
+  3.32E-10 9.72E-10 6.33E-10 5.40E-10 2.63E-10 7.58E-10 1.45E-09 1.67E-09
+  1.06E-09 1.96E-09 1.68E-09 7.06E-10 2.19E-09 1.58E-09 2.08E-09 1.39E-09
+  4.10E-10 1.41E-09 5.83E-09 4.78E-09 3.10E-09 5.51E-09 2.53E-09 4.08E-09
+  3.58E-09 4.12E-09 2.26E-09 3.63E-09 1.96E-10 1.94E-10 1.64E-10 2.75E-10
+  6.03E-10 4.70E-10 3.57E-10 6.69E-10 7.20E-10 7.10E-10 8.55E-10 3.40E-09
+  1.47E-06
+  -0.2500  0.2500  0.2500    1  4.58926E-05 kpt; spin; max resid(k); each band:
+  1.02E-09 3.92E-10 4.70E-10 1.03E-10 3.05E-10 1.09E-10 5.19E-10 1.60E-10
+  2.18E-10 2.28E-10 2.50E-10 2.63E-10 2.55E-10 2.13E-10 2.06E-10 2.81E-10
+  1.21E-10 1.33E-10 3.58E-10 5.07E-10 6.10E-10 4.91E-10 3.73E-10 3.66E-10
+  2.57E-10 8.11E-10 6.18E-10 6.22E-10 5.09E-10 2.02E-09 1.23E-09 9.97E-10
+  1.47E-09 2.29E-09 1.15E-09 1.37E-09 1.71E-09 1.09E-09 1.18E-09 1.16E-09
+  9.89E-10 1.98E-09 8.46E-09 4.42E-09 3.64E-09 2.76E-09 6.65E-09 3.60E-09
+  2.33E-09 3.23E-09 3.77E-09 3.50E-09 1.26E-10 2.22E-10 2.44E-10 3.25E-10
+  4.13E-10 1.15E-09 4.95E-10 1.00E-09 6.99E-10 6.84E-10 1.14E-09 3.58E-09
+  4.59E-05
+   0.2500 -0.2500  0.2500    1  1.19108E-06 kpt; spin; max resid(k); each band:
+  1.01E-09 3.94E-10 4.71E-10 1.01E-10 3.14E-10 1.10E-10 5.11E-10 1.60E-10
+  2.17E-10 2.27E-10 2.54E-10 2.58E-10 2.34E-10 2.22E-10 2.63E-10 2.25E-10
+  1.30E-10 1.27E-10 3.54E-10 3.57E-10 7.10E-10 5.21E-10 4.83E-10 5.80E-10
+  4.88E-10 3.56E-10 5.44E-10 6.97E-10 2.49E-10 6.16E-10 1.86E-09 2.35E-09
+  1.00E-09 2.25E-09 2.55E-09 8.13E-10 6.00E-10 7.13E-10 1.13E-09 1.97E-09
+  4.53E-10 1.64E-09 3.12E-09 1.01E-08 3.03E-09 1.26E-09 3.11E-09 4.98E-09
+  5.63E-09 2.75E-09 3.57E-09 2.61E-09 1.94E-10 1.32E-10 2.40E-10 1.99E-10
+  5.62E-10 4.71E-10 5.74E-10 6.84E-10 6.63E-10 5.25E-10 9.53E-10 5.13E-09
+  1.19E-06
+  -0.2500 -0.2500  0.2500    1  5.89285E-05 kpt; spin; max resid(k); each band:
+  1.00E-09 4.05E-10 4.63E-10 1.04E-10 3.04E-10 1.10E-10 5.02E-10 1.60E-10
+  2.23E-10 2.12E-10 2.64E-10 2.64E-10 2.20E-10 2.46E-10 2.75E-10 2.08E-10
+  1.33E-10 1.22E-10 4.45E-10 3.54E-10 7.17E-10 4.40E-10 4.56E-10 5.65E-10
+  3.65E-10 3.23E-10 4.47E-10 6.76E-10 7.16E-10 1.23E-09 2.03E-09 1.02E-09
+  1.73E-09 1.71E-09 2.01E-09 1.06E-09 7.05E-10 1.61E-09 2.39E-09 1.08E-09
+  2.07E-09 1.73E-09 2.32E-09 2.73E-09 6.41E-09 3.24E-09 8.11E-09 3.24E-09
+  2.48E-09 3.68E-09 3.89E-09 2.75E-09 1.97E-10 1.22E-10 2.44E-10 3.04E-10
+  4.54E-10 6.55E-10 3.76E-10 6.54E-10 4.29E-10 6.88E-10 1.12E-09 1.41E-09
+  5.89E-05
+   0.2500  0.2500  0.2500    2  2.29611E-06 kpt; spin; max resid(k); each band:
+  2.37E-09 8.59E-11 2.44E-09 1.80E-10 2.68E-09 4.19E-09 1.88E-09 2.53E-10
+  2.15E-10 1.89E-10 1.99E-10 1.76E-10 2.43E-10 2.15E-10 1.92E-10 1.83E-10
+  1.47E-10 1.60E-10 3.10E-10 3.54E-10 5.45E-10 3.52E-10 3.97E-10 4.28E-10
+  2.78E-10 3.26E-10 5.02E-10 3.79E-10 3.05E-10 2.48E-10 1.03E-09 5.21E-10
+  1.31E-09 5.01E-10 1.87E-09 9.59E-10 8.40E-10 2.67E-09 2.02E-09 6.62E-10
+  2.40E-09 1.40E-09 8.07E-09 1.75E-08 6.37E-09 7.56E-09 5.16E-09 1.06E-08
+  1.97E-08 1.57E-08 1.26E-08 5.19E-09 4.99E-09 2.68E-09 2.58E-10 3.52E-10
+  8.31E-10 7.71E-10 6.70E-10 8.78E-10 9.88E-10 8.19E-10 8.18E-10 1.63E-09
+  2.30E-06
+  -0.2500  0.2500  0.2500    2  2.87851E-05 kpt; spin; max resid(k); each band:
+  2.39E-09 8.65E-11 2.49E-09 1.80E-10 2.68E-09 4.18E-09 1.90E-09 2.53E-10
+  2.22E-10 1.79E-10 2.09E-10 1.70E-10 2.25E-10 2.39E-10 1.97E-10 1.84E-10
+  1.46E-10 1.60E-10 4.21E-10 2.83E-10 3.30E-10 3.59E-10 4.99E-10 4.36E-10
+  2.36E-10 3.76E-10 3.79E-10 5.25E-10 5.22E-10 1.37E-10 6.32E-10 7.09E-10
+  1.07E-09 2.10E-09 7.05E-10 2.15E-09 1.80E-09 1.18E-09 4.36E-10 2.23E-09
+  6.59E-10 1.56E-09 1.53E-08 8.86E-09 5.01E-09 1.47E-08 1.07E-08 3.78E-09
+  2.14E-08 1.72E-08 1.22E-08 2.16E-09 6.75E-09 1.04E-09 4.85E-10 3.65E-10
+  7.19E-10 9.91E-10 5.85E-10 1.27E-09 1.15E-09 1.41E-09 9.91E-10 1.58E-09
+  2.88E-05
+   0.2500 -0.2500  0.2500    2  2.32938E-07 kpt; spin; max resid(k); each band:
+  2.39E-09 8.66E-11 2.47E-09 1.84E-10 3.17E-09 4.44E-09 1.88E-09 2.56E-10
+  2.13E-10 1.96E-10 1.83E-10 1.91E-10 2.46E-10 2.25E-10 1.94E-10 1.73E-10
+  1.39E-10 1.62E-10 4.53E-10 2.69E-10 4.61E-10 3.96E-10 2.75E-10 2.40E-10
+  4.36E-10 7.62E-10 2.45E-10 4.47E-10 2.25E-10 6.43E-10 6.77E-10 9.43E-10
+  1.37E-09 5.65E-10 1.20E-09 1.96E-09 7.67E-10 1.35E-09 1.64E-09 8.11E-10
+  1.23E-09 1.71E-09 2.19E-08 7.70E-10 1.21E-08 3.76E-09 3.12E-09 1.51E-08
+  2.04E-08 1.82E-08 2.18E-09 9.60E-09 9.00E-09 9.38E-10 3.77E-10 2.39E-10
+  8.78E-10 6.81E-10 7.04E-10 1.31E-09 8.13E-10 6.97E-10 8.70E-10 1.17E-09
+  2.33E-07
+  -0.2500 -0.2500  0.2500    2  3.21026E-05 kpt; spin; max resid(k); each band:
+  2.38E-09 8.57E-11 2.43E-09 1.86E-10 3.17E-09 4.40E-09 1.85E-09 2.57E-10
+  2.20E-10 1.88E-10 1.92E-10 1.82E-10 2.59E-10 2.09E-10 1.90E-10 1.92E-10
+  1.38E-10 1.56E-10 2.95E-10 4.14E-10 5.03E-10 3.92E-10 2.53E-10 4.43E-10
+  2.19E-10 6.07E-10 3.99E-10 3.65E-10 4.05E-10 1.30E-10 5.57E-10 2.13E-09
+  6.78E-10 5.37E-10 7.10E-10 7.38E-10 1.46E-09 4.52E-09 1.54E-09 3.86E-10
+  1.05E-09 8.59E-10 1.46E-08 6.59E-09 9.81E-09 1.40E-08 5.95E-09 7.17E-09
+  2.05E-08 1.95E-08 5.92E-09 4.83E-09 9.33E-09 5.19E-10 2.92E-10 6.03E-10
+  6.25E-10 1.40E-09 6.52E-10 5.92E-10 8.20E-10 1.14E-09 7.33E-10 1.68E-09
+  3.21E-05
+ Fermi (or HOMO) energy (hartree) =   0.21789   Average Vxc (hartree)=  -0.44470
+ Magnetization (Bohr magneton)=  4.00000000E+00
+ Total spin up =  5.20000000E+01   Total spin down =  4.80000000E+01
+ Eigenvalues (hartree) for nkpt=   4  k points, SPIN UP:
+ kpt#   1, nband= 65, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
+  -3.77973   -3.77972   -2.30718   -2.30712   -2.30484   -2.30481   -2.29959   -2.29953
+  -0.78255   -0.77023   -0.73721   -0.73520   -0.68351   -0.67826   -0.64957   -0.64788
+  -0.31848   -0.29524   -0.20005   -0.18801   -0.18427   -0.17993   -0.15690   -0.14210
+  -0.13090   -0.12095   -0.10401   -0.09255   -0.07398   -0.04482   -0.03564   -0.03411
+  -0.01214   -0.00407    0.00202    0.01163    0.01652    0.03243    0.03981    0.05056
+   0.06559    0.07358    0.08668    0.09349    0.09700    0.10500    0.11174    0.11890
+   0.12181    0.13475    0.15347    0.16124    0.29817    0.31601    0.44873    0.47313
+   0.48771    0.52508    0.54689    0.56726    0.59348    0.60972    0.63779    0.64319
+   0.67347
+      occupation numbers for kpt#   1
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    0.00000    0.00000    0.00000    0.00000
+   0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000
+   0.00000
+ kpt#   2, nband= 65, wtk=  0.25000, kpt= -0.2500  0.2500  0.2500 (reduced coord)
+  -3.77973   -3.77972   -2.30718   -2.30712   -2.30484   -2.30481   -2.29959   -2.29953
+  -0.78507   -0.76838   -0.73734   -0.73461   -0.68135   -0.67924   -0.64918   -0.64851
+  -0.31814   -0.29566   -0.19805   -0.19260   -0.18241   -0.17598   -0.15636   -0.14474
+  -0.13534   -0.11940   -0.11105   -0.09898   -0.08330   -0.04092   -0.03697   -0.03370
+  -0.01243   -0.00623    0.00334    0.02347    0.02958    0.03255    0.04934    0.05296
+   0.06160    0.07217    0.08466    0.09715    0.10180    0.10383    0.10896    0.11329
+   0.11980    0.14241    0.14952    0.16124    0.30387    0.31511    0.45260    0.46203
+   0.46603    0.53978    0.55165    0.57960    0.59098    0.61043    0.62890    0.63890
+   0.67847
+      occupation numbers for kpt#   2
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    0.00000    0.00000    0.00000    0.00000
+   0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000
+   0.00000
+ kpt#   3, nband= 65, wtk=  0.25000, kpt=  0.2500 -0.2500  0.2500 (reduced coord)
+  -3.77973   -3.77972   -2.30718   -2.30712   -2.30484   -2.30481   -2.29959   -2.29953
+  -0.78255   -0.77023   -0.73721   -0.73521   -0.68351   -0.67826   -0.64957   -0.64787
+  -0.31848   -0.29524   -0.20006   -0.18800   -0.18426   -0.17994   -0.15691   -0.14210
+  -0.13089   -0.12097   -0.10401   -0.09254   -0.07398   -0.04482   -0.03564   -0.03412
+  -0.01213   -0.00407    0.00201    0.01164    0.01656    0.03240    0.03980    0.05054
+   0.06557    0.07358    0.08666    0.09348    0.09707    0.10496    0.11178    0.11889
+   0.12178    0.13477    0.15352    0.16120    0.29817    0.31601    0.44872    0.47313
+   0.48771    0.52506    0.54690    0.56725    0.59349    0.60971    0.63781    0.64318
+   0.67346
+      occupation numbers for kpt#   3
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    0.00000    0.00000    0.00000    0.00000
+   0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000
+   0.00000
+ kpt#   4, nband= 65, wtk=  0.25000, kpt= -0.2500 -0.2500  0.2500 (reduced coord)
+  -3.77973   -3.77972   -2.30718   -2.30712   -2.30484   -2.30481   -2.29959   -2.29953
+  -0.78507   -0.76838   -0.73733   -0.73462   -0.68135   -0.67924   -0.64919   -0.64850
+  -0.31814   -0.29566   -0.19805   -0.19261   -0.18240   -0.17598   -0.15637   -0.14473
+  -0.13534   -0.11941   -0.11105   -0.09898   -0.08329   -0.04093   -0.03695   -0.03371
+  -0.01243   -0.00621    0.00333    0.02345    0.02960    0.03251    0.04932    0.05298
+   0.06164    0.07213    0.08481    0.09717    0.10165    0.10384    0.10896    0.11328
+   0.11980    0.14245    0.14953    0.16121    0.30386    0.31512    0.45259    0.46204
+   0.46603    0.53978    0.55164    0.57961    0.59097    0.61043    0.62890    0.63892
+   0.67907
+      occupation numbers for kpt#   4
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    0.00000    0.00000    0.00000    0.00000
+   0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000
+   0.00000
+ Eigenvalues (hartree) for nkpt=   4  k points, SPIN DOWN:
+ kpt#   1, nband= 65, wtk=  0.25000, kpt=  0.2500  0.2500  0.2500 (reduced coord)
+  -3.69912   -3.69904   -2.19155   -2.19142   -2.19101   -2.19087   -2.18835   -2.18828
+  -0.77858   -0.76606   -0.73249   -0.73045   -0.67853   -0.67282   -0.64370   -0.64217
+  -0.31523   -0.29179   -0.19355   -0.18265   -0.17339   -0.17212   -0.14868   -0.13435
+  -0.12419   -0.11004   -0.09540   -0.08273   -0.07095   -0.03991   -0.01698   -0.00592
+   0.01007    0.01648    0.01881    0.02855    0.04872    0.05068    0.05883    0.06764
+   0.07516    0.09406    0.12467    0.13197    0.13524    0.13704    0.14153    0.14706
+   0.27302    0.28142    0.29351    0.30376    0.31028    0.32122    0.45007    0.47475
+   0.49780    0.53320    0.55362    0.57472    0.60145    0.61518    0.64264    0.64819
+   0.67877
+      occupation numbers for kpt#   1
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000
+   0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000
+   0.00000
+ kpt#   2, nband= 65, wtk=  0.25000, kpt= -0.2500  0.2500  0.2500 (reduced coord)
+  -3.69912   -3.69904   -2.19155   -2.19142   -2.19101   -2.19087   -2.18835   -2.18828
+  -0.78115   -0.76418   -0.73261   -0.72986   -0.67604   -0.67408   -0.64347   -0.64264
+  -0.31476   -0.29230   -0.19169   -0.18536   -0.17136   -0.16890   -0.14888   -0.13822
+  -0.13087   -0.11052   -0.10322   -0.08954   -0.07525   -0.03461   -0.01599   -0.00527
+   0.01296    0.01849    0.03449    0.03690    0.04407    0.05568    0.06181    0.06330
+   0.07845    0.08942    0.12659    0.13202    0.13584    0.13672    0.14093    0.14335
+   0.27063    0.28723    0.30003    0.30640    0.30763    0.31834    0.45523    0.46373
+   0.47303    0.55203    0.55648    0.58643    0.59703    0.61769    0.63387    0.64418
+   0.68251
+      occupation numbers for kpt#   2
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000
+   0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000
+   0.00000
+ kpt#   3, nband= 65, wtk=  0.25000, kpt=  0.2500 -0.2500  0.2500 (reduced coord)
+  -3.69912   -3.69904   -2.19155   -2.19142   -2.19101   -2.19087   -2.18835   -2.18828
+  -0.77858   -0.76606   -0.73248   -0.73045   -0.67853   -0.67282   -0.64370   -0.64217
+  -0.31523   -0.29179   -0.19355   -0.18265   -0.17338   -0.17212   -0.14870   -0.13434
+  -0.12418   -0.11005   -0.09540   -0.08272   -0.07095   -0.03991   -0.01698   -0.00593
+   0.01006    0.01650    0.01883    0.02852    0.04872    0.05065    0.05886    0.06764
+   0.07517    0.09404    0.12472    0.13185    0.13528    0.13706    0.14157    0.14704
+   0.27305    0.28141    0.29347    0.30374    0.31031    0.32123    0.45007    0.47475
+   0.49779    0.53319    0.55365    0.57472    0.60145    0.61517    0.64265    0.64819
+   0.67875
+      occupation numbers for kpt#   3
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000
+   0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000
+   0.00000
+ kpt#   4, nband= 65, wtk=  0.25000, kpt= -0.2500 -0.2500  0.2500 (reduced coord)
+  -3.69912   -3.69904   -2.19155   -2.19142   -2.19101   -2.19087   -2.18835   -2.18828
+  -0.78115   -0.76418   -0.73261   -0.72986   -0.67604   -0.67409   -0.64347   -0.64264
+  -0.31476   -0.29231   -0.19169   -0.18536   -0.17137   -0.16890   -0.14888   -0.13823
+  -0.13086   -0.11052   -0.10324   -0.08952   -0.07526   -0.03460   -0.01600   -0.00527
+   0.01295    0.01851    0.03449    0.03691    0.04406    0.05565    0.06184    0.06331
+   0.07846    0.08940    0.12653    0.13204    0.13575    0.13681    0.14098    0.14334
+   0.27065    0.28720    0.30001    0.30638    0.30768    0.31834    0.45523    0.46372
+   0.47304    0.55202    0.55648    0.58643    0.59702    0.61768    0.63387    0.64419
+   0.68236
+      occupation numbers for kpt#   4
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000    1.00000
+   0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000
+   0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000    0.00000
+   0.00000
+ Total charge density [el/Bohr^3]
+      Maximum=    3.0665E+00  at reduced coord.    0.0694    0.9778    0.0250
+ Next maximum=    3.0665E+00  at reduced coord.    0.9306    0.0222    0.9750
+      Minimum=    2.2032E-03  at reduced coord.    0.0000    0.0000    0.5000
+ Next minimum=    2.2048E-03  at reduced coord.    0.9931    0.0000    0.5000
+   Integrated=    1.0000E+02
+ Spin up density      [el/Bohr^3]
+      Maximum=    1.6193E+00  at reduced coord.    0.0625    0.0370    0.0250
+ Next maximum=    1.6193E+00  at reduced coord.    0.9375    0.9630    0.9750
+      Minimum=    1.0910E-03  at reduced coord.    0.0000    0.0000    0.5000
+ Next minimum=    1.0918E-03  at reduced coord.    0.9931    0.0000    0.5000
+   Integrated=    5.2000E+01
+ Spin down density    [el/Bohr^3]
+      Maximum=    1.5405E+00  at reduced coord.    0.0694    0.9778    0.0250
+ Next maximum=    1.5405E+00  at reduced coord.    0.9306    0.0222    0.9750
+      Minimum=    1.1122E-03  at reduced coord.    0.0000    0.0000    0.5000
+ Next minimum=    1.1130E-03  at reduced coord.    0.9931    0.0000    0.5000
+   Integrated=    4.8000E+01
+ Magnetization (spin up - spin down) [el/Bohr^3]
+      Maximum=    6.6469E-01  at reduced coord.    0.9236    0.5481    0.4688
+ Next maximum=    6.6469E-01  at reduced coord.    0.0764    0.4519    0.5313
+      Minimum=   -2.6502E-02  at reduced coord.    0.9792    0.5185    0.5250
+ Next minimum=   -2.6502E-02  at reduced coord.    0.0208    0.4815    0.4750
+   Integrated=    4.0000E+00
+ Relative magnetization (=zeta, between -1 and 1)
+      Maximum=    4.7854E-01  at reduced coord.    0.9236    0.4074    0.3875
+ Next maximum=    4.7853E-01  at reduced coord.    0.0764    0.5926    0.6125
+      Minimum=   -2.8003E-02  at reduced coord.    0.8403    0.9111    0.7750
+ Next minimum=   -2.8003E-02  at reduced coord.    0.1597    0.0889    0.2250
+
+ Cartesian components of stress tensor (hartree/bohr^3)
+  sigma(1 1)=  1.46180787E-02  sigma(3 2)=  2.47184548E-04
+  sigma(2 2)=  1.26643958E-02  sigma(3 1)= -8.88498936E-08
+  sigma(3 3)=  1.48810493E-02  sigma(2 1)=  6.20781487E-07
+
+-Cartesian components of stress tensor (GPa)         [Pressure= -4.1350E+02 GPa]
+- sigma(1 1)=  4.30078652E+02  sigma(3 2)=  7.27241926E+00
+- sigma(2 2)=  3.72599325E+02  sigma(3 1)= -2.61405368E-03
+- sigma(3 3)=  4.37815513E+02  sigma(2 1)=  1.82640188E-02
+
+== END DATASET(S) ==============================================================
+================================================================================
+  
+ -outvars: echo values of variables after computation  --------
+ 
+ These variables are accessible in NetCDF format (abo_OUT.nc)
+
+            acell      9.4000000000E-01  9.4000000000E-01  9.4000000000E-01 Bohr
+              amu      5.86900000E+01  1.20110000E+01  1.59994000E+01
+        autoparal           1
+           diemac      1.00000000E+00
+           diemix      4.00000000E-01
+             ecut      2.50000000E+02 Hartree
+           ecutsm      5.00000000E-01 Hartree
+           etotal     -4.5906419007E+02
+            fcart      4.7826951390E-06 -9.4224709602E-06 -6.1249535724E-06
+                       3.4755405238E-06  1.4121512663E-05  4.5334609254E-06
+                      -2.9147406747E-02 -3.2313805395E-03 -2.2045524969E-02
+                      -2.9181124506E-02  3.1929794901E-03  2.2048993647E-02
+                       2.9146777570E-02  3.2430016857E-03  2.2045057068E-02
+                       2.9180883291E-02 -3.2110046941E-03 -2.2047661784E-02
+                      -3.6849336357E-02  8.1999462549E-02 -3.8280418912E-02
+                      -3.6280584166E-02 -8.1891649542E-02  3.8342452277E-02
+                       3.6850264785E-02 -8.2006696752E-02  3.8279458257E-02
+                       3.6280396558E-02  8.1898319463E-02 -3.8340477946E-02
+                       5.1733463569E-02  8.0758964692E-02  2.4038960399E-02
+                       5.1170364002E-02 -8.0705477432E-02 -2.4169621775E-02
+                      -5.1736554202E-02 -8.0756972815E-02 -2.4040780623E-02
+                      -5.1175402030E-02  8.0705754853E-02  2.4171155853E-02
+-          fftalg         312
+              ixc     -263267
+              kpt      2.50000000E-01  2.50000000E-01  2.50000000E-01
+                      -2.50000000E-01  2.50000000E-01  2.50000000E-01
+                       2.50000000E-01 -2.50000000E-01  2.50000000E-01
+                      -2.50000000E-01 -2.50000000E-01  2.50000000E-01
+         kptrlatt        2    0    0      0    2    0      0    0    2
+          kptrlen      1.80716943E+01
+P           mkmem           1
+            natom          14
+            nband          65
+            ngfft         144     135     160
+             nkpt           4
+-        np_spkpt           8
+           nspden           2
+           nsppol           2
+            nstep          60
+             nsym           1
+           ntypat           3
+              occ      1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       1.000000  1.000000  1.000000  1.000000  1.000000  1.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000  0.000000
+                       0.000000  0.000000  0.000000  0.000000  0.000000
+           occopt           3
+           prtden           0
+           prteig           0
+          prtkden           1
+            prtwf           0
+            rprim      0.0000000000E+00  1.0137047334E+01  0.0000000000E+00
+                       9.6126033568E+00  0.0000000000E+00  0.0000000000E+00
+                       0.0000000000E+00 -5.7455806104E+00 -9.8776109362E+00
+           shiftk      5.00000000E-01  5.00000000E-01  5.00000000E-01
+          spgroup           1
+           spinat      0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+                       0.0000000000E+00  0.0000000000E+00  1.0000000000E+00
+           strten      1.4618078706E-02  1.2664395779E-02  1.4881049318E-02
+                       2.4718454793E-04 -8.8849893604E-08  6.2078148725E-07
+           toldfe      1.00000000E-06 Hartree
+           tsmear      1.00000000E-03 Hartree
+            typat      1  1  2  2  2  2  3  3  3  3  3  3  3  3
+          usekden           1
+              wtk        0.25000    0.25000    0.25000    0.25000
+           xangst      2.3907821875E+00 -1.4290022453E+00 -2.4566930939E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       2.9668985343E+00  1.1195575430E+00 -2.0185615342E+00
+                       5.7611634684E-01  2.4938769586E+00 -4.3813155975E-01
+                       1.8146658406E+00  1.0648747133E+00 -2.8948246537E+00
+                       4.2054480281E+00 -3.0944470233E-01 -4.4752546281E+00
+                       1.3988657841E+00  2.1004969827E+00 -3.3340175048E+00
+                       3.7896479716E+00 -1.3450669718E+00 -4.0360617769E+00
+                       3.3826985908E+00  8.3935273528E-02 -1.5793686830E+00
+                       9.9191640332E-01  3.5294992280E+00 -8.7732441092E-01
+                       3.4220508656E+00  2.1925805700E+00 -1.7996701795E+00
+                       1.0312686781E+00  1.4208539315E+00 -6.5702291442E-01
+                       1.3595135093E+00 -8.1483137821E-03 -3.1137160083E+00
+                       3.7502956968E+00  7.6357832473E-01 -4.2563632734E+00
+            xcart      4.5179235777E+00 -2.7004228869E+00 -4.6424771400E+00
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       5.6066256939E+00  2.1156571462E+00 -3.8145284819E+00
+                       1.0887021162E+00  4.7127444608E+00 -8.2794865811E-01
+                       3.4292214615E+00  2.0123215739E+00 -5.4704257981E+00
+                       7.9471450391E+00 -5.8476574067E-01 -8.4570056220E+00
+                       2.6434732287E+00  3.9693640403E+00 -6.3003800064E+00
+                       7.1613968064E+00 -2.5418082070E+00 -7.6270514137E+00
+                       6.3923739267E+00  1.5861467986E-01 -2.9845742737E+00
+                       1.8744503490E+00  6.6697869272E+00 -1.6579028663E+00
+                       6.4667389488E+00  4.1433768016E+00 -3.4008837687E+00
+                       1.9488153711E+00  2.6850248054E+00 -1.2415933713E+00
+                       2.5691082066E+00 -1.5398081493E-02 -5.8840705113E+00
+                       7.0870317843E+00  1.4429539147E+00 -8.0433609088E+00
+             xred      2.7020217699E-17  5.0000000000E-01  5.0000000000E-01
+                       0.0000000000E+00  0.0000000000E+00  0.0000000000E+00
+                       4.5488100000E-01  6.2048700000E-01  4.1082900000E-01
+                       5.4511900000E-01  1.2048700000E-01  8.9171000000E-02
+                       5.4511900000E-01  3.7951300000E-01  5.8917100000E-01
+                       4.5488100000E-01  8.7951300000E-01  9.1082900000E-01
+                       8.0116400000E-01  2.9255400000E-01  6.7855800000E-01
+                       1.9883600000E-01  7.9255400000E-01  8.2144200000E-01
+                       1.9883600000E-01  7.0744600000E-01  3.2144200000E-01
+                       8.0116400000E-01  2.0744600000E-01  1.7855800000E-01
+                       6.4242900000E-01  7.1567600000E-01  3.6627900000E-01
+                       3.5757100000E-01  2.1567600000E-01  1.3372100000E-01
+                       3.5757100000E-01  2.8432400000E-01  6.3372100000E-01
+                       6.4242900000E-01  7.8432400000E-01  8.6627900000E-01
+            znucl       28.00000    6.00000    8.00000
+
+================================================================================
+  
+
+================================================================================
+
+ Suggested references for the acknowledgment of ABINIT usage.
+
+ The users of ABINIT have little formal obligations with respect to the ABINIT group
+ (those specified in the GNU General Public License, http://www.gnu.org/copyleft/gpl.txt).
+ However, it is common practice in the scientific literature,
+ to acknowledge the efforts of people that have made the research possible.
+ In this spirit, please find below suggested citations of work written by ABINIT developers,
+ corresponding to implementations inside of ABINIT that you have used in the present run.
+ Note also that it will be of great value to readers of publications presenting these results,
+ to read papers enabling them to understand the theoretical formalism and details
+ of the ABINIT implementation.
+ For information on why they are suggested, see also https://docs.abinit.org/theory/acknowledgments.
+-
+- [1] Libxc: A library of exchange and correlation functionals for density functional theory.
+- M.A.L. Marques, M.J.T. Oliveira, T. Burnus, Computer Physics Communications 183, 2227 (2012).
+- Comment: to be cited when LibXC is used (negative value of ixc)
+- Strong suggestion to cite this paper.
+- DOI and bibtex: see https://docs.abinit.org/theory/bibliography/#marques2012
+-
+- [2] The Abinit project: Impact, environment and recent developments.
+- Computer Phys. Comm. 248, 107042 (2020).
+- X.Gonze, B. Amadon, G. Antonius, F.Arnardi, L.Baguet, J.-M.Beuken,
+- J.Bieder, F.Bottin, J.Bouchet, E.Bousquet, N.Brouwer, F.Bruneval,
+- G.Brunin, T.Cavignac, J.-B. Charraud, Wei Chen, M.Cote, S.Cottenier,
+- J.Denier, G.Geneste, Ph.Ghosez, M.Giantomassi, Y.Gillet, O.Gingras,
+- D.R.Hamann, G.Hautier, Xu He, N.Helbig, N.Holzwarth, Y.Jia, F.Jollet,
+- W.Lafargue-Dit-Hauret, K.Lejaeghere, M.A.L.Marques, A.Martin, C.Martins,
+- H.P.C. Miranda, F.Naccarato, K. Persson, G.Petretto, V.Planes, Y.Pouillon,
+- S.Prokhorenko, F.Ricci, G.-M.Rignanese, A.H.Romero, M.M.Schmitt, M.Torrent,
+- M.J.van Setten, B.Van Troeye, M.J.Verstraete, G.Zerah and J.W.Zwanzig
+- Comment: the fifth generic paper describing the ABINIT project.
+- Note that a version of this paper, that is not formatted for Computer Phys. Comm. 
+- is available at https://www.abinit.org/sites/default/files/ABINIT20.pdf .
+- The licence allows the authors to put it on the Web.
+- DOI and bibtex: see https://docs.abinit.org/theory/bibliography/#gonze2020
+-
+- [3] Optimized norm-conserving Vanderbilt pseudopotentials.
+- D.R. Hamann, Phys. Rev. B 88, 085117 (2013).
+- Comment: Some pseudopotential generated using the ONCVPSP code were used.
+- DOI and bibtex: see https://docs.abinit.org/theory/bibliography/#hamann2013
+-
+- [4] ABINIT: Overview, and focus on selected capabilities
+- J. Chem. Phys. 152, 124102 (2020).
+- A. Romero, D.C. Allan, B. Amadon, G. Antonius, T. Applencourt, L.Baguet,
+- J.Bieder, F.Bottin, J.Bouchet, E.Bousquet, F.Bruneval,
+- G.Brunin, D.Caliste, M.Cote,
+- J.Denier, C. Dreyer, Ph.Ghosez, M.Giantomassi, Y.Gillet, O.Gingras,
+- D.R.Hamann, G.Hautier, F.Jollet, G. Jomard,
+- A.Martin, 
+- H.P.C. Miranda, F.Naccarato, G.Petretto, N.A. Pike, V.Planes,
+- S.Prokhorenko, T. Rangel, F.Ricci, G.-M.Rignanese, M.Royo, M.Stengel, M.Torrent,
+- M.J.van Setten, B.Van Troeye, M.J.Verstraete, J.Wiktor, J.W.Zwanziger, and X.Gonze.
+- Comment: a global overview of ABINIT, with focus on selected capabilities .
+- Note that a version of this paper, that is not formatted for J. Chem. Phys 
+- is available at https://www.abinit.org/sites/default/files/ABINIT20_JPC.pdf .
+- The licence allows the authors to put it on the Web.
+- DOI and bibtex: see https://docs.abinit.org/theory/bibliography/#romero2020
+-
+- [5] Recent developments in the ABINIT software package.
+- Computer Phys. Comm. 205, 106 (2016).
+- X.Gonze, F.Jollet, F.Abreu Araujo, D.Adams, B.Amadon, T.Applencourt,
+- C.Audouze, J.-M.Beuken, J.Bieder, A.Bokhanchuk, E.Bousquet, F.Bruneval
+- D.Caliste, M.Cote, F.Dahm, F.Da Pieve, M.Delaveau, M.Di Gennaro,
+- B.Dorado, C.Espejo, G.Geneste, L.Genovese, A.Gerossier, M.Giantomassi,
+- Y.Gillet, D.R.Hamann, L.He, G.Jomard, J.Laflamme Janssen, S.Le Roux,
+- A.Levitt, A.Lherbier, F.Liu, I.Lukacevic, A.Martin, C.Martins,
+- M.J.T.Oliveira, S.Ponce, Y.Pouillon, T.Rangel, G.-M.Rignanese,
+- A.H.Romero, B.Rousseau, O.Rubel, A.A.Shukri, M.Stankovski, M.Torrent,
+- M.J.Van Setten, B.Van Troeye, M.J.Verstraete, D.Waroquier, J.Wiktor,
+- B.Xu, A.Zhou, J.W.Zwanziger.
+- Comment: the fourth generic paper describing the ABINIT project.
+- Note that a version of this paper, that is not formatted for Computer Phys. Comm. 
+- is available at https://www.abinit.org/sites/default/files/ABINIT16.pdf .
+- The licence allows the authors to put it on the Web.
+- DOI and bibtex: see https://docs.abinit.org/theory/bibliography/#gonze2016
+ Proc.   0 individual time (sec): cpu=       3760.4  wall=       3772.2
+
+ Calculation completed.
+.Delivered   0 WARNINGs and   0 COMMENTs to log file.
+
+--- !FinalSummary
+program: abinit
+version: 9.6.2
+start_datetime: Wed Dec 14 23:01:20 2022
+end_datetime: Thu Dec 15 00:04:12 2022
+overall_cpu_time:       30088.5
+overall_wall_time:       30177.3
+exit_requested_by_user: no 
+timelimit: 0
+pseudos: 
+    Ni  : 6ed2f4ef33f542dbb8bccaf193f9ee1b
+    C   : 0671db42fbc6781d44a36978545fd691
+    O   : ec29db0878725605673bf3262559bcee
+usepaw: 0
+mpi_procs: 10
+omp_threads: 1
+num_warnings: 0
+num_comments: 0
+...
+---------------------------------------
+Begin Slurm Epilog: Dec-15-2022 00:04:13
+Job ID:        184340
+Array Job ID:  _4294967294
+User ID:       bzhang376
+Account:       gts-phanish6-coda20
+Job name:      Abi094
+Resources:     cpu=10,mem=70G,node=1
+Rsrc Used:     cput=10:29:10,vmem=7464K,walltime=01:02:55,mem=7368K,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-02-005-20-1
+---------------------------------------

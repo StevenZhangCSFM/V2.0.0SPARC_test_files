@@ -1,0 +1,25 @@
+---------------------------------------
+Begin Slurm Prolog: Dec-14-2022 22:57:40
+Job ID:    184333
+User ID:   bzhang376
+Account:   gts-phanish6-coda20
+Job name:  Abi094
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 184333 ON atl1-1-02-005-20-1 CANCELLED AT 2022-12-14T22:58:12 ***
+slurmstepd: error: *** STEP 184333.0 ON atl1-1-02-005-20-1 CANCELLED AT 2022-12-14T22:58:12 ***
+---------------------------------------
+Begin Slurm Epilog: Dec-14-2022 22:58:15
+Job ID:        184333
+Array Job ID:  _4294967294
+User ID:       bzhang376
+Account:       gts-phanish6-coda20
+Job name:      Abi094
+Resources:     cpu=14,mem=98G,node=1
+Rsrc Used:     cput=00:07:28,vmem=7848K,walltime=00:00:32,mem=7348K,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-02-005-20-1
+---------------------------------------

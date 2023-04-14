@@ -1,0 +1,22 @@
+---------------------------------------
+Begin Slurm Prolog: Dec-22-2022 11:23:56
+Job ID:    223838
+User ID:   bzhang376
+Account:   gts-phanish6-coda20
+Job name:  C_62
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+---------------------------------------
+Begin Slurm Epilog: Dec-22-2022 11:28:31
+Job ID:        223838
+Array Job ID:  _4294967294
+User ID:       bzhang376
+Account:       gts-phanish6-coda20
+Job name:      C_62
+Resources:     cpu=48,mem=336G,node=2
+Rsrc Used:     cput=03:40:00,vmem=8348K,walltime=00:04:35,mem=7056K,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-02-004-5-2,atl1-1-02-004-6-1
+---------------------------------------

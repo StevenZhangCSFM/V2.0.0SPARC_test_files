@@ -1,0 +1,90 @@
+
+#Unit cell description
+#*********************
+acell  1.04 1.04 1.04
+natom  14
+ntypat 3 
+typat  2*1 4*2 8*3
+znucl  28 6 8
+nband  65
+rprim  0.0 10.1370473339769 0.0
+       9.61260335675681 0.0 0.0
+       0.0 -5.74558061042 -9.87761093623239
+xred   0.0000000000000000    0.5000000000000000    0.5000000000000000
+       0.0000000000000000    0.0000000000000000    0.0000000000000000
+       0.4548810000000001    0.6204870000000002    0.4108289999999999
+       0.5451189999999999    0.1204870000000002    0.0891710000000001
+       0.5451189999999999    0.3795129999999998    0.5891710000000001
+       0.4548810000000001    0.8795129999999998    0.9108289999999999
+       0.8011640000000000    0.2925540000000001    0.6785580000000000
+       0.1988360000000000    0.7925540000000000    0.8214420000000000
+       0.1988360000000000    0.7074459999999999    0.3214420000000000
+       0.8011640000000000    0.2074459999999999    0.1785580000000000
+       0.6424290000000000    0.7156760000000001    0.3662790000000000
+       0.3575710000000000    0.2156760000000001    0.1337210000000000
+       0.3575710000000000    0.2843239999999999    0.6337210000000000
+       0.6424290000000000    0.7843239999999999    0.8662790000000000
+ixc    -263267
+nsym   1
+nsppol 2
+spinat 0 0 1.0
+       0 0 1.0
+       0 0 1.0
+       0 0 1.0
+       0 0 1.0
+       0 0 1.0
+       0 0 1.0
+       0 0 1.0
+       0 0 1.0
+       0 0 1.0
+       0 0 1.0
+       0 0 1.0
+       0 0 1.0
+       0 0 1.0
+
+#k-points and symetries
+#**********************
+ kptopt 1
+ ngkpt 2 2 2
+ nshiftk 1  
+ shiftk  0.5 0.5 0.5
+
+#Plane wave basis set
+#********************
+ecut   250.   # 600 800
+ecutsm 0.5d0 # What is its function? 0.5d0
+
+#SCF procedure parameters
+#************************
+nstep     60
+toldfe    1.d-6
+diemac    1.0 # Set as 1.0= MIXING_PRECOND: none
+diemix    0.4
+iscf      7 # potential pulay mixing
+occopt 3            # 1 = insulator, 3 =  Fermi-Dirac smearing, 7 = gaussian broadening
+tsmear 0.001         # broadening energy parameter (Ha): default = 0.04, 0.01 better for d-band metals
+usekden 1
+
+#Miscelaneous
+*************
+prtden 0
+prtwf  0
+prteig 0
+
+autoparal 1
+
+#%%<BEGIN TEST_INFO>
+#%% [setup]
+#%% executable = abinit
+#%% [files]
+#%% files_to_test = 
+#%%   t10.abo, tolnlines = 0, tolabs = 0.0, tolrel = 0.0, fld_options = -medium 
+#%% [paral_info]
+#%% max_nprocs = 2
+#%% [extra_info]
+#%% authors = M. Torrent
+#%% keywords = 
+#%% description = 
+#%%   Argon FCC. Test the vdW-DFT-D2 (Grimme) semi-empirical potential.
+#%% topics = vdw
+#%%<END TEST_INFO>

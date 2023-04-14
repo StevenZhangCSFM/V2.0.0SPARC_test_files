@@ -1,0 +1,66 @@
+
+#Unit cell description
+#*********************
+acell  1.0 1.0 1.0
+natom  4  ntypat 1 znucl 79
+typat  4*1
+nspinor 2
+nband  100
+rprim  7.88259133953532  0.0000000000000000  0.0000000000000000
+       0.0000000000000000  7.88259133953532  0.0000000000000000
+       0.0000000000000000  0.0000000000000000  7.88259133953532
+xred   0   0   0
+       0   0.5 0.5
+       0.5 0   0.5
+       0.5 0.5 0
+ixc    11
+nsym   1
+
+#k-points and symetries
+#**********************
+ kptopt 1
+ ngkpt 10 10 10
+ nshiftk 1  
+ shiftk  0.0 0.0 0.0
+
+#Plane wave basis set
+#********************
+ecut   120.   # 800
+ecutsm 0.5d0 # What is its function? 0.5d0
+
+#SCF procedure parameters
+#************************
+nstep     60
+toldfe    5.d-5
+diemac    1.0 # Set as 1.0= MIXING_PRECOND: none
+diemix    0.3
+iscf      7 # potential pulay mixing
+occopt 3            # 1 = insulator, 3 =  Fermi-Dirac smearing, 7 = gaussian broadening
+tsmear 0.001         # broadening energy parameter (Ha): default = 0.04, 0.01 better for d-band metals
+
+#Parallel
+#************************
+autoparal 1
+
+#Miscelaneous
+*************
+prtden 0
+prtwf  0
+prteig 1
+
+
+#%%<BEGIN TEST_INFO>
+#%% [setup]
+#%% executable = abinit
+#%% [files]
+#%% files_to_test = 
+#%%   t10.abo, tolnlines = 0, tolabs = 0.0, tolrel = 0.0, fld_options = -medium 
+#%% [paral_info]
+#%% max_nprocs = 2
+#%% [extra_info]
+#%% authors = M. Torrent
+#%% keywords = 
+#%% description = 
+#%%   Argon FCC. Test the vdW-DFT-D2 (Grimme) semi-empirical potential.
+#%% topics = vdw
+#%%<END TEST_INFO>
