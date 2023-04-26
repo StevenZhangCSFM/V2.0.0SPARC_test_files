@@ -7,9 +7,9 @@ curve1 = plot(qeE + shift, qeDOS, '-k', 'linewidth',1.5);
 hold on;
 curve2 = plot(sparcE, sparcDOS, '--r', 'linewidth',1.5);
 hold on;
-fermiLevel = [-1.9697324277E-01*27.2113897,0.00001;-1.9697324277E-01*27.2113897,54];
-fermiLevelQE = [1.512299078679678e-1*27.2113897 + shift,0.00001;1.512299078679678e-1*27.2113897 + shift,24];
-% curve3 = plot(fermiLevel(:,1),fermiLevel(:,2),':b', 'linewidth',1.5);
+fermiLevel = [-0.25078*27.2113897,0.00001;-0.25078*27.2113897,54]; % at the middle of LUMO and HOMO
+% fermiLevelQE = [1.512299078679678e-1*27.2113897 + shift,0.00001;1.512299078679678e-1*27.2113897 + shift,24];
+curve3 = plot(fermiLevel(:,1),fermiLevel(:,2),':b', 'linewidth',1.5);
 % curve4 = plot(fermiLevelQE(:,1),fermiLevelQE(:,2),':r', 'linewidth',1.5);
 axis([-33 -3 0 24]);
 ylabel('Density of states','Interpreter','latex');
