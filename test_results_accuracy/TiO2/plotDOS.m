@@ -11,10 +11,10 @@ fermiLevel = [-0.25078*27.2113897,0.00001;-0.25078*27.2113897,54]; % at the midd
 % fermiLevelQE = [1.512299078679678e-1*27.2113897 + shift,0.00001;1.512299078679678e-1*27.2113897 + shift,24];
 curve3 = plot(fermiLevel(:,1),fermiLevel(:,2),':b', 'linewidth',1.5);
 % curve4 = plot(fermiLevelQE(:,1),fermiLevelQE(:,2),':r', 'linewidth',1.5);
-axis([-33 -3 0 24]);
+axis([-33 -3 0 48]);
 ylabel('Density of states','Interpreter','latex');
-yticks([0 6 12 18 24]);
-yticklabels({'0.0','6.0','12.0','18.0','24.0'});
+yticks([0 12 24 36 48]);
+yticklabels({'0.0','12.0','24.0','36.0','48.0'});
 xlabel('Energy (eV)','Interpreter','latex');
 xticks([-33 -27 -21 -15 -9 -3]);
 xticklabels({'-33.0','-27.0','-21.0','-15.0','-9.0','-3.0'});

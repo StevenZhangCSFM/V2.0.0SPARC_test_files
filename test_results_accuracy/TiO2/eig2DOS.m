@@ -1,6 +1,7 @@
 function [DOS, E] = eig2DOS(lambda_nk, N, sigma)
     % EIG2DOS plots density of states (DOS) based on the eigenvalues
-    % DOE(e) = 2 \sum_{n=1}^{Ns} delta(lambda(n) -  e)
+    % DOS(e) = 2 \fint_{BZ}\sum_{n=1}^{Ns} delta(lambda(n) -  e)
+    % The input sigma is \sqrt 2*\sigma
     %
     % @param lambda Eigenvalues
     % @param n      Number of points in E
@@ -29,7 +30,7 @@ function [DOS, E] = eig2DOS(lambda_nk, N, sigma)
     
     E = linspace(Emin, Emax, N);
     
-    DOS = sum(gauss_distribution(colminusrow(E, lambda), sigma), 2)/N_k;
+    DOS = 2 * sum(gauss_distribution(colminusrow(E, lambda), sigma), 2)/N_k;
     
     end
     
