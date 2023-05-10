@@ -23,11 +23,10 @@ function [fitresult, gof] = createFit(volume, energy)
 [xData, yData] = prepareCurveData( volume, energy);
 
 % Set up fittype and options.
-% ft = fittype( '3/2*a*((905.90496501/x)^(7/3)-(905.90496501/x)^(5/3))*(1+3/4*(b-4)*((905.90496501/x)^(2/3)-1))', 'independent', 'x', 'dependent', 'y' );
-ft = fittype( '-459.142241012 + 9*933.92068956*a/16*(((x/933.92068956)^(2/3)-1).^3 * b + (((x/933.92068956).^(2/3)-1).^2).*(6-4*(x/933.92068956).^(2/3)))', 'independent', 'x', 'dependent', 'y' );
+ft = fittype( '-c + 9*d*a/16*(((d/x)^(2/3)-1).^3 * b + (((d/x).^(2/3)-1).^2).*(6-4*(d/x).^(2/3)))', 'independent', 'x', 'dependent', 'y' );
 opts = fitoptions( 'Method', 'NonlinearLeastSquares' );
 opts.Display = 'Off';
-opts.StartPoint = [0.0061 4.146];
+opts.StartPoint = [0.0061 4.146 -459.142241012 933.92068956];
 
 % Fit model to data.
 [fitresult, gof] = fit( xData, yData, ft, opts );

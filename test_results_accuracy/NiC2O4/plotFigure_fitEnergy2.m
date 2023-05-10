@@ -1,11 +1,10 @@
 load('dataSetCorrect2.mat');
-% volume = [701.66843693	749.49354159	799.44386423	851.56560524	905.90496501	962.50814394	1021.4213424	1082.6907608	1146.3625996	1212.483059	1281.0983396];
 volume = [799.443864	825.230420	851.565605	878.455195	905.904965	933.920690	962.508144	991.673103	1021.421342	1051.758637	1082.690761];
 volume_interp = linspace(700, 1250, 200);
-% energyAbinit = [energyAbinit(3:5),energyAbinit(7:9)];
-% energySPARC = [energySPARC(3:5),energySPARC(7:9)];
-% pressureSPARC = [pressureSPARC(3:5),pressureSPARC(7:9)];
+
 [SPARCfitResult] = fittingEnergy(energySPARC, volume);
+[AbinitfitResult] = fittingEnergy(energyAbinit, volume);
+
 yyaxis left;
 curve3 = plot(volume/14,energyAbinit,'*','color','r','MarkerSize',8);
 hold on;
@@ -15,6 +14,11 @@ SPARCFitEnergy = SPARCfitResult(volume_interp)/14;
 curve5 = plot(volume_interp/14,SPARCFitEnergy,'-','color','#0072BD','MarkerSize',8);
 SPARCB0 = SPARCfitResult.a;
 SPARCdB0 = SPARCfitResult.b;
+SPARCE = SPARCfitResult.c;
+SPARCV0 = SPARCfitResult.d;
+
+AbinitE = AbinitfitResult.c;
+AbinitV0 = AbinitfitResult.d;
 hold on;
 axis([55 80 -32.797 -32.785]);
 yticks([-32.797 -32.793 -32.789 -32.785]);
@@ -23,7 +27,7 @@ ylabel('Energy (Ha/atom)','Interpreter','latex');
 yyaxis right;
 curve2 = plot(volume/14,pressureSPARC,'o','color','#D95139','MarkerSize',8);
 hold on;
-SPARCFitPres = (3/2*SPARCB0*((933.92068956./volume_interp).^(7/3)-(933.92068956./volume_interp).^(5/3)).*(1+3/4*(SPARCdB0-4)*((933.92068956./volume_interp).^(2/3)-1))) * 29421.0264843896;
+SPARCFitPres = (3/2*SPARCB0*((SPARCV0./volume_interp).^(7/3)-(SPARCV0./volume_interp).^(5/3)).*(1+3/4*(SPARCdB0-4)*((SPARCV0./volume_interp).^(2/3)-1))) * 29421.0264843896;
 plot(volume_interp/14,SPARCFitPres,'-','color','#D95139','MarkerSize',8);
 hold on;
 axis([55 80 -40 80]);
