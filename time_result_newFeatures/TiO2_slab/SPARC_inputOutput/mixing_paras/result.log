@@ -1,0 +1,10 @@
+doing mixing_paras
+indx -1
+tol = 1.000000e-03
+running mesh 0.25000, mixing_paras 0.50000
+wtime 1040.70 s
+running mesh 0.25000, mixing_paras 0.70000
+wtime 1023.75 s
+running mesh 0.25000, mixing_paras 0.90000
+wtime 1018.03 s
+wtime_list:  [1040.699, 1023.745, 1018.028]

@@ -1,0 +1,26 @@
+---------------------------------------
+Begin Slurm Prolog: Feb-08-2023 18:01:46
+Job ID:    673690
+User ID:   bzhang376
+Account:   gts-phanish6-coda20
+Job name:  NiC2O4_script
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+  File "/storage/home/hcoda1/3/bzhang376/SPARC_repo/tests_updateSPARC_speedNewFeatures/NiC2O4_SCAN/mesh_TOLscf_primeCell/fdn_test.py", line 70
+    mesh_list = [0.2 0.24 0.28]
+                     ^
+SyntaxError: invalid syntax
+---------------------------------------
+Begin Slurm Epilog: Feb-08-2023 18:01:55
+Job ID:        673690
+Array Job ID:  _4294967294
+User ID:       bzhang376
+Account:       gts-phanish6-coda20
+Job name:      NiC2O4_script
+Resources:     cpu=48,mem=336G,node=4
+Rsrc Used:     cput=00:07:12,vmem=1124K,walltime=00:00:09,mem=0,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-03-004-1-[1-2],atl1-1-03-004-2-1,atl1-1-03-004-7-1
+---------------------------------------

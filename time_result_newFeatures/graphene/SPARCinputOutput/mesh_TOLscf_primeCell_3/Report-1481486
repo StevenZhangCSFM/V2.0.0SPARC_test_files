@@ -1,0 +1,24 @@
+---------------------------------------
+Begin Slurm Prolog: Mar-31-2023 16:19:44
+Job ID:    1481486
+User ID:   bzhang376
+Account:   gts-phanish6-coda20
+Job name:  graphene_script
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+srun: Job 1481486 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 1481486
+---------------------------------------
+Begin Slurm Epilog: Mar-31-2023 16:21:29
+Job ID:        1481486
+Array Job ID:  _4294967294
+User ID:       bzhang376
+Account:       gts-phanish6-coda20
+Job name:      graphene_script
+Resources:     cpu=48,mem=336G,node=4
+Rsrc Used:     cput=01:25:36,vmem=91020K,walltime=00:01:47,mem=40212K,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-02-002-4-2,atl1-1-02-002-9-1,atl1-1-02-002-16-1,atl1-1-02-002-22-1
+---------------------------------------

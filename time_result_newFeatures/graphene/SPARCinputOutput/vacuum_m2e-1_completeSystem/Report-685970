@@ -1,0 +1,22 @@
+---------------------------------------
+Begin Slurm Prolog: Feb-10-2023 18:38:22
+Job ID:    685970
+User ID:   bzhang376
+Account:   gts-phanish6-coda20
+Job name:  graphene_vacuum
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+---------------------------------------
+Begin Slurm Epilog: Feb-10-2023 19:00:29
+Job ID:        685970
+Array Job ID:  _4294967294
+User ID:       bzhang376
+Account:       gts-phanish6-coda20
+Job name:      graphene_vacuum
+Resources:     cpu=240,mem=1680G,node=20
+Rsrc Used:     cput=3-16:28:00,vmem=32320K,walltime=00:22:07,mem=10268K,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-02-010-12-2,atl1-1-02-010-13-[1-2],atl1-1-02-010-15-2,atl1-1-02-010-16-[1-2],atl1-1-02-010-17-2,atl1-1-02-010-18-[1-2],atl1-1-02-010-19-2,atl1-1-02-010-20-[1-2],atl1-1-02-010-21-[1-2],atl1-1-02-010-22-1,atl1-1-02-010-26-1,atl1-1-02-010-28-[1-2],atl1-1-02-010-29-[1-2]
+---------------------------------------

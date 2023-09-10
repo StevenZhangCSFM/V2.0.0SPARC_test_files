@@ -1,0 +1,22 @@
+---------------------------------------
+Begin Slurm Prolog: Feb-13-2023 17:23:01
+Job ID:    697858
+User ID:   bzhang376
+Account:   gts-phanish6-coda20
+Job name:  Au_SOC
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+---------------------------------------
+Begin Slurm Epilog: Feb-13-2023 17:35:45
+Job ID:        697858
+Array Job ID:  _4294967294
+User ID:       bzhang376
+Account:       gts-phanish6-coda20
+Job name:      Au_SOC
+Resources:     cpu=96,mem=672G,node=8
+Rsrc Used:     cput=20:24:00,vmem=41580K,walltime=00:12:45,mem=40404K,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-02-005-2-2,atl1-1-02-005-3-1,atl1-1-02-005-4-2,atl1-1-02-005-17-2,atl1-1-02-005-18-[1-2],atl1-1-02-005-19-[1-2]
+---------------------------------------

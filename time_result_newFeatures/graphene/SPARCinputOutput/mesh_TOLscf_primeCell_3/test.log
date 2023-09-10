@@ -1,0 +1,34 @@
+I am rank 12 in zAxisComm, my coord is 0 0 12, my ZAxisVertices is 117 125, there are 15 processors in it.
+
+fchrg = 4.00000000 > 0.0 (icmod != 0)
+This pseudopotential contains non-linear core correction. 
+
+fchrg = 4.000000, READING MODEL CORE CHARGE!
+
+[33m
+WARNING: Pseudopotential file for atom type C has pspxc = 11,
+not equal to input ixc = -102 (vdWDF1). Be careful with the result.
+[0mI am rank 0 in zAxisComm, my coord is 0 0 0, my ZAxisVertices is 0 9, there are 15 processors in it.
+WARNING: The density after mixing has negative components!
+WARNING: The density after mixing has negative components!
+WARNING: The density after mixing has negative components!
+WARNING: The density after mixing has negative components!
+WARNING: The density after mixing has negative components!
+WARNING: The density after mixing has negative components!
+WARNING: The density after mixing has negative components!
+WARNING: The density after mixing has negative components!
+WARNING: The density after mixing has negative components!
+The program took 1.707 s.
+I am rank 1 in zAxisComm, my coord is 0 0 1, my ZAxisVertices is 10 19, there are 15 processors in it.
+I am rank 13 in zAxisComm, my coord is 0 0 13, my ZAxisVertices is 126 134, there are 15 processors in it.
+I am rank 2 in zAxisComm, my coord is 0 0 2, my ZAxisVertices is 20 29, there are 15 processors in it.
+I am rank 14 in zAxisComm, my coord is 0 0 14, my ZAxisVertices is 135 143, there are 15 processors in it.
+I am rank 3 in zAxisComm, my coord is 0 0 3, my ZAxisVertices is 30 39, there are 15 processors in it.
+I am rank 4 in zAxisComm, my coord is 0 0 4, my ZAxisVertices is 40 49, there are 15 processors in it.
+I am rank 5 in zAxisComm, my coord is 0 0 5, my ZAxisVertices is 50 59, there are 15 processors in it.
+I am rank 6 in zAxisComm, my coord is 0 0 6, my ZAxisVertices is 60 69, there are 15 processors in it.
+I am rank 7 in zAxisComm, my coord is 0 0 7, my ZAxisVertices is 70 79, there are 15 processors in it.
+I am rank 8 in zAxisComm, my coord is 0 0 8, my ZAxisVertices is 80 89, there are 15 processors in it.
+I am rank 9 in zAxisComm, my coord is 0 0 9, my ZAxisVertices is 90 98, there are 15 processors in it.
+I am rank 11 in zAxisComm, my coord is 0 0 11, my ZAxisVertices is 108 116, there are 15 processors in it.
+I am rank 10 in zAxisComm, my coord is 0 0 10, my ZAxisVertices is 99 107, there are 15 processors in it.

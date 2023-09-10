@@ -1,0 +1,29 @@
+---------------------------------------
+Begin Slurm Prolog: Feb-14-2023 17:56:52
+Job ID:    705074
+User ID:   bzhang376
+Account:   gts-phanish6
+Job name:  TiO2_mesh
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+
+Lmod is automatically replacing "gcc/10.3.0-o57x6h" with "intel/20.0.4".
+
+
+The following have been reloaded with a version change:
+  1) mvapich2/2.3.6-ouywal => mvapich2/2.3.6-z2duuy
+
+---------------------------------------
+Begin Slurm Epilog: Feb-14-2023 18:20:25
+Job ID:        705074
+Array Job ID:  _4294967294
+User ID:       bzhang376
+Account:       gts-phanish6
+Job name:      TiO2_mesh
+Resources:     cpu=360,mem=2520G,node=30
+Rsrc Used:     cput=5-21:18:00,vmem=13520K,walltime=00:23:33,mem=11336K,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-02-017-1-2,atl1-1-02-017-3-[1-2],atl1-1-02-017-4-1,atl1-1-02-017-5-2,atl1-1-02-017-6-1,atl1-1-02-017-8-2,atl1-1-02-017-10-2,atl1-1-02-017-11-1,atl1-1-02-017-17-1,atl1-1-02-017-22-[1-2],atl1-1-02-017-23-[1-2],atl1-1-02-017-24-[1-2],atl1-1-02-017-25-[1-2],atl1-1-02-017-26-[1-2],atl1-1-02-017-27-[1-2],atl1-1-02-017-28-[1-2],atl1-1-02-017-29-[1-2],atl1-1-02-017-30-[1-2],atl1-1-02-017-31-[1-2]
+---------------------------------------

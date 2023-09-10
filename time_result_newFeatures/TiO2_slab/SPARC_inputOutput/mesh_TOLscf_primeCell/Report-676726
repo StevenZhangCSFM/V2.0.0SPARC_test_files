@@ -1,0 +1,22 @@
+---------------------------------------
+Begin Slurm Prolog: Feb-09-2023 12:07:16
+Job ID:    676726
+User ID:   bzhang376
+Account:   gts-phanish6-coda20
+Job name:  NiC2O4_script
+Partition: cpu-small
+QOS:       inferno
+---------------------------------------
+---------------------------------------
+Begin Slurm Epilog: Feb-09-2023 12:11:30
+Job ID:        676726
+Array Job ID:  _4294967294
+User ID:       bzhang376
+Account:       gts-phanish6-coda20
+Job name:      NiC2O4_script
+Resources:     cpu=96,mem=672G,node=8
+Rsrc Used:     cput=06:46:24,vmem=41380K,walltime=00:04:14,mem=40248K,energy_used=0
+Partition:     cpu-small
+QOS:           inferno
+Nodes:         atl1-1-02-002-5-1,atl1-1-02-002-6-1,atl1-1-02-002-9-2,atl1-1-02-002-11-2,atl1-1-02-002-13-2,atl1-1-02-002-15-2,atl1-1-02-002-16-2,atl1-1-02-002-18-2
+---------------------------------------

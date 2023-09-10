@@ -1,0 +1,230 @@
+***************************************************************************
+*                       SPARC (version JAN 25, 2023)                      *
+*   Copyright (c) 2020 Material Physics & Mechanics Group, Georgia Tech   *
+*           Distributed under GNU General Public License 3 (GPL)          *
+*                   Start time: Sat Feb 11 21:29:20 2023                  *
+***************************************************************************
+                           Input parameters                                
+***************************************************************************
+LATVEC_SCALE: 17.5236981730929 11.2151152043688 52.9814825493465 
+LATVEC:
+1 0 0 
+0 1 0 
+0 0 1 
+FD_GRID: 117 75 353
+FD_ORDER: 12
+BC: P P D
+KPOINT_GRID: 3 3 1
+KPOINT_SHIFT: 0 0 0
+SPIN_TYP: 0
+ELEC_TEMP_TYPE: Gaussian
+SMEARING: 0.001836999861
+EXCHANGE_CORRELATION: HSE
+EXX_RANGE_FOCK: 0.106000
+EXX_RANGE_PBE: 0.106000
+NSTATES: 465
+CHEB_DEGREE: 42
+CHEFSI_BOUND_FLAG: 0
+CALC_STRESS: 0
+CALC_PRES: 0
+MAXIT_SCF: 100
+MINIT_SCF: 2
+MAXIT_POISSON: 3000
+TOL_SCF: 1.00E-05
+POISSON_SOLVER: AAR
+TOL_POISSON: 1.00E-07
+TOL_LANCZOS: 1.00E-02
+TOL_PSEUDOCHARGE: 1.00E-08
+MIXING_VARIABLE: density
+MIXING_PRECOND: kerker
+TOL_PRECOND: 2.24E-05
+PRECOND_KERKER_KTF: 1
+PRECOND_KERKER_THRESH: 0.1
+MIXING_PARAMETER: 0.3
+MIXING_HISTORY: 7
+PULAY_FREQUENCY: 1
+PULAY_RESTART: 0
+REFERENCE_CUTOFF: 0.5
+RHO_TRIGGER: 4
+FIX_RAND: 0
+VERBOSITY: 1
+PRINT_FORCES: 1
+PRINT_ATOMS: 1
+PRINT_EIGEN: 0
+PRINT_DENSITY: 0
+PRINT_ENERGY_DENSITY: 0
+EXX_FRAC: 0.25
+TOL_FOCK: 2.00E-06
+TOL_SCF_INIT: 1.00E-03
+MAXIT_FOCK: 20
+MINIT_FOCK: 2
+EXX_METHOD: FOURIER_SPACE
+EXX_DIVERGENCE: AUXILIARY
+EXX_MEM: 12
+ACE_FLAG: 1
+EXX_ACE_VALENCE_STATES: 3
+EXX_DOWNSAMPLING: 1 1 1
+OUTPUT_FILE: TiO2_HSE
+***************************************************************************
+                                Cell                                       
+***************************************************************************
+Lattice vectors (Bohr):
+17.523698173092900 0.000000000000000 0.000000000000000 
+0.000000000000000 11.215115204368800 0.000000000000000 
+0.000000000000000 0.000000000000000 52.981482549346488 
+Volume: 1.0412466332E+04 (Bohr^3)
+***************************************************************************
+                           Parallelization                                 
+***************************************************************************
+NP_SPIN_PARAL: 1
+NP_KPOINT_PARAL: 5
+NP_BAND_PARAL: 6
+NP_DOMAIN_PARAL: 2 1 8
+NP_DOMAIN_PHI_PARAL: 6 4 20
+EIG_SERIAL_MAXNS: 1500
+***************************************************************************
+                             Initialization                                
+***************************************************************************
+Number of processors               :  480
+Mesh spacing in x-direction        :  0.149775 (Bohr)
+Mesh spacing in y-direction        :  0.149535 (Bohr)
+Mesh spacing in z-direction        :  0.150089 (Bohr)
+Number of symmetry adapted k-points:  5
+Output printed to                  :  TiO2_HSE.out
+Total number of atom types         :  2
+Total number of atoms              :  96
+Total number of electrons          :  768
+Atom type 1  (valence electrons)   :  O 6
+Pseudopotential                    :  ../08_O_6_1.2_1.4_pbe_n_v1.0.psp8
+Pseudocharge radii of atom type 1  :  6.74 6.73 6.75 (x, y, z dir)
+Number of atoms of type 1          :  64
+Atom type 2  (valence electrons)   :  Ti 12
+Pseudopotential                    :  ../22_Ti_12_2.0_2.8_pbe_n_v1.0.psp8
+Pseudocharge radii of atom type 2  :  6.74 6.73 6.75 (x, y, z dir)
+Number of atoms of type 2          :  32
+Estimated total memory usage       :  193.58 GB
+Estimated memory per processor     :  412.98 MB
+===================================================================
+                    Self Consistent Field (SCF#1)                     
+===================================================================
+Iteration     Free Energy (Ha/atom)   SCF Error        Timing (sec)
+1            -3.0661850547E+01        1.356E-01        187.115
+2            -3.0635206883E+01        5.939E-02        46.978
+3            -3.0632870006E+01        3.810E-02        47.170
+4            -3.0634688641E+01        3.093E-02        47.043
+5            -3.0633124098E+01        1.125E-02        47.052
+6            -3.0633088047E+01        3.879E-03        46.981
+7            -3.0633145465E+01        5.705E-03        46.999
+8            -3.0633099200E+01        2.306E-03        47.204
+9            -3.0633096800E+01        1.150E-03        46.937
+10           -3.0633096451E+01        4.021E-04        47.012
+Total number of SCF: 10    
+
+No.1 Exx outer loop. ACE timing: 6732.668 (sec)
+1            -3.0414801522E+01        9.755E-03        116.953
+2            -3.0415680137E+01        1.289E-02        113.426
+3            -3.0415275580E+01        8.585E-03        113.296
+4            -3.0415005523E+01        4.097E-03        113.612
+5            -3.0414996403E+01        2.812E-03        113.309
+6            -3.0415008378E+01        2.152E-03        113.123
+7            -3.0414989423E+01        9.962E-04        113.451
+8            -3.0414984157E+01        5.167E-04        113.271
+9            -3.0414976548E+01        2.351E-04        113.561
+10           -3.0414972244E+01        2.017E-04        113.199
+11           -3.0414970569E+01        8.683E-05        113.130
+12           -3.0414970280E+01        6.135E-05        112.916
+13           -3.0414970204E+01        3.484E-05        113.444
+14           -3.0414970404E+01        2.753E-05        113.080
+15           -3.0414970398E+01        1.992E-05        113.162
+16           -3.0414970534E+01        1.370E-05        113.153
+17           -3.0414970680E+01        1.057E-05        113.077
+18           -3.0414970670E+01        6.457E-06        113.247
+Total number of SCF: 18    
+Exx outer loop error: 3.1339912314e-04 
+
+No.2 Exx outer loop. ACE timing: 6642.475 (sec)
+1            -3.0415387333E+01        2.151E-03        116.896
+2            -3.0415405858E+01        2.145E-03        113.380
+3            -3.0415413816E+01        1.000E-03        113.329
+4            -3.0415419153E+01        5.569E-04        113.343
+5            -3.0415388729E+01        3.382E-04        113.161
+6            -3.0415385845E+01        2.301E-04        113.260
+7            -3.0415383835E+01        1.663E-04        113.147
+8            -3.0415383781E+01        9.369E-05        113.080
+9            -3.0415383853E+01        4.071E-05        113.046
+10           -3.0415384051E+01        3.090E-05        113.135
+11           -3.0415384129E+01        1.886E-05        112.968
+12           -3.0415384325E+01        1.093E-05        113.269
+13           -3.0415384388E+01        4.928E-06        113.005
+Total number of SCF: 13    
+Exx outer loop error: 2.0679176198e-04 
+
+No.3 Exx outer loop. ACE timing: 6840.723 (sec)
+1            -3.0415411296E+01        6.338E-04        116.875
+2            -3.0415411979E+01        4.924E-04        112.990
+3            -3.0415411029E+01        1.554E-04        113.108
+4            -3.0415411474E+01        7.238E-05        113.067
+5            -3.0415410922E+01        4.457E-05        113.040
+6            -3.0415411515E+01        2.188E-05        112.942
+7            -3.0415411028E+01        1.173E-05        113.063
+8            -3.0415410962E+01        5.899E-06        112.883
+Total number of SCF: 8     
+Exx outer loop error: 6.5526076476e-05 
+
+No.4 Exx outer loop. ACE timing: 6882.432 (sec)
+1            -3.0415413801E+01        2.060E-04        116.888
+2            -3.0415413953E+01        1.486E-04        112.889
+3            -3.0415413836E+01        2.586E-05        112.786
+4            -3.0415414333E+01        1.622E-05        112.874
+5            -3.0415414379E+01        7.204E-06        113.253
+Total number of SCF: 5     
+Exx outer loop error: 2.0795480635e-05 
+
+No.5 Exx outer loop. ACE timing: 6747.055 (sec)
+1            -3.0415414713E+01        7.370E-05        116.994
+2            -3.0415414658E+01        5.908E-05        112.866
+3            -3.0415414689E+01        8.254E-06        112.993
+Total number of SCF: 3     
+Exx outer loop error: 6.6987749035e-06 
+
+No.6 Exx outer loop. ACE timing: 6797.082 (sec)
+1            -3.0415414426E+01        2.667E-05        117.140
+2            -3.0415414413E+01        2.666E-05        112.716
+3            -3.0415414274E+01        3.742E-06        112.808
+Total number of SCF: 3     
+Exx outer loop error: 2.7496912497e-06 
+
+No.7 Exx outer loop. ACE timing: 6816.695 (sec)
+1            -3.0415414189E+01        1.129E-05        116.798
+2            -3.0415414198E+01        1.139E-05        112.918
+3            -3.0415414218E+01        1.934E-06        112.866
+Total number of SCF: 3     
+Exx outer loop error: 1.0622853749e-06 
+====================================================================
+                    Energy and force calculation                    
+====================================================================
+Free energy per atom               : -3.0415412093E+01 (Ha/atom)
+Total free energy                  : -2.9198795609E+03 (Ha)
+Band structure energy              : -7.6163196215E+02 (Ha)
+Exchange correlation energy        : -5.1712482355E+02 (Ha)
+Self and correction energy         : -3.8441458345E+03 (Ha)
+-Entropy*kb*T                      : -2.4413586631E-10 (Ha)
+Fermi level                        : -3.0941508086E-01 (Ha)
+RMS force                          :  1.6631835346E-02 (Ha/Bohr)
+Maximum force                      :  8.4491064407E-02 (Ha/Bohr)
+Time for force calculation         :  1.385 (sec)
+***************************************************************************
+                               Timing info                                 
+***************************************************************************
+Total walltime                     :  54568.225 sec
+___________________________________________________________________________
+
+***************************************************************************
+*             Material Physics & Mechanics Group, Georgia Tech            *
+*                       PI: Phanish Suryanarayana                         *
+*               List of contributors: See the documentation               *
+*         Citation: See README.md or the documentation for details        *
+*  Acknowledgements: U.S. DOE SC (DE-SC0019410), U.S. DOE NNSA (ASC)      *
+*      {Preliminary developments: U.S. NSF (1333500,1663244,1553212)}     *
+***************************************************************************
+                                                                           
